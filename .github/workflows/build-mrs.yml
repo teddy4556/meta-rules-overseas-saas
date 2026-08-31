@@ -20,17 +20,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Download mihomo binary (latest release)
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Build mihomo from source (cloned repo has its own go.mod as main module)
         run: |
-          # 用 GitHub API 取最新 release tag,避免硬编码版本
-          TAG=$(curl -s https://api.github.com/repos/metacubex/mihomo/releases/latest | grep '"tag_name"' | sed -E 's/.*"tag_name":[[:space:]]*"([^"]+)".*/\1/')
-          echo "Using mihomo tag: $TAG"
-          URL="https://github.com/metacubex/mihomo/releases/download/${TAG}/mihomo-linux-amd64-compatible-${TAG}.gz"
-          echo "Downloading: $URL"
-          curl -sL "$URL" -o mihomo.gz
-          ls -la mihomo.gz
-          gunzip mihomo.gz
-          chmod +x mihomo
+          # 关键: mihomo v1.19+ go.mod 含 replace 指令,不能跨包 go install
+          # 正确做法: 整 repo clone 下来,以 root module 身份 build
+          git clone --depth 1 --branch v1.19.30 https://github.com/MetaCubeX/mihomo.git
+          cd mihomo
+          go build -o ../mihomo .
+          cd ..
           ./mihomo version
 
       - name: Compile all .mrs (per business group)
