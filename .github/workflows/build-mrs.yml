@@ -5,7 +5,12 @@ on:
     branches: [main]
     paths:
       - '*.yaml'
+      - '.github/workflows/build-mrs.yml'
   workflow_dispatch:
+
+# 关键 — 给 GITHUB_TOKEN 写权限(默认 deny 普通用户 repo 的 push)
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -13,14 +18,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # fetch-depth: 0 让 git push 能访问完整 history
+          fetch-depth: 0
 
       - name: Download mihomo release binary
         run: |
-          # Download mihomo linux amd64 compatible build (has convert-ruleset subcommand)
           curl -sL https://github.com/MetaCubeX/mihomo/releases/download/v1.19.30/mihomo-linux-amd64-compatible-v1.19.30.gz -o mihomo.gz
           gunzip mihomo.gz
           chmod +x mihomo
-          ./mihomo version | head -3
+          ./mihomo version
 
       - name: Compile all .mrs (per business group)
         run: |
@@ -31,14 +38,13 @@ jobs:
 
       - name: Verify .mrs artifacts
         run: |
-          ls -la *.mrs | head -10
-          echo "---"
-          echo "Total .mrs files: $(ls *.mrs | wc -l)"
+          echo "Total .mrs: $(ls *.mrs | wc -l)"
+          ls -la *.mrs | head -5
 
       - name: Commit .mrs artifacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add *.mrs
-          git diff --staged --quiet || git commit -m "build: auto-compile 30 business-group .mrs files"
+          git diff --staged --quiet || git commit -m "build: auto-compile $(ls *.mrs | wc -l) business-group .mrs files"
           git push
