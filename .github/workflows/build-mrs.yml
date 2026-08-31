@@ -25,21 +25,22 @@ jobs:
         with:
           go-version: '1.22'
 
-      - name: Build mihomo from source (cloned repo has its own go.mod as main module)
+      - name: Build mihomo binary from source
         run: |
-          # 关键: mihomo v1.19+ go.mod 含 replace 指令,不能跨包 go install
-          # 正确做法: 整 repo clone 下来,以 root module 身份 build
-          git clone --depth 1 --branch v1.19.30 https://github.com/MetaCubeX/mihomo.git
-          cd mihomo
-          go build -o ../mihomo .
+          # Clone mihomo source into a directory named 'mihomo-src'
+          git clone --depth 1 --branch v1.19.30 https://github.com/MetaCubeX/mihomo.git mihomo-src
+          cd mihomo-src
+          # Build to a clean path (../bin/mihomo, separate from src dir)
+          go build -o ../bin/mihomo .
           cd ..
-          ./mihomo version
+          chmod +x bin/mihomo
+          bin/mihomo version
 
       - name: Compile all .mrs (per business group)
         run: |
           for yaml in *.yaml; do
             mrs="${yaml%.yaml}.mrs"
-            ./mihomo convert-ruleset domain text "$yaml" "$mrs"
+            bin/mihomo convert-ruleset domain text "$yaml" "$mrs"
           done
 
       - name: Verify .mrs artifacts
