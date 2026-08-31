@@ -1,0 +1,11 @@
+payload:
+    # auth
+    - +.auth0.com
+    - +.clerk.com
+    - +.firebase.google.com
+    - +.firebaseapp.com
+    - +.firebaseio.com
+    - +.workos.com
+    - +.okta.com
+    - +.onelogin.com
+    - +.duo.com

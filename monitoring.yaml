@@ -1,0 +1,16 @@
+payload:
+    # monitoring
+    - +.datadoghq.com
+    - +.datadog.com
+    - +.sentry.io
+    - +.betterstack.com
+    - +.grafana.com
+    - +.pagerduty.com
+    - +.newrelic.com
+    - +.sumologic.com
+    - +.logrocket.com
+    - +.rollbar.com
+    - +.bugsnag.com
+    - +.honeybadger.io
+    - +.uptime.com
+    - +.pingdom.com

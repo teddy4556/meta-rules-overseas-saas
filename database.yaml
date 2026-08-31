@@ -1,0 +1,17 @@
+payload:
+    # database
+    - +.supabase.com
+    - +.supabase.co
+    - +.neon.tech
+    - +.planetscale.com
+    - +.mongodb.com
+    - +.mongodb.net
+    - +.upstash.com
+    - +.prisma.io
+    - +.hasura.io
+    - +.fauna.com
+    - +.cockroachlabs.com
+    - +.turso.tech
+    - +.tidbcloud.com
+    - +.snowflake.com
+    - +.databricks.com

@@ -8,63 +8,96 @@
 
 | 服务 | 例子 |
 |---|---|
-| **协作** | Slack, Notion, Figma, Linear, Asana, ClickUp, Monday |
-| **开发者** | Vercel, Netlify, Railway, Fly.io, Render, Replit |
-| **设计** | Figma, Canva, Framer, Webflow, Sketch Cloud |
-| **AI** | Claude, ChatGPT, Perplexity, HuggingFace, Replicate |
-| **监控** | Datadog, Sentry, BetterStack, Grafana Cloud |
-| **数据库** | Supabase, Neon, PlanetScale, MongoDB Atlas |
+| **AI** | Claude, ChatGPT, Perplexity, HuggingFace, Cursor |
+| **协作** | Slack, Notion, Figma, Linear, Asana, ClickUp |
+| **开发者** | Vercel, Netlify, Railway, npm, PyPI |
+| **设计** | Figma, Canva, Framer, Webflow |
+| **监控** | Datadog, Sentry, BetterStack |
+| **数据库** | Supabase, Neon, PlanetScale |
+| **支付** | Stripe, PayPal |
 
-这些服务**走代理后稳定性和速度都显著提升**。本仓库收录它们,**完全兼容 meta-rules-dat `.mrs` 格式**,可以直接在 OpenClash / clash-meta 中作为 `rule-provider` 使用。
+这些服务**走代理后稳定性和速度都显著提升**。本仓库收录它们,**完全兼容 meta-rules-dat `.mrs` 格式**。
 
 ## 使用方式(OpenClash 示例)
 
+本仓库**按服务类别拆分**,你可以**独立引用每个类别**:
+
 ```yaml
 rule-providers:
-  overseas-saas:
+  overseas-ai:
     type: http
     behavior: domain
     format: mrs
-    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/overseas-saas.mrs"
-    path: "./rule_provider/overseas-saas.mrs"
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/ai-tools.mrs"
+    path: "./rule_provider/ai-tools.mrs"
+    interval: 86400
+
+  overseas-collab:
+    type: http
+    behavior: domain
+    format: mrs
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/collaboration.mrs"
+    path: "./rule_provider/collaboration.mrs"
+    interval: 86400
+
+  overseas-dev:
+    type: http
+    behavior: domain
+    format: mrs
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/developer-platforms.mrs"
+    path: "./rule_provider/developer-platforms.mrs"
     interval: 86400
 
 rules:
-  - RULE-SET,overseas-saas, 其他-手选  # 走 url-test 业务组
-  # 或者:
-  - RULE-SET,overseas-saas, 美国-手选  # 走美国手选节点
+  - RULE-SET,overseas-ai,    其他-手选
+  - RULE-SET,overseas-collab, 其他-手选
+  - RULE-SET,overseas-dev,   美国-手选     # 开发者平台首选美国
 ```
 
-## 规则集结构
+## 可用的规则集(按类别)
+
+| 文件 | 类别 | 包含示例 |
+|---|---|---|
+| `ai-tools.mrs` | AI 工具 | Claude, ChatGPT, Perplexity, HuggingFace, Cursor, Midjourney, Suno |
+| `collaboration.mrs` | 协作工具 | Slack, Notion, Figma, Linear, Asana, ClickUp, Miro, Dropbox, Zoom, Teams |
+| `developer-platforms.mrs` | 开发者平台 | Vercel, Netlify, Railway, npm, PyPI, Docker Hub, Buildkite, CircleCI |
+| `design.mrs` | 设计工具 | Canva, Framer, Webflow, Sketch, Dribbble, Behance |
+| `monitoring.mrs` | 监控运维 | Datadog, Sentry, BetterStack, Grafana, PagerDuty, NewRelic |
+| `database.mrs` | 数据库 | Supabase, Neon, PlanetScale, MongoDB Atlas, Upstash, Prisma |
+| `auth.mrs` | 认证服务 | Auth0, Clerk, Firebase, Okta, OneLogin |
+| `misc.mrs` | 其他 | Stripe, PayPal, Twilio, Cloudflare CDN, Akamai |
+
+## 仓库结构
 
 ```
-overseas-saas.yaml   # 源文件(可读、易审阅)
-overseas-saas.mrs    # 编译后二进制(MRS,体积小,加载快)
-LICENSE              # MIT
+ai-tools.yaml             # 源文件(可读、易审阅)
+ai-tools.mrs              # 编译后二进制(MRS)
+collaboration.yaml
+collaboration.mrs
+developer-platforms.yaml
+developer-platforms.mrs
+design.yaml
+design.mrs
+monitoring.yaml
+monitoring.mrs
+database.yaml
+database.mrs
+auth.yaml
+auth.mrs
+misc.yaml
+misc.mrs
+LICENSE                   # MIT
+README.md
 .github/workflows/
-  release.yml        # GitHub Actions 自动编译 .mrs
+  build-mrs.yml           # GitHub Actions 自动编译 8 个 .mrs
 ```
-
-## 域名分类
-
-按服务类型分块(每块以注释开头,方便 PR 时定位):
-
-| 类别 | 包含 |
-|---|---|
-| `ai-tools` | Claude / ChatGPT / Perplexity / HuggingFace / Replicate / Cursor / Cody |
-| `collaboration` | Slack / Notion / Figma / Linear / Asana / ClickUp / Monday / Trello / Miro |
-| `developers` | Vercel / Netlify / Railway / Fly.io / Render / Replit / Gitpod / StackBlitz / CodeSandbox |
-| `design` | Figma / Canva / Framer / Webflow / Sketch Cloud / InVision |
-| `monitoring` | Datadog / Sentry / BetterStack / Grafana Cloud / PagerDuty / New Relic |
-| `database` | Supabase / Neon / PlanetScale / MongoDB Atlas / Upstash / Prisma |
-| `auth` | Auth0 / Clerk / Firebase / Supabase Auth |
 
 ## 贡献
 
 接受 PR!新增域名时请:
 
-1. 确认该域名在中国大陆**走代理比直连更稳**(可用[Globalping](https://globalping.io/)测速)
-2. 编辑 `overseas-saas.yaml`,放到对应分类
+1. 确认该域名在中国大陆**走代理比直连更稳**
+2. 编辑对应类别的 yaml 文件(放进最匹配的类别)
 3. 保持 `+.` 前缀(mihomo domain suffix 匹配)
 4. 提交 PR,描述你为什么要加这个域名
 

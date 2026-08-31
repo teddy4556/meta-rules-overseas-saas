@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'overseas-saas.yaml'
+      - '*.yaml'
   workflow_dispatch:
 
 jobs:
@@ -24,14 +24,17 @@ jobs:
           GOBIN=$HOME/go/bin go install github.com/metacubex/mihomo/cmd/mihomo@latest
           echo "$HOME/go/bin" >> $GITHUB_PATH
 
-      - name: Compile .mrs
+      - name: Compile .mrs (per-category)
         run: |
-          mihomo convert-ruleset domain text overseas-saas.yaml overseas-saas.mrs
+          for yaml in ai-tools.yaml collaboration.yaml developer-platforms.yaml design.yaml monitoring.yaml database.yaml auth.yaml misc.yaml; do
+            mrs="${yaml%.yaml}.mrs"
+            mihomo convert-ruleset domain text "$yaml" "$mrs"
+          done
 
-      - name: Commit .mrs
+      - name: Commit .mrs artifacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add overseas-saas.mrs
-          git diff --staged --quiet || git commit -m "build: auto-compile overseas-saas.mrs"
+          git add *.mrs
+          git diff --staged --quiet || git commit -m "build: auto-compile 8 category .mrs files"
           git push
