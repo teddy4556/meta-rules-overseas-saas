@@ -14,27 +14,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.22'
-
-      - name: Install mihomo
+      - name: Download mihomo release binary
         run: |
-          GOBIN=$HOME/go/bin go install github.com/metacubex/mihomo/cmd/mihomo@latest
-          echo "$HOME/go/bin" >> $GITHUB_PATH
+          # Download mihomo linux amd64 compatible build (has convert-ruleset subcommand)
+          curl -sL https://github.com/MetaCubeX/mihomo/releases/download/v1.19.30/mihomo-linux-amd64-compatible-v1.19.30.gz -o mihomo.gz
+          gunzip mihomo.gz
+          chmod +x mihomo
+          ./mihomo version | head -3
 
       - name: Compile all .mrs (per business group)
         run: |
           for yaml in *.yaml; do
             mrs="${yaml%.yaml}.mrs"
-            mihomo convert-ruleset domain text "$yaml" "$mrs"
+            ./mihomo convert-ruleset domain text "$yaml" "$mrs"
           done
+
+      - name: Verify .mrs artifacts
+        run: |
+          ls -la *.mrs | head -10
+          echo "---"
+          echo "Total .mrs files: $(ls *.mrs | wc -l)"
 
       - name: Commit .mrs artifacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add *.mrs
-          git diff --staged --quiet || git commit -m "build: auto-compile 22 business-group .mrs files"
+          git diff --staged --quiet || git commit -m "build: auto-compile 30 business-group .mrs files"
           git push
