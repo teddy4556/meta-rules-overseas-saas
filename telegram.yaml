@@ -1,0 +1,27 @@
+payload:
+    # Telegram (compatible with meta geosite/telegram)
+    - +.telegram.org
+    - +.telegram.me
+    - +.telegram.dog
+    - +.telegram-cdn.org
+    - +.telegram.space
+    - +.tx.me
+    - +.t.me
+    - +.tdesktop.com
+    - +.telega.one
+    - +.telegra.ph
+    - +.graph.org
+    - +.comments.app
+    - +.contest.com
+    - +.quiz.directory
+    - +.fragment.com
+    - +.telesco.pe
+    - +.tg.dev
+    - +.ton.org
+    - +.toncenter.com
+    - +.usercontent.dev
+    - +.cdn-telegram.org
+    - +.web.telegram.org
+    - +.a.telegram.org
+    - +.api.telegram.org
+    - +.updates.telegram.org

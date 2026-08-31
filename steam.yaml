@@ -1,0 +1,29 @@
+payload:
+    # Steam / Valve
+    - +.steampowered.com
+    - +.steamcommunity.com
+    - +.steamgames.com
+    - +.steamstatic.com
+    - +.steamcdn-a.akamaihd.net
+    - +.steamcontent.com
+    - +.steam-chat.com
+    - +.steamserver.net
+    - +.valvesoftware.com
+    - +.valve.net
+    - +.sourceforge.net
+    - +.sf.net
+    - +.epicgames.com
+    - +.epicgames.dev
+    - +.easyanticheat.net
+    - +.gog.com
+    - +.gogalaxy.com
+    - +.humblebundle.com
+    - +.itch.io
+    - +.playstation.com
+    - +.playstation.net
+    - +.sonyentertainmentnetwork.com
+    - +.xbox.com
+    - +.xboxlive.com
+    - +.battle.net
+    - +.blizzard.com
+    - +.riotgames.com

@@ -1,0 +1,25 @@
+payload:
+    # Disney+
+    - +.disney.com
+    - +.disneyplus.com
+    - +.disney-plus.net
+    - +.disneycdn.com
+    - +.disney.com.au
+    - +.disney.de
+    - +.disney.fr
+    - +.disney.it
+    - +.disney.es
+    - +.disney.co.jp
+    - +.disney.co.uk
+    - +.disneyplus.in
+    - +.api.disneyplus.com
+    - +.hotstar.com
+    - +.hotstarext.com
+    - +.mediahotstar.com
+    - +.hstar.com
+    - +.fox.com
+    - +.foxplus.com
+    - +.hulu.com
+    - +.huluim.com
+    - +.hulustream.com
+    - +.hulu.jp

@@ -1,0 +1,24 @@
+payload:
+    # TikTok
+    - +.tiktok.com
+    - +.tiktokv.com
+    - +.tiktokcdn.com
+    - +.tiktok-cdn.com
+    - +.tiktokstatic.com
+    - +.tiktok-api.com
+    - +.byteic.com
+    - +.byted.org
+    - +.bytedance.com
+    - +.bytedance.net
+    - +.bytedns.net
+    - +.bytedance-static.com
+    - +.ibytedto.com
+    - +.ipstatp.com
+    - +.musical.ly
+    - +.snssdk.com
+    - +.amemv.com
+    - +.toutiao.com
+    - +.douyin.com
+    - +.ixigua.com
+    - +.feishu.cn
+    - +.larkoffice.com

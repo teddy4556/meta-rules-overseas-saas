@@ -1,0 +1,27 @@
+payload:
+    # YouTube
+    - +.youtube.com
+    - +.youtu.be
+    - +.yt.be
+    - +.youtube-nocookie.com
+    - +.youtube-ui.com
+    - +.youtubekids.com
+    - +.youtubeeducation.com
+    - +.youtubemusic.com
+    - +.youtubegaming.com
+    - +.youtubego.com
+    - +.youtube.googleapis.com
+    - +.googlevideo.com
+    - +.ytimg.com
+    - +.i.ytimg.com
+    - +.s.ytimg.com
+    - +.music.youtube.com
+    - +.gaming.youtube.com
+    - +.studio.youtube.com
+    - +.tv.youtube.com
+    - +.premium.youtube.com
+    - +.youtube.com
+    - +.youtube.googleapis.com
+    - +.ggpht.com
+    - +.youtube-ui.l.google.com
+    - +.wide-youtube.l.google.com

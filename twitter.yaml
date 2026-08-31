@@ -1,0 +1,21 @@
+payload:
+    # Twitter / X
+    - +.twitter.com
+    - +.x.com
+    - +.abs.twimg.com
+    - +.twimg.com
+    - +.t.co
+    - +.tweetdeck.com
+    - +.twitter.jp
+    - +.twitter.io
+    - +.periscope.tv
+    - +.pscp.tv
+    - +.x.io
+    - +.api.twitter.com
+    - +.api.x.com
+    - +.platform.twitter.com
+    - +.developer.twitter.com
+    - +.analytics.twitter.com
+    - +.ads.twitter.com
+    - +.business.twitter.com
+    - +.help.twitter.com

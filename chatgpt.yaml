@@ -1,0 +1,21 @@
+payload:
+    # ChatGPT / OpenAI
+    - +.openai.com
+    - +.chatgpt.com
+    - +.chat.openai.com
+    - +.oaistatic.com
+    - +.oaiusercontent.com
+    - +.openai.fund
+    - +.openai.org
+    - +.openaiassets.com
+    - +.openaiapis.com
+    - +.openailabs.com
+    - +.sora.com
+    - +.sora-chatgpt.com
+    - +.platform.openai.com
+    - +.cdn.openai.com
+    - +.api.openai.com
+    - +.auth0.openai.com
+    - +.status.openai.com
+    - +.chatgpt.pt
+    - +.chatgp.pt

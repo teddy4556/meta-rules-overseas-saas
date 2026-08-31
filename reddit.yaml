@@ -1,0 +1,15 @@
+payload:
+    # Reddit
+    - +.reddit.com
+    - +.redditmedia.com
+    - +.redditstatic.com
+    - +.redd.it
+    - +.reddit.map.fastly.net
+    - +.reddit-uploaded-media.com
+    - +.redditgifts.com
+    - +.redditinc.com
+    - +.redditstatus.com
+    - +.api.reddit.com
+    - +.oauth.reddit.com
+    - +.out.reddit.com
+    - +.i.reddit.com

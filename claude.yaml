@@ -1,0 +1,16 @@
+payload:
+    # Claude / Anthropic
+    - +.anthropic.com
+    - +.claude.ai
+    - +.claude.com
+    - +.anthropic-news.com
+    - +.console.anthropic.com
+    - +.api.anthropic.com
+    - +.files.anthropic.com
+    - +.anthropic.science
+    - +.anthropic.cc
+    - +.anthropic.fyi
+    - +.anthropicdata.com
+    - +.anthropic-api.com
+    - +.claudeusercontent.com
+    - +.claude-co.com

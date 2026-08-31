@@ -1,0 +1,25 @@
+payload:
+    # Spotify
+    - +.spotify.com
+    - +.spotify.net
+    - +.spotifycdn.com
+    - +.scdn.co
+    - +.spotifycdn.net
+    - +.spotifycharts.com
+    - +.spotifyforbrands.com
+    - +.spotifyjobs.com
+    - +.audio-akp-quic-control.spotifycdn.com
+    - +.audio-akp.spotifycdn.com
+    - +.audio-fab.spotifycdn.com
+    - +.audio-fa.scdn.co
+    - +.audio-gc.scdn.co
+    - +.audio-gc.spotifycdn.com
+    - +.audio-sp.scdn.co
+    - +.ap.spotify.com
+    - +.api.spotify.com
+    - +.open.spotify.com
+    - +.www.spotify.com
+    - +.newsroom.spotify.com
+    - +.podcasters.spotify.com
+    - +.developer.spotify.com
+    - +.accounts.spotify.com

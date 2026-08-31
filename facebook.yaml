@@ -1,0 +1,25 @@
+payload:
+    # Facebook / Meta
+    - +.facebook.com
+    - +.facebook.de
+    - +.facebook.design
+    - +.facebook.hu
+    - +.facebook.in
+    - +.facebook.nl
+    - +.facebook.se
+    - +.fb.com
+    - +.fb.gg
+    - +.fb.me
+    - +.fbcdn.net
+    - +.fbsbx.com
+    - +.business.facebook.com
+    - +.developers.facebook.com
+    - +.graph.facebook.com
+    - +.messenger.com
+    - +.m.me
+    - +.instagram.com
+    - +.oculus.com
+    - +.oculuscdn.com
+    - +.wit.ai
+    - +.workplace.com
+    - +.atdmt.com

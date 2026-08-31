@@ -1,0 +1,20 @@
+payload:
+    # Netflix
+    - +.netflix.com
+    - +.netflix.net
+    - +.nflxext.com
+    - +.nflximg.net
+    - +.nflxvideo.net
+    - +.nflxso.net
+    - +.netflixcdn.com
+    - +.netflixdn.net
+    - +.nflxq.akamaized.net
+    - +.cdn1.nflx.com
+    - +.cdn2.nflx.com
+    - +.api.netflix.com
+    - +.codeflix.com
+    - +.help.netflix.com
+    - +.signup.netflix.com
+    - +.jobs.netflix.com
+    - +.techblog.netflix.com
+    - +.research.netflix.com

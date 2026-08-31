@@ -1,0 +1,29 @@
+payload:
+    # Amazon Prime Video / AWS
+    - +.amazon.com
+    - +.amazon.co.uk
+    - +.amazon.de
+    - +.amazon.co.jp
+    - +.amazon.ca
+    - +.amazon.com.au
+    - +.amazon.it
+    - +.amazon.es
+    - +.amazon.fr
+    - +.amazon.nl
+    - +.amazonaws.com
+    - +.aws.amazon.com
+    - +.amazon-adsystem.com
+    - +.amazonalexa.com
+    - +.alexa.com
+    - +.alexa.dev
+    - +.amazonpay.com
+    - +.amazonprime.com
+    - +.primevideo.com
+    - +.media-amazon.com
+    - +.images-amazon.com
+    - +.ssl-images-amazon.com
+    - +.music.amazon.com
+    - +.twitch.tv
+    - +.twitchcdn.net
+    - +.jtvnw.net
+    - +.ttvnw.net
