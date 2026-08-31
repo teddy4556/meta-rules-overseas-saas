@@ -20,23 +20,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.22'
-
-      - name: Install mihomo
+      - name: Download mihomo binary (latest release)
         run: |
-          # mihomo v1.19+: module = github.com/metacubex/mihomo (no /cmd/mihomo suffix)
-          go install github.com/metacubex/mihomo@latest
-          echo "$HOME/go/bin" >> "$GITHUB_PATH"
-          mihomo version | head -2
+          # 用 GitHub API 取最新 release tag,避免硬编码版本
+          TAG=$(curl -s https://api.github.com/repos/metacubex/mihomo/releases/latest | grep '"tag_name"' | sed -E 's/.*"tag_name":[[:space:]]*"([^"]+)".*/\1/')
+          echo "Using mihomo tag: $TAG"
+          URL="https://github.com/metacubex/mihomo/releases/download/${TAG}/mihomo-linux-amd64-compatible-${TAG}.gz"
+          echo "Downloading: $URL"
+          curl -sL "$URL" -o mihomo.gz
+          ls -la mihomo.gz
+          gunzip mihomo.gz
+          chmod +x mihomo
+          ./mihomo version
 
       - name: Compile all .mrs (per business group)
         run: |
           for yaml in *.yaml; do
             mrs="${yaml%.yaml}.mrs"
-            mihomo convert-ruleset domain text "$yaml" "$mrs"
+            ./mihomo convert-ruleset domain text "$yaml" "$mrs"
           done
 
       - name: Verify .mrs artifacts
