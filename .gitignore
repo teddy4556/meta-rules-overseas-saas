@@ -1,6 +1,3 @@
-# Build artifacts
-*.mrs
-
 # OS
 .DS_Store
 Thumbs.db
@@ -10,5 +7,8 @@ Thumbs.db
 .idea/
 *.swp
 
-# Local
+# Local dev artifacts
 *.local
+
+# Note: .mrs files ARE tracked — they're the published artifacts.
+# CI compiles yaml -> .mrs and commits them to the repo.
