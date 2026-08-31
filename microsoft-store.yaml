@@ -1,0 +1,30 @@
+payload:
+    # Microsoft Store (separate from Microsoft 365 / Azure business services)
+    # 解决坑 67:store.microsoft.com / apps.microsoft.com / displaycatalog.mp.microsoft.com
+    # 国内 IP 访问被 Microsoft 主动 403/301(geo-block),必须走代理
+    - +.microsoftstore.com
+    - +.microsoft.com
+    - +.microsoftstore.com.cn
+    - +.msftncsi.com
+    - +.store.microsoft.com
+    - +.apps.microsoft.com
+    - +.displaycatalog.mp.microsoft.com
+    - +.cdn.store.microsoft.com
+    - +.tlu.dl.delivery.mp.microsoft.com
+    - +.tlu.dl.delivery.mp.microsoft.com.akamaized.net
+    - +.img-prod-cms-rt-microsoft-com.akamaized.net
+    - +.img.s-microsoft.com
+    - +.store-images.s-microsoft.com
+    - +.xbox.com
+    - +.xboxservices.com
+    - +.xboxlive.com
+    - +.xvideos.com
+    - +.playstation.com
+    - +.playstation.net
+    - +.sonyentertainmentnetwork.com
+    - +.ea.com
+    - +.origin.com
+    - +.ubisoft.com
+    - +.ubi.com
+    - +.wargaming.net
+    - +.riotgames.com

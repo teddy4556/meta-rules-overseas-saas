@@ -1,0 +1,16 @@
+payload:
+    # Cloud IDE / Online Development
+    - +.gitpod.io
+    - +.stackblitz.com
+    - +.codesandbox.io
+    - +.replit.com
+    - +.glitch.com
+    - +.heroku.com
+    - +.flynn.io
+    - +.codepen.io
+    - +.jsbin.com
+    - +.jsfiddle.net
+    - +.runkit.com
+    - +.typescriptlang.org
+    - +.playcode.io
+    - +.kaggle.com

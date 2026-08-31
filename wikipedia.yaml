@@ -1,0 +1,22 @@
+payload:
+    # Wikipedia / Wikimedia
+    - +.wikipedia.org
+    - +.wikimedia.org
+    - +.mediawiki.org
+    - +.wiktionary.org
+    - +.wikiquote.org
+    - +.wikisource.org
+    - +.wikibooks.org
+    - +.wikinews.org
+    - +.wikiversity.org
+    - +.wikivoyage.org
+    - +.wikidata.org
+    - +.wikimediafoundation.org
+    - +.upload.wikimedia.org
+    - +.commons.wikimedia.org
+    - +.en.wikipedia.org
+    - +.zh.wikipedia.org
+    - +.wiki.mozilla.org
+    - +.wiki.archlinux.org
+    - +.wiki.debian.org
+    - +.wiki.gentoo.org

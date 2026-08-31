@@ -1,0 +1,31 @@
+payload:
+    # 18+ / Adult (optional — for adult content)
+    # 大部分机场包含此类规则集;适合有需要的用户单独引用
+    - +.pornhub.com
+    - +.phncdn.com
+    - +.phprcdn.com
+    - +.phub.com
+    - +.xvideos.com
+    - +.xvideos-cdn.com
+    - +.xnxx.com
+    - +.xnxx-cdn.com
+    - +.xhamster.com
+    - +.xhcdn.com
+    - +.redtube.com
+    - +.youporn.com
+    - +.tube8.com
+    - +.onlyfans.com
+    - +.fansly.com
+    - +.chaturbate.com
+    - +.livejasmin.com
+    - +.stripchat.com
+    - +.bongacams.com
+    - +.camsoda.com
+    - +.myfreecams.com
+    - +.imlive.com
+    - +.flirt4free.com
+    - +.spankbang.com
+    - +.eporner.com
+    - +.beeg.com
+    - +.txxx.com
+    - +.thumbzilla.com

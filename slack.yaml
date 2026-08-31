@@ -1,0 +1,21 @@
+payload:
+    # Slack
+    - +.slack.com
+    - +.slack-edge.com
+    - +.slack-files.com
+    - +.slack-imgs.com
+    - +.slack-redir.net
+    - +.slack-redirect.com
+    - +.slack-core.com
+    - +.slackb.com
+    - +.slack-edge.io
+    - +.slack-status.com
+    - +.slack.com
+    - +.api.slack.com
+    - +.files.slack.com
+    - +.wss-primary.slack.com
+    - +.wss-backup.slack.com
+    - +.wss-mobile.slack.com
+    - +.app.slack.com
+    - +.enterprise.slack.com
+    - +.slackatwork.com

@@ -10,8 +10,6 @@
 
 ## 使用方式(OpenClash 示例)
 
-假设你的 OpenClash 有 `ChatGPT` / `Claude` / `YouTube` / `Netflix` / `Telegram` 等业务组,加 rule-provider:
-
 ```yaml
 rule-providers:
   chatgpt:
@@ -20,14 +18,6 @@ rule-providers:
     format: mrs
     url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/chatgpt.mrs"
     path: "./rule_provider/chatgpt.mrs"
-    interval: 86400
-
-  claude:
-    type: http
-    behavior: domain
-    format: mrs
-    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/claude.mrs"
-    path: "./rule_provider/claude.mrs"
     interval: 86400
 
   youtube:
@@ -40,49 +30,62 @@ rule-providers:
 
 rules:
   - RULE-SET,chatgpt,  ChatGPT
-  - RULE-SET,claude,   Claude
   - RULE-SET,youtube,  YouTube
-  - RULE-SET,twitter,  Twitter(X)   # 你可能已用旧 mrs,可叠加
+  - RULE-SET,telegram, Telegram
 ```
 
-## 可用的规则集(每个文件 = 一个业务组)
+## 可用的规则集
 
-| yaml 文件 | 业务组 | 域名数 | 包含 |
-|---|---|---|---|
-| `chatgpt.yaml` | ChatGPT | 19 | openai.com, chatgpt.com, sora, oaiusercontent, etc. |
-| `claude.yaml` | Claude | 14 | anthropic.com, claude.ai, claudeusercontent, etc. |
-| `copilot.yaml` | Copilot | 10 | copilot.microsoft.com, githubcopilot, bing, etc. |
-| `perplexity.yaml` | Perplexity | 9 | perplexity.ai, pplx, etc. |
-| `gemini.yaml` | Gemini | 13 | gemini.google.com, deepmind, notebooklm, etc. |
-| `meta-ai.yaml` | Meta AI | 13 | meta.ai, llama, instagram, threads, etc. |
-| `twitter.yaml` | Twitter(X) | 19 | twitter.com, x.com, twimg, tweetdeck, etc. |
-| `facebook.yaml` | Facebook | 23 | facebook.com, fbcdn, instagram, oculus, etc. |
-| `telegram.yaml` | Telegram | 25 | telegram.org, t.me, telegra.ph, ton.org, etc. |
-| `whatsapp.yaml` | WhatsApp | 15 | whatsapp.com, wa.me, etc. |
-| `reddit.yaml` | Reddit | 13 | reddit.com, redd.it, etc. |
-| `youtube.yaml` | YouTube | 25 | youtube.com, googlevideo, ytimg, etc. |
-| `tiktok.yaml` | TikTok | 22 | tiktok.com, bytedance, douyin, etc. |
-| `netflix.yaml` | Netflix | 18 | netflix.com, nflxext, nflximg, etc. |
-| `disney.yaml` | Disney | 23 | disneyplus.com, hotstar, hulu, etc. |
-| `hbo.yaml` | HBO | 26 | hbomax.com, warnermedia, cnn, etc. |
-| `spotify.yaml` | Spotify | 23 | spotify.com, scdn.co, etc. |
-| `amazon.yaml` | Amazon | 27 | amazon.com, aws, primevideo, twitch, etc. |
-| `crunchyroll.yaml` | Crunchyroll | 21 | crunchyroll.com, funimation, myanimelist, etc. |
-| `github.yaml` | GitHub | 27 | github.com, gist, copilot.github, etc. |
-| `nvidia.yaml` | Nvidia | 26 | nvidia.com, geforce, etc. |
-| `steam.yaml` | Steam | 27 | steam, epicgames, gog, playstation, xbox, etc. |
-| **总计** | **22 个业务组** | **438** | |
+**主流业务组(22 个,核心):**
+
+| yaml | 对应业务组 | 域名数 |
+|---|---|---|
+| `chatgpt.yaml` | ChatGPT | 19 |
+| `claude.yaml` | Claude | 14 |
+| `copilot.yaml` | Copilot | 10 |
+| `perplexity.yaml` | Perplexity | 9 |
+| `gemini.yaml` | Gemini | 13 |
+| `meta-ai.yaml` | Meta AI | 13 |
+| `twitter.yaml` | Twitter(X) | 19 |
+| `facebook.yaml` | Facebook | 23 |
+| `telegram.yaml` | Telegram | 25 |
+| `whatsapp.yaml` | WhatsApp | 15 |
+| `reddit.yaml` | Reddit | 13 |
+| `youtube.yaml` | YouTube | 25 |
+| `tiktok.yaml` | TikTok | 22 |
+| `netflix.yaml` | Netflix | 18 |
+| `disney.yaml` | Disney | 23 |
+| `hbo.yaml` | HBO | 26 |
+| `spotify.yaml` | Spotify | 23 |
+| `amazon.yaml` | Amazon | 27 |
+| `crunchyroll.yaml` | Crunchyroll | 21 |
+| `github.yaml` | GitHub | 27 |
+| `nvidia.yaml` | Nvidia | 26 |
+| `steam.yaml` | Steam | 27 |
+
+**扩展业务组(8 个,可选):**
+
+| yaml | 用途 | 域名数 |
+|---|---|---|
+| `microsoft-store.yaml` | Microsoft Store / Xbox / PlayStation(国内 IP 被 Microsoft 主动 403,坑 67) | 26 |
+| `discord.yaml` | Discord(OpenClash 没独立业务组时可建) | 25 |
+| `slack.yaml` | Slack(配合 Discord) | 19 |
+| `notion.yaml` | Notion(配合 Discord/Slack) | 20 |
+| `wikipedia.yaml` | Wikipedia / Wikimedia 全家桶 | 20 |
+| `scholar.yaml` | 学术(Google Scholar / ResearchGate / arXiv / PubMed) | 26 |
+| `cloud-ide.yaml` | 云 IDE(Gitpod / StackBlitz / CodeSandbox / Replit) | 13 |
+| `pornhub.yaml` | 18+ 类(选择性使用) | 28 |
+
+**总计 30 个 yaml / 618 个域名**
 
 ## 仓库结构
 
 ```
-chatgpt.yaml / chatgpt.mrs        # 业务组 ChatGPT
-claude.yaml  / claude.mrs         # 业务组 Claude
-... 22 对
-LICENSE                            # MIT
+<业务组>.yaml / <业务组>.mrs       # 30 对一一对应
+LICENSE                              # MIT
 README.md
 .github/workflows/
-  build-mrs.yml                    # GitHub Actions 自动编译 22 个 .mrs
+  build-mrs.yml                      # GitHub Actions 自动编译 30 个 .mrs
 ```
 
 ## 贡献
