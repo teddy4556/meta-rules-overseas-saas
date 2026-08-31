@@ -14,6 +14,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 增加到 25 分钟(mihomo source build 首次可能 5-15 分钟)
+    timeout-minutes: 25
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,15 +27,24 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.22'
+          cache: true   # 自动 cache Go module
 
       - name: Build mihomo binary from source
         run: |
-          # Clone mihomo source into a directory named 'mihomo-src'
-          git clone --depth 1 --branch v1.19.30 https://github.com/MetaCubeX/mihomo.git mihomo-src
+          set -e
+          echo "::group::Clone mihomo source"
+          if [ ! -d "mihomo-src" ]; then
+            git clone --depth 1 --branch v1.19.30 https://github.com/MetaCubeX/mihomo.git mihomo-src
+          fi
+          echo "::endgroup::"
+
+          echo "::group::Build"
           cd mihomo-src
-          # Build to a clean path (../bin/mihomo, separate from src dir)
-          go build -o ../bin/mihomo .
+          # verbose: -v 显示编译过程
+          go build -v -o ../bin/mihomo . 2>&1 | tail -20
           cd ..
+          echo "::endgroup::"
+
           chmod +x bin/mihomo
           bin/mihomo version
 
