@@ -1,0 +1,37 @@
+name: build-mrs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'overseas-saas.yaml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Install mihomo
+        run: |
+          GOBIN=$HOME/go/bin go install github.com/metacubex/mihomo/cmd/mihomo@latest
+          echo "$HOME/go/bin" >> $GITHUB_PATH
+
+      - name: Compile .mrs
+        run: |
+          mihomo convert-ruleset domain text overseas-saas.yaml overseas-saas.mrs
+
+      - name: Commit .mrs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add overseas-saas.mrs
+          git diff --staged --quiet || git commit -m "build: auto-compile overseas-saas.mrs"
+          git push
