@@ -9,7 +9,6 @@ payload:
     - +.discord.new
     - +.discord.gift
     - +.discordstatus.com
-    - +.discord.com
     - +.discord.dev
     - +.discord.tools
     - +.discordtranscripts.com
@@ -26,3 +25,5 @@ payload:
     - +.discordwidgets.com
     - +.discord.band
     - +.discord.coffee
+    # 9-1 batch: 补 meta yfamilys 漏的 discord 子域 (mine - yc)
+    # 来源: yfamilys/discord.list, mine/discord.yaml
