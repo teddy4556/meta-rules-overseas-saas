@@ -1,20 +1,69 @@
 payload:
-    - +.api.openai.com
-    - +.auth0.openai.com
-    - +.cdn.openai.com
+    # OpenAI 全生态(9-1 命中率 + 完整性优化版)
+    # 涵盖:ChatGPT 主域 + OpenAI 自身服务 + SDK/Analytics/Bot 检测/支付/实时音视频
+    # 注:9-1 起加 DOMAIN-KEYWORD + IP-CIDR + IP-ASN 提升命中率(本仓库第二个含
+    # IP 段的 yaml,继 twitter.yaml 后)
+    # === ChatGPT 主域 ===
     - +.chat.openai.com
-    - +.chatgp.pt
     - +.chatgpt.com
     - +.chatgpt.pt
-    - +.oaistatic.com
-    - +.oaiusercontent.com
+    - +.chatgp.pt
+    - +.sora-chatgpt.com
+    - +.sora.com
+    # === OpenAI 主域 ===
     - +.openai.com
     - +.openai.fund
     - +.openai.org
     - +.openaiapis.com
     - +.openaiassets.com
     - +.openailabs.com
+    # === OpenAI API/认证 ===
+    - +.api.openai.com
+    - +.auth0.openai.com
     - +.platform.openai.com
-    - +.sora-chatgpt.com
-    - +.sora.com
+    - +.cdn.openai.com
+    - +.oaistatic.com
+    - +.oaiusercontent.com
     - +.status.openai.com
+    # === OpenAI CDN / Azure 资源 ===
+    - +.chat.openai.com.cdn.cloudflare.net
+    - +.openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+    - +.openaicomproductionae4b.blob.core.windows.net
+    - +.production-openaicom-storage.azureedge.net
+    - +.openaiapi-site.azureedge.net
+    - +.openaicom.imgix.net
+    # === Bot 检测 / 反滥用 ===
+    - +.client-api.arkoselabs.com
+    - +.openai-api.arkoselabs.com
+    # === 实时音视频(ChatGPT 高级语音模式)===
+    - +.chatgpt.livekit.cloud
+    - +.host.livekit.cloud
+    - +.turn.livekit.cloud
+    # === Analytics / Feature Flag ===
+    - +.api.statsig.com
+    - +.events.statsigapi.net
+    - +.launchdarkly.com
+    - +.featuregates.org
+    # === 监控 / 错误追踪 ===
+    - +.sentry.io
+    - +.segment.io
+    - +.static.cloudflareinsights.com
+    - +.browser-intake-datadoghq.com
+    # === 支付 ===
+    - +.stripe.com
+    # === 客户支持 ===
+    - +.intercom.io
+    - +.intercomcdn.com
+    # === 其他 ===
+    - +.ai.com
+    - +.algolia.net
+    - +.auth0.com
+    - +.identrust.com
+    - +.observeit.net
+    # === DOMAIN-KEYWORD 兜底 ===
+    - DOMAIN-KEYWORD,openai
+    # === IP 段(命中率优化,绕过 DNS) ===
+    - IP-CIDR,24.199.123.28/32,no-resolve
+    - IP-CIDR,64.23.132.171/32,no-resolve
+    # === IP-ASN(OpenAI 母公司 Choopa/Jupiter)===
+    - IP-ASN,20473,no-resolve
