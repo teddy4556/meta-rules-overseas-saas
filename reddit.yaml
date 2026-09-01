@@ -17,3 +17,6 @@ payload:
     - +.redditspace.com
     - +.redditstatic.com
     - +.redditstatus.com
+
+    # 9-1 batch: 补 meta yfamilys 漏的 reddit 子域 (mine - yc)
+    # 来源: yfamilys/reddit.list, mine/reddit.yaml
