@@ -1,0 +1,24 @@
+payload:
+    # PayPal — international payments
+    # 补充 meta paypal.mrs 的细节(坑 9: PayPal 经常被风控)
+    - +.paypal.com
+    - +.paypal-corp.com
+    - +.paypal-communication.com
+    - +.paypal-customerfeedback.com
+    - +.paypal-learning.com
+    - +.paypal-mktg.com
+    - +.paypal-notice.com
+    - +.paypal-survey.com
+    - +.paypal.us
+    - +.paypalobjects.com
+    - +.paypalinc.com
+    - +.paypal-knowledge.com
+    - +.paypal-help.com
+    - +.paypal.biz
+    - +.paypalbenefits.com
+    - +.paypal-plus.com
+    - +.paypal.me
+    - +.paypalobjects.com.edgesuite.net
+    - +.braintreepayments.com
+    - +.braintreegateway.com
+    - +.venmo.com
