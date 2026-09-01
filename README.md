@@ -126,6 +126,31 @@ rules:
 
 > AntiAD (9.7 MB / 292K 行) **不在本仓库** — 体积过大,改走 README 引用段。
 
+**国内去广告 (`cn/` 子目录,1 个 yaml):**
+
+跟 `国内直连.yaml` 配套,但用途相反:
+
+| yaml | 用途 | 条数 |
+|---|---|---|
+| `cn/国内去广告.yaml` | 国内常见广告/统计/弹窗/恶意站阻断 (ADLite 轻量版) | 55843 |
+
+用法 — 走 `REJECT` (或 `广告拦截` 业务组):
+
+```yaml
+rule-providers:
+  国内去广告:
+    type: http
+    behavior: reject
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/cn/国内去广告.yaml"
+    path: "./rule_provider/国内去广告.yaml"
+    interval: 86400
+
+rules:
+  - RULE-SET,国内去广告,REJECT  # 或独立业务组
+```
+
+> 几乎全是 DOMAIN-SUFFIX (55744/55843),mihomo hash 索引匹配,OpenClash 性能影响极小。
+
 ## Microsoft 服务分流(坑 67)
 
 Microsoft 服务一刀切走代理其实没必要 — Office/Outlook/Bing/OneDrive 等国内访问正常,Azure 国内版(世纪互联运营)也是直连更快。本仓库把 Microsoft 拆成两个 yaml:
@@ -168,7 +193,8 @@ rules:
 
 ```
 <业务组>.yaml               # 32 个 yaml,直接 rule-provider 用
-cn/国内直连.yaml             # 中国大陆直连白名单 (15872 条)
+cn/国内直连.yaml             # 中国大陆直连白名单 (20027 条 DIRECT)
+cn/国内去广告.yaml           # 国内常见广告/统计阻断 (55843 条 REJECT)
 LICENSE                       # MIT
 README.md
 ```
