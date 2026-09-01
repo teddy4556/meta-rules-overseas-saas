@@ -1,15 +1,19 @@
 payload:
-    # Reddit
-    - +.reddit.com
-    - +.redditmedia.com
-    - +.redditstatic.com
-    - +.redd.it
-    - +.reddit.map.fastly.net
-    - +.reddit-uploaded-media.com
-    - +.redditgifts.com
-    - +.redditinc.com
-    - +.redditstatus.com
     - +.api.reddit.com
+    - +.i.reddit.com
     - +.oauth.reddit.com
     - +.out.reddit.com
-    - +.i.reddit.com
+    - +.redd.it
+    - +.reddit-uploaded-media.com
+    - +.reddit.app.link
+    - +.reddit.com
+    - +.reddit.map.fastly.net
+    - +.redditblog.com
+    - +.redditgifts.com
+    - +.reddithelp.com
+    - +.redditinc.com
+    - +.redditmail.com
+    - +.redditmedia.com
+    - +.redditspace.com
+    - +.redditstatic.com
+    - +.redditstatus.com

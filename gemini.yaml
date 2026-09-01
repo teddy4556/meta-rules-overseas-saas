@@ -1,15 +1,14 @@
 payload:
-    # Google Gemini
-    - +.gemini.google.com
+    - +.aistudio.google.com
     - +.bard.google.com
-    - +.gemini.com
-    - +.geminiapp.com
-    - +.gemini.googleusercontent.com
     - +.deepmind.com
     - +.deepmind.google
+    - +.gemini.com
+    - +.gemini.google.com
+    - +.gemini.googleusercontent.com
+    - +.geminiapp.com
     - +.generativelanguage.googleapis.com
-    - +.makersuite.google.com
-    - +.aistudio.google.com
     - +.labs.google
-    - +.notebooklm.google.com
+    - +.makersuite.google.com
     - +.notebooklm.app
+    - +.notebooklm.google.com

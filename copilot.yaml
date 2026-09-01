@@ -1,12 +1,11 @@
 payload:
-    # GitHub Copilot
-    - +.copilot.microsoft.com
-    - +.githubcopilot.com
+    - +.bing.com
+    - +.copilot-cloud.com
     - +.copilot.com
-    - +.github.ai
-    - +.githubcopilot.ai
+    - +.copilot.microsoft.com
     - +.copilot.workspace
     - +.copilotgallery.com
-    - +.copilot-cloud.com
-    - +.bing.com
     - +.copilotstudio.microsoft.com
+    - +.github.ai
+    - +.githubcopilot.ai
+    - +.githubcopilot.com

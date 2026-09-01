@@ -1,11 +1,10 @@
 payload:
-    # Perplexity
+    - +.api.perplexity.ai
     - +.perplexity.ai
     - +.perplexity.com
-    - +.api.perplexity.ai
-    - +.www.perplexity.ai
-    - +.pplx.ai
-    - +.pplx.com
-    - +.perplexitylabs.ai
     - +.perplexity.dev
     - +.perplexityapi.com
+    - +.perplexitylabs.ai
+    - +.pplx.ai
+    - +.pplx.com
+    - +.www.perplexity.ai

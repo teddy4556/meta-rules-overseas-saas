@@ -1,28 +1,27 @@
 payload:
-    # Nvidia
-    - +.nvidia.com
-    - +.nvidia.net
+    - +.developer.download.nvidia.com
+    - +.developer.nvidia.com
+    - +.geforce.com
+    - +.geforcenow.com
+    - +.images.nvidia.com
+    - +.nv-technology.nvidia.com
+    - +.nvda.ws
+    - +.nvgs.nvidia.com
     - +.nvidia.cn
-    - +.nvidia.in
-    - +.nvidia.de
-    - +.nvidia.es
-    - +.nvidia.fr
-    - +.nvidia.it
     - +.nvidia.co.jp
     - +.nvidia.co.kr
+    - +.nvidia.com
     - +.nvidia.com.br
     - +.nvidia.com.mx
     - +.nvidia.com.tw
-    - +.nvgs.nvidia.com
-    - +.nvda.ws
-    - +.geforce.com
-    - +.geforcenow.com
-    - +.nvlabs.nvidia.com
+    - +.nvidia.de
+    - +.nvidia.es
+    - +.nvidia.fr
+    - +.nvidia.in
+    - +.nvidia.it
+    - +.nvidia.net
+    - +.nvidia.partners
     - +.nvidianews.com
     - +.nvidianews.nvidia.com
-    - +.nv-technology.nvidia.com
-    - +.nvidia.partners
-    - +.developer.nvidia.com
-    - +.developer.download.nvidia.com
-    - +.images.nvidia.com
+    - +.nvlabs.nvidia.com
     - +.research.nvidia.com

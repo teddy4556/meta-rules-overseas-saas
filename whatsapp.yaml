@@ -1,17 +1,16 @@
 payload:
-    # WhatsApp
+    - +.api.whatsapp.com
+    - +.business.whatsapp.com
+    - +.chat.whatsapp.com
+    - +.wa.me
+    - +.wamrooms.com
+    - +.whatsapp-brand.com
+    - +.whatsapp-cdn.com
+    - +.whatsapp-plus.com
+    - +.whatsapp.cc
     - +.whatsapp.com
     - +.whatsapp.net
-    - +.wa.me
     - +.whatsapp.org
-    - +.whatsapp-brand.com
-    - +.whatsapp.cc
     - +.wwco.com
     - +.wwhelp.com
     - +.wwstatic.com
-    - +.wamrooms.com
-    - +.whatsapp-cdn.com
-    - +.whatsapp-plus.com
-    - +.business.whatsapp.com
-    - +.api.whatsapp.com
-    - +.chat.whatsapp.com

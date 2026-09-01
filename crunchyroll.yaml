@@ -1,23 +1,22 @@
 payload:
-    # Crunchyroll
-    - +.crunchyroll.com
-    - +.crunchyrollcdn.com
-    - +.crunchyroll.tv
-    - +.funimation.com
-    - +.funimationservices.com
-    - +.funimationext.com
+    - +.anidb.net
+    - +.anilist.co
     - +.anime-one.com
-    - +.hidive.com
-    - +.viz.com
-    - +.vizmedia.com
+    - +.anime-planet.com
+    - +.animenewsnetwork.com
     - +.animepahe.com
+    - +.crunchyroll.com
+    - +.crunchyroll.tv
+    - +.crunchyrollcdn.com
+    - +.funimation.com
+    - +.funimationext.com
+    - +.funimationservices.com
+    - +.hidive.com
     - +.kissanime.com
     - +.kissmanga.com
-    - +.animenewsnetwork.com
-    - +.myanimelist.net
-    - +.anilist.co
-    - +.anime-planet.com
-    - +.mangaupdates.com
-    - +.anidb.net
     - +.kitsu.io
+    - +.mangaupdates.com
+    - +.myanimelist.net
     - +.simulcast.me
+    - +.viz.com
+    - +.vizmedia.com

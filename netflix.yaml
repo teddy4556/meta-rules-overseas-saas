@@ -1,20 +1,36 @@
 payload:
-    # Netflix
-    - +.netflix.com
-    - +.netflix.net
-    - +.nflxext.com
-    - +.nflximg.net
-    - +.nflxvideo.net
-    - +.nflxso.net
-    - +.netflixcdn.com
-    - +.netflixdn.net
-    - +.nflxq.akamaized.net
+    - +.api.netflix.com
     - +.cdn1.nflx.com
     - +.cdn2.nflx.com
-    - +.api.netflix.com
     - +.codeflix.com
+    - +.fast.com
     - +.help.netflix.com
-    - +.signup.netflix.com
     - +.jobs.netflix.com
-    - +.techblog.netflix.com
+    - +.netflix.ca
+    - +.netflix.com
+    - +.netflix.net
+    - +.netflixcdn.com
+    - +.netflixdn.net
+    - +.netflixdnstest0.com
+    - +.netflixdnstest1.com
+    - +.netflixdnstest10.com
+    - +.netflixdnstest2.com
+    - +.netflixdnstest3.com
+    - +.netflixdnstest4.com
+    - +.netflixdnstest5.com
+    - +.netflixdnstest6.com
+    - +.netflixdnstest7.com
+    - +.netflixdnstest8.com
+    - +.netflixdnstest9.com
+    - +.netflixinvestor.com
+    - +.netflixtechblog.com
+    - +.nflxext.com
+    - +.nflximg.com
+    - +.nflximg.net
+    - +.nflxq.akamaized.net
+    - +.nflxsearch.net
+    - +.nflxso.net
+    - +.nflxvideo.net
     - +.research.netflix.com
+    - +.signup.netflix.com
+    - +.techblog.netflix.com

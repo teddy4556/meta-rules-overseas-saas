@@ -1,15 +1,14 @@
 payload:
-    # Meta AI
-    - +.meta.ai
-    - +.meta.com
-    - +.llama.com
-    - +.meta-llama.com
-    - +.metaai.com
     - +.ai.meta.com
-    - +.metaverse.ai
-    - +.meta.ai.com
     - +.facebook.ai
     - +.instagram.com
+    - +.llama.com
+    - +.messenger.com
+    - +.meta-llama.com
+    - +.meta.ai
+    - +.meta.ai.com
+    - +.meta.com
+    - +.metaai.com
+    - +.metaverse.ai
     - +.threads.com
     - +.threads.net
-    - +.messenger.com

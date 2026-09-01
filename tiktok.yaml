@@ -1,24 +1,50 @@
 payload:
-    # TikTok
-    - +.tiktok.com
-    - +.tiktokv.com
-    - +.tiktokcdn.com
-    - +.tiktok-cdn.com
-    - +.tiktokstatic.com
-    - +.tiktok-api.com
-    - +.byteic.com
+    - +.amemv.com
+    - +.analytics.tiktok.com
     - +.byted.org
+    - +.bytedance-static.com
     - +.bytedance.com
     - +.bytedance.net
+    - +.bytedapm.com
     - +.bytedns.net
-    - +.bytedance-static.com
+    - +.byteic.com
+    - +.douyin.com
+    - +.feishu.cn
     - +.ibytedto.com
     - +.ipstatp.com
+    - +.ixigua.com
+    - +.larkoffice.com
+    - +.muscdn.com
     - +.musical.ly
     - +.snssdk.com
-    - +.amemv.com
+    - +.tik-tokapi.com
+    - +.tiktok-api.com
+    - +.tiktok-cdn.com
+    - +.tiktok-minis.com
+    - +.tiktok-row.net
+    - +.tiktok.com
+    - +.tiktokcdn-eu.com
+    - +.tiktokcdn-us.com
+    - +.tiktokcdn-us.com.edgesuite.net
+    - +.tiktokcdn.com
+    - +.tiktokcdn.com.akamaized.net
+    - +.tiktokcdn.com.edgesuite.net
+    - +.tiktokd.net
+    - +.tiktokd.org
+    - +.tiktokeu-cdn.com
+    - +.tiktokglobalshopv.com
+    - +.tiktokminis.us
+    - +.tiktokrow-cdn.com
+    - +.tiktokstatic.com
+    - +.tiktokv.com
+    - +.tiktokv.com.edgekey.net
+    - +.tiktokv.com.edgesuite.net
+    - +.tiktokv.eu
+    - +.tiktokv.us
+    - +.tiktokw.eu
+    - +.tiktokw.us
     - +.toutiao.com
-    - +.douyin.com
-    - +.ixigua.com
-    - +.feishu.cn
-    - +.larkoffice.com
+    - +.ttcdn-us.com
+    - +.ttlivecdn.com
+    - +.ttoverseaus.net
+    - +.ttwstatic.com
