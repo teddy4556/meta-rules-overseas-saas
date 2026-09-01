@@ -84,6 +84,32 @@ rules:
 | `nvidia.yaml` | Nvidia | 26 |
 | `steam.yaml` | Steam | 27 |
 
+
+**游戏平台(`games.yaml`,1 个 yaml):**
+
+海外游戏平台,**走 PROXY**:
+
+| yaml | 用途 | 条数 |
+|---|---|---|
+| `games.yaml` | Nintendo / EA / Epic / Riot / Supercell / Xbox / LoL Mobile / Nexon | 400 |
+
+用法:
+
+```yaml
+rule-providers:
+  games:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/games.yaml"
+    path: "./rule_provider/games.yaml"
+    interval: 86400
+
+rules:
+  - RULE-SET,games, 游戏
+```
+
+> 与 `cn/国内游戏.yaml`(DIRECT)互不重叠,严格去重。
+
 **扩展业务组(8 个,可选):**
 
 | yaml | 用途 | 域名数 |
@@ -101,7 +127,31 @@ rules:
 
 **总计 32 个 yaml**
 
+**国内游戏 (`cn/` 子目录):**
+
+国内游戏厂商平台,**走 DIRECT**:
+
+| yaml | 用途 | 条数 |
+|---|---|---|
+| `cn/国内游戏.yaml` | 腾讯 / 米哈游 / 雀魂 / 网易 / SteamCN / 暴雪 / 育碧 国服 | 181 |
+
+用法:
+
+```yaml
+rule-providers:
+  国内游戏:
+    type: http
+    behavior: direct
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/cn/国内游戏.yaml"
+    path: "./rule_provider/国内游戏.yaml"
+    interval: 86400
+
+rules:
+  - RULE-SET,国内游戏,DIRECT
+```
+
 **国内直连 (`cn/` 子目录,1 个 yaml):**
+
 
 仓库名虽是 overseas-saas,但放一个国内白名单方便 OpenClash 一站式引用:
 
@@ -193,7 +243,9 @@ rules:
 
 ```
 <业务组>.yaml               # 32 个 yaml,直接 rule-provider 用
+games.yaml                    # 海外游戏平台 (400 条 PROXY)
 cn/国内直连.yaml             # 中国大陆直连白名单 (20027 条 DIRECT)
+cn/国内游戏.yaml             # 国内游戏厂商平台 (181 条 DIRECT)
 cn/国内去广告.yaml           # 国内常见广告/统计阻断 (55843 条 REJECT)
 LICENSE                       # MIT
 README.md
