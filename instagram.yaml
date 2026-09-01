@@ -1,0 +1,6 @@
+payload:
+    # Instagram
+    # 来源: yfamilys/instagram.list + mine 9-1 备份
+    - +.cdninstagram.com
+    - +.instagr.am
+    - +.instagram.com
