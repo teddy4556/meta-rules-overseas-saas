@@ -22,3 +22,5 @@ payload:
     - +.braintreepayments.com
     - +.braintreegateway.com
     - +.venmo.com
+    # 9-1 batch: 补 meta yfamilys 漏的 paypal 子域 (mine - yc)
+    # 来源: yfamilys/paypal.list, mine/paypal.yaml
