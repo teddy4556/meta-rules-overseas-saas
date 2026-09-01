@@ -1,30 +1,30 @@
 payload:
-    # Microsoft Store (separate from Microsoft 365 / Azure business services)
+    # Microsoft Store + Xbox + PSN 国内代理
     # 解决坑 67:store.microsoft.com / apps.microsoft.com / displaycatalog.mp.microsoft.com
-    # 国内 IP 访问被 Microsoft 主动 403/301(geo-block),必须走代理
-    - +.microsoftstore.com
-    - +.microsoft.com
-    - +.microsoftstore.com.cn
-    - +.msftncsi.com
-    - +.store.microsoft.com
+    # 国内 IP 访问被 Microsoft 主动 403/301(geo-block),必须走代理。
+    # Xbox 主机服务和 PSN 同理(国内访问受限/锁区),需要代理才能下载/联机。
+    #
+    # 配套 microsoft-direct.yaml:Office/Outlook/Bing/OneDrive/Azure 国内版
+    # 等无需代理的服务走 DIRECT,实现精细分流。
+    #
+    # 注意:已删除原 microsoft-store.yaml 中的游戏发行商域名
+    # (riotgames.com / wargaming.net / ubi.com / ubisoft.com / ea.com /
+    #  origin.com / xvideos.com),它们不属于 Microsoft Store 范畴。
+    # Microsoft Store(坑 67 主战场)
     - +.apps.microsoft.com
     - +.displaycatalog.mp.microsoft.com
-    - +.cdn.store.microsoft.com
-    - +.tlu.dl.delivery.mp.microsoft.com
-    - +.tlu.dl.delivery.mp.microsoft.com.akamaized.net
     - +.img-prod-cms-rt-microsoft-com.akamaized.net
     - +.img.s-microsoft.com
+    - +.microsoftstore.com
     - +.store-images.s-microsoft.com
+    - +.store.microsoft.com
+    - +.tlu.dl.delivery.mp.microsoft.com
+    - +.tlu.dl.delivery.mp.microsoft.com.akamaized.net
+    # Xbox 主机服务
     - +.xbox.com
-    - +.xboxservices.com
     - +.xboxlive.com
-    - +.xvideos.com
+    - +.xboxservices.com
+    # Sony PSN(同 Xbox 国内受限逻辑)
     - +.playstation.com
     - +.playstation.net
     - +.sonyentertainmentnetwork.com
-    - +.ea.com
-    - +.origin.com
-    - +.ubisoft.com
-    - +.ubi.com
-    - +.wargaming.net
-    - +.riotgames.com

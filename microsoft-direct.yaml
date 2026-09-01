@@ -1,0 +1,57 @@
+payload:
+    # Microsoft 服务 国内可直连
+    # 拆分原因:Microsoft 主流服务(Office/Outlook/Bing/OneDrive 等)
+    # 国内可正常访问,不需要走代理。但 Microsoft Store / Xbox / PSN
+    # 因 geo-block 必须走代理(坑 67),分两个文件以便 OpenClash 配置。
+    #
+    # Azure 国内版(世纪互联运营)直连;Azure 国际版走代理(本文件不含)。
+    # Azure 国内版 + 中国 CDN
+    - +.azure-api.cn
+    - +.azure-apihub.cn
+    - +.azure-automation.cn
+    - +.azure-connectedvehicles.cn
+    - +.azure-devices-int.net
+    - +.azure-devices-provisioning.cn
+    - +.azure-devices.cn
+    - +.azure-dns.cn
+    - +.azure-mobile.net
+    - +.azure-sphere.com
+    - +.azure-test.net
+    - +.azure.cn
+    - +.chinacloudsites.cn
+    - +.mgmt-azure-api.cn
+    - +.windowsazure.cn
+    # Microsoft 主流服务
+    - +.bbing.com
+    - +.bing.com
+    - +.bing.com.cn
+    - +.discoverbing.com
+    - +.explorebing.com
+    - +.live.com
+    - +.live.net
+    - +.microsoft.com
+    - +.microsoft.com.cn
+    - +.microsoft.com.hk
+    - +.microsoftstore.com.cn
+    - +.microsofttranslator.com
+    - +.msftncsi.com
+    - +.msn.com
+    - +.msn.com.cn
+    - +.msn.com.tw
+    - +.msxiaobing.com
+    - +.myhomemsn.com
+    - +.mymicrosoft.com
+    - +.office.com
+    - +.office.net
+    - +.office365.com
+    - +.officeapps.live.com
+    - +.onedrive.com
+    - +.onedrive.live.com
+    - +.onmicrosoft.com
+    - +.outlook.com
+    - +.outlook.live.com
+    - +.outlook.office.com
+    - +.skydrive.com
+    - +.skype.com
+    - +.visualstudio.com
+    - +.visualstudioonline.com

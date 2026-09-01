@@ -88,7 +88,8 @@ rules:
 
 | yaml | 用途 | 域名数 |
 |---|---|---|
-| `microsoft-store.yaml` | Microsoft Store / Xbox / PlayStation(国内 IP 被 Microsoft 主动 403,坑 67) | 26 |
+| `microsoft-direct.yaml` | Microsoft 国内可直连服务(Office/Outlook/Bing/OneDrive/Skype/Azure 国内版 等 48 个域名) | 48 |
+| `microsoft-store.yaml` | Microsoft Store / Xbox / Sony PSN(国内 IP 被 Microsoft 主动 403,坑 67) | 15 |
 | `discord.yaml` | Discord(OpenClash 没独立业务组时可建) | 25 |
 | `slack.yaml` | Slack(配合 Discord) | 19 |
 | `notion.yaml` | Notion(配合 Discord/Slack) | 20 |
@@ -98,12 +99,50 @@ rules:
 | `pornhub.yaml` | 18+ 类(选择性使用) | 28 |
 | `paypal-extra.yaml` | PayPal 子域补充(配合 meta-rules-dat 的 paypal) | 21 |
 
-**总计 31 个 yaml**
+**总计 32 个 yaml**
 
-## 仓库结构
+## Microsoft 服务分流(坑 67)
+
+Microsoft 服务一刀切走代理其实没必要 — Office/Outlook/Bing/OneDrive 等国内访问正常,Azure 国内版(世纪互联运营)也是直连更快。本仓库把 Microsoft 拆成两个 yaml:
+
+| yaml | 用途 | 走 |
+|---|---|---|
+| `microsoft-direct.yaml` | 国内可直连:Office/Outlook/Bing/OneDrive/Skype/Azure 国内版 等 48 个域名 | DIRECT |
+| `microsoft-store.yaml` | 必须代理:Microsoft Store / Xbox / Sony PSN(geo-block + 锁区) | 代理业务组 |
+
+### OpenClash 配置示例
+
+```yaml
+rule-providers:
+  microsoft-direct:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/microsoft-direct.yaml"
+    path: "./rule_provider/microsoft-direct.yaml"
+    interval: 86400
+
+  microsoft-store:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/microsoft-store.yaml"
+    path: "./rule_provider/microsoft-store.yaml"
+    interval: 86400
+
+rules:
+  # Microsoft 直连服务优先
+  - RULE-SET,microsoft-direct,DIRECT
+  # Microsoft Store / Xbox / PSN 走代理业务组(你 OpenClash 已有的"Microsoft Store"业务组)
+  - RULE-SET,microsoft-store,Microsoft Store
+```
+
+> **判断依据**:坑 67 实测 `store.microsoft.com / apps.microsoft.com / displaycatalog.mp.microsoft.com` 国内 IP 返 403/301;Office/Outlook/Bing 等国内 ISP 可直连且速度正常。Azure 国内版(`azure.cn` / `windowsazure.cn`)由世纪互联运营,直连稳定。Azure 国际版不在本仓库范围。
+
+### 仓库结构
 
 ```
-<业务组>.yaml               # 31 个 yaml,直接 rule-provider 用
+<业务组>.yaml               # 32 个 yaml,直接 rule-provider 用
 LICENSE                       # MIT
 README.md
 ```
