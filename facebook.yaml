@@ -405,3 +405,6 @@ payload:
     - +.wwwmfacebook.com
     - +.zuckerberg.com
     - +.zuckerberg.net
+
+    # 9-1 batch: 补 meta yfamilys 漏的 facebook 子域 (mine - yc)
+    # 来源: yfamilys/facebook.list, mine/facebook.yaml
