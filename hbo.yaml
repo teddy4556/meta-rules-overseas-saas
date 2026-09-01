@@ -82,3 +82,6 @@ payload:
     - +.warnerbros.com
     - +.warnerbrosdiscovery.com
     - +.warnermedia.com
+
+    # 9-1 batch: 补 meta yfamilys 漏的 hbo 子域 (mine - yc)
+    # 来源: yfamilys/hbo.list, mine/hbo.yaml
