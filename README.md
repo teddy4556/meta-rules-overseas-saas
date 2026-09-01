@@ -101,6 +101,31 @@ rules:
 
 **总计 32 个 yaml**
 
+**国内直连 (`cn/` 子目录,1 个 yaml):**
+
+仓库名虽是 overseas-saas,但放一个国内白名单方便 OpenClash 一站式引用:
+
+| yaml | 用途 | 条数 |
+|---|---|---|
+| `cn/国内直连.yaml` | 中国大陆域 + IP 直连白名单 (合并 China / IPs-CN / ChinaMedia / Weibo) | 15872 |
+
+用法跟其他 yaml 一样,只是走 `DIRECT`:
+
+```yaml
+rule-providers:
+  国内直连:
+    type: http
+    behavior: direct
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/cn/国内直连.yaml"
+    path: "./rule_provider/国内直连.yaml"
+    interval: 86400
+
+rules:
+  - RULE-SET,国内直连,DIRECT
+```
+
+> AntiAD (9.7 MB / 292K 行) **不在本仓库** — 体积过大,改走 README 引用段。
+
 ## Microsoft 服务分流(坑 67)
 
 Microsoft 服务一刀切走代理其实没必要 — Office/Outlook/Bing/OneDrive 等国内访问正常,Azure 国内版(世纪互联运营)也是直连更快。本仓库把 Microsoft 拆成两个 yaml:
@@ -143,6 +168,7 @@ rules:
 
 ```
 <业务组>.yaml               # 32 个 yaml,直接 rule-provider 用
+cn/国内直连.yaml             # 中国大陆直连白名单 (15872 条)
 LICENSE                       # MIT
 README.md
 ```
