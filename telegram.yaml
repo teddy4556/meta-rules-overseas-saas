@@ -1,26 +1,42 @@
 payload:
+    # Telegram 核心服务(9-1 补完版)
+    # 涵盖:主域/桌面端/Mini Apps/TON 生态/官方子域/国内访问备用镜像
+    # 核心 telegram.org
+    - +.telegram.org
+    - +.telegram-cdn.org
+    - +.telegram.me
+    - +.telegram.dog
+    - +.telegram.space
+    # 短链
+    - +.t.me
+    - +.tx.me
+    - +.tg.dev
+    # 桌面端
+    - +.tdesktop.com
+    # 官方子域
+    - +.web.telegram.org
     - +.a.telegram.org
     - +.api.telegram.org
     - +.cdn-telegram.org
+    - +.updates.telegram.org
+    # 服务
+    - +.telegra.ph
+    - +.legra.ph
+    - +.telega.one
+    - +.telesco.pe
+    # 评论/投票
     - +.comments.app
     - +.contest.com
-    - +.fragment.com
     - +.graph.org
     - +.quiz.directory
-    - +.t.me
-    - +.tdesktop.com
-    - +.telega.one
-    - +.telegra.ph
-    - +.telegram-cdn.org
-    - +.telegram.dog
-    - +.telegram.me
-    - +.telegram.org
-    - +.telegram.space
-    - +.telesco.pe
-    - +.tg.dev
+    # TON 生态
     - +.ton.org
     - +.toncenter.com
-    - +.tx.me
-    - +.updates.telegram.org
+    - +.fragment.com
     - +.usercontent.dev
-    - +.web.telegram.org
+    # 国内访问备用镜像(9-1 补: telegram.org 被封时的替代)
+    - +.stel.com
+    # Telegram Mini Apps 官方商店(9-1 补)
+    - +.mbrx.app
+    # 非官方下载站(9-1 补,墙内用户备用)
+    - +.telegramdownload.com
