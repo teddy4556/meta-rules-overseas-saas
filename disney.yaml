@@ -224,3 +224,6 @@ payload:
     - +.watchdisneyfe.com
     - +.watchespn.com
     - +.wwwhuluplus.com
+
+    # 9-1 batch: 补 meta yfamilys 漏的 disney 子域 (mine - yc)
+    # 来源: yfamilys/disney.list, mine/disney.yaml
