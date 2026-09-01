@@ -185,3 +185,18 @@ payload:
     - +.youtubemusic.com
     - +.yt.be
     - +.ytimg.com
+
+    # 9-1 batch: 补 meta yfamilys 漏的 youtube 子域 (mine - yc)
+    # 来源: yfamilys/youtube.list, mine/youtube.yaml
+    - +.ads.youtube.com
+    - +.gaming.youtube.com
+    - +.i.ytimg.com
+    - +.premium.youtube.com
+    - +.s.ytimg.com
+    - +.studio.youtube.com
+    - +.tv.youtube.com
+    - +.youtube-ui.com
+    - +.youtubemusic.com
+
+    # 9-1 batch: youtube-music 子域合并(原 youtube-music.list 仅 1 域)
+    # 来源: yfamilys/youtube-music.list
