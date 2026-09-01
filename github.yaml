@@ -44,6 +44,11 @@ payload:
     - +.pages.github.com
     - +.repo.new
     - +.thegithubshop.com
+      - +.github-atom-io-herokuapp-com.freetls.fastly.net
+      - +.github-avatars.oss-cn-hongkong.aliyuncs.com
+      - +.github-cloud.s3.amazonaws.com
+      - +.rawgit.com
+      - +.rawgithub.com
 
     # 9-1 batch: 补 meta yfamilys 漏的 github 子域 (mine - yc)
     # 来源: yfamilys/github.list, mine/github.yaml

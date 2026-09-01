@@ -13,3 +13,4 @@ payload:
     - +.claudeusercontent.com
     - +.console.anthropic.com
     - +.files.anthropic.com
+      - +.cdn.usefathom.com

@@ -48,6 +48,22 @@ payload:
     - +.ttlivecdn.com
     - +.ttoverseaus.net
     - +.ttwstatic.com
+      - +.bytegecko-i18n.com
+      - +.byteintlapi.com
+      - +.byteoversea.com
+      - +.capcut.com
+      - +.ibytedtos.com
+      - +.ibyteimg.com
+      - +.isnssdk.com
+      - +.lf16-effectcdn.byteeffecttos-g.com
+      - +.lf16-pkgcdn.pitaya-clientai.com
+      - +.marscode.com
+      - +.p16-tiktokcdn-com.akamaized.net
+      - +.sgpstatp.com
+      - +.tiktokmusic.app
+      - +.trae-api-sg.mchost.guru
+      - +.trae.ai
+      - +.ttwebview.com
 
     # 9-1 batch: 补 meta yfamilys 漏的 tiktok 子域 (mine - yc)
     # 来源: yfamilys/tiktok.list, mine/tiktok.yaml

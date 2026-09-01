@@ -10,7 +10,6 @@ payload:
     - +.slackb.com
     - +.slack-edge.io
     - +.slack-status.com
-    - +.slack.com
     - +.api.slack.com
     - +.files.slack.com
     - +.wss-primary.slack.com
@@ -19,3 +18,7 @@ payload:
     - +.app.slack.com
     - +.enterprise.slack.com
     - +.slackatwork.com
+      - +.slack-msgs.com
+      - +.slackcertified.com
+      - +.slackdemo.com
+      - +.slackhq.com

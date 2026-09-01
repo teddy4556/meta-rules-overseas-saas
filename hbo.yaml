@@ -82,6 +82,31 @@ payload:
     - +.warnerbros.com
     - +.warnerbrosdiscovery.com
     - +.warnermedia.com
+      - +.bcbolthboa-a.akamaihd.net
+      - +.cf-images.ap-southeast-1.prod.boltdns.net
+      - +.dai3fd1oh325y.cloudfront.net
+      - +.execute-api.ap-southeast-1.amazonaws.com
+      - +.execute-api.us-east-1.amazonaws.com
+      - +.hboasia1-i.akamaihd.net
+      - +.hboasia2-i.akamaihd.net
+      - +.hboasia3-i.akamaihd.net
+      - +.hboasia4-i.akamaihd.net
+      - +.hboasia5-i.akamaihd.net
+      - +.hboasialive.akamaized.net
+      - +.hbogeo.cust.footprint.net
+      - +.hbogoprod-vod.akamaized.net
+      - +.hbolb.onwardsmg.com
+      - +.hbounify-prod.evergent.com
+      - +.manifest.prod.boltdns.net
+      - +.now-ashare.com
+      - +.now-tv.com
+      - +.now.com
+      - +.now.com.hk
+      - +.nowe.com
+      - +.nowe.hk
+      - +.players.brightcove.net
+      - +.warnermediacdn.com
+      - +.youboranqs01.com
 
     # 9-1 batch: 补 meta yfamilys 漏的 hbo 子域 (mine - yc)
     # 来源: yfamilys/hbo.list, mine/hbo.yaml

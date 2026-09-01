@@ -14,6 +14,9 @@ payload:
     - +.wwco.com
     - +.wwhelp.com
     - +.wwstatic.com
+      - +.bintray.com
+      - +.graph.facebook.com
+      - +.whatsapp.biz
 
     # 9-1 batch: 补 meta yfamilys 漏的 whatsapp 子域 (mine - yc)
     # 来源: yfamilys/whatsapp.list, mine/whatsapp.yaml

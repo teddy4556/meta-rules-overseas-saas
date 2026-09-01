@@ -25,5 +25,23 @@ payload:
     - +.discordwidgets.com
     - +.discord.band
     - +.discord.coffee
+      - +.airhorn.solutions
+      - +.airhornbot.com
+      - +.bigbeans.solutions
+      - +.dis.gd
+      - +.discord-activities.com
+      - +.discord-attachments-uploads-prd.storage.googleapis.com
+      - +.discord.co
+      - +.discord.design
+      - +.discord.gifts
+      - +.discord.store
+      - +.discordactivities.com
+      - +.discordapp.io
+      - +.discordapp.page.link
+      - +.discordmerch.com
+      - +.discordpartygames.com
+      - +.discordsays.com
+      - +.hammerandchisel.ssl.zendesk.com
+      - +.watchanimeattheoffice.com
     # 9-1 batch: 补 meta yfamilys 漏的 discord 子域 (mine - yc)
     # 来源: yfamilys/discord.list, mine/discord.yaml

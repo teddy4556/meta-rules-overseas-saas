@@ -58,3 +58,22 @@ payload:
     - +.wmsjsteam.com
     - +.xbox.com
     - +.xboxlive.com
+      - +.cdn-ali.content.steamchina.com
+      - +.cdn-qc.content.steamchina.com
+      - +.cdn-ws.content.steamchina.com
+      - +.dl.steam.ksyna.com
+      - +.f3b7q2p3.ssl.hwcdn.net
+      - +.fanatical.com
+      - +.steambroadcast.akamaized.net
+      - +.steamcommunity-a.akamaihd.net
+      - +.steamcontent.tnkjmec.com
+      - +.steammobile.akamaized.net
+      - +.steampipe-kr.akamaized.net
+      - +.steampipe-partner.akamaized.net
+      - +.steampipe.akamaized.net
+      - +.steamstat.us
+      - +.steamstore-a.akamaihd.net
+      - +.steamunlocked.net
+      - +.steamusercontent-a.akamaihd.net
+      - +.steamuserimages-a.akamaihd.net
+      - +.steamvideo-a.akamaihd.net

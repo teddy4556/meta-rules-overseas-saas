@@ -224,6 +224,22 @@ payload:
     - +.watchdisneyfe.com
     - +.watchespn.com
     - +.wwwhuluplus.com
+      - +.abcnews.edgesuite.net
+      - +.adobedtm.com
+      - +.bam.nr-data.net
+      - +.braze.com
+      - +.cdn.optimizely.com
+      - +.conviva.com
+      - +.d9.flashtalking.com
+      - +.disney.demdex.net
+      - +.disney.my.sentry.io
+      - +.disneyplus.com.ssl.sc.omtrdc.net
+      - +.dlp-media.com
+      - +.dssedge.com
+      - +.espn.hb.omtrdc.net
+      - +.espndotcom.tt.omtrdc.net
+      - +.execute-api.us-east-1.amazonaws.com
+      - +.js-agent.newrelic.com
 
     # 9-1 batch: 补 meta yfamilys 漏的 disney 子域 (mine - yc)
     # 来源: yfamilys/disney.list, mine/disney.yaml

@@ -40,3 +40,5 @@ payload:
     - +.mbrx.app
     # 非官方下载站(9-1 补,墙内用户备用)
     - +.telegramdownload.com
+      - +.api.imem.app
+      - +.api.swiftgram.app

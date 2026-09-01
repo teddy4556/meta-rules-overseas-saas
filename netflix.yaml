@@ -34,6 +34,15 @@ payload:
     - +.research.netflix.com
     - +.signup.netflix.com
     - +.techblog.netflix.com
+      - +.cookielaw.org
+      - +.e13252.dscg.akamaiedge.net
+      - +.flxvpn.net
+      - +.h-netflix.online-metrix.net
+      - +.netflix.com.au
+      - +.netflix.com.edgesuite.net
+      - +.netflixstudios.com
+      - +.onetrust.com
+      - +.us-west-2.amazonaws.com
 
     # 9-1 batch: 补 meta yfamilys 漏的 netflix 子域 (mine - yc)
     # 来源: yfamilys/netflix.list, mine/netflix.yaml
