@@ -34,3 +34,6 @@ payload:
     - +.research.netflix.com
     - +.signup.netflix.com
     - +.techblog.netflix.com
+
+    # 9-1 batch: 补 meta yfamilys 漏的 netflix 子域 (mine - yc)
+    # 来源: yfamilys/netflix.list, mine/netflix.yaml
