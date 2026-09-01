@@ -6,26 +6,37 @@
 
 [meta-rules-dat](https://github.com/metacubex/meta-rules-dat) 是 mihomo 生态最常用的规则集,但它**只包含被 GFW 屏蔽的域名**(geosite-gfw)且按大类聚合(如 `gfw`/`google`/`netflix` 各一个文件),无法精细匹配每个用户的 OpenClash 业务组配置。
 
-本仓库提供**按业务组拆分的域名列表**,每个 yaml 对应一个具体的业务组(如 `chatgpt.yaml` → `ChatGPT` 业务组、`youtube.yaml` → `YouTube` 业务组)。你可以**直接引用对应的 yaml 作为 rule-provider**,无需再手动维护每个业务组的域名补充。
+本仓库提供**按业务组拆分的域名列表**,每个 yaml 对应一个具体的业务组(如 `chatgpt.yaml` → `ChatGPT` 业务组、`youtube.yaml` → `YouTube` 业务组)。你可以**直接 fork 本仓库,把 yaml 内容内嵌到你的 OpenClash 配置**,无需再手动维护每个业务组的域名补充。
 
-## 使用方式(OpenClash 示例)
+## 使用方式
+
+### 方式 A — 直接内嵌到 OpenClash 自定义规则(推荐)
+
+在 OpenClash → 配置订阅 → 自定义规则 → 直接粘贴:
+
+```yaml
+##  ChatGPT 业务组
+- DOMAIN-SUFFIX,chat.openai.com,ChatGPT
+- DOMAIN-SUFFIX,chatgpt.com,ChatGPT
+- DOMAIN-SUFFIX,oaistatic.com,ChatGPT
+- DOMAIN-SUFFIX,oaiusercontent.com,ChatGPT
+- DOMAIN-SUFFIX,openai.com,ChatGPT
+- DOMAIN-SUFFIX,openaiapis.com,ChatGPT
+- DOMAIN-KEYWORD,openai,ChatGPT
+```
+
+把每个 `*.yaml` 里的 `+.example.com` 替换成 `DOMAIN-SUFFIX,example.com,业务组名` 即可。
+
+### 方式 B — rule-provider 远程加载(原生 yaml 格式)
 
 ```yaml
 rule-providers:
   chatgpt:
     type: http
-    behavior: domain
-    format: mrs
-    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/chatgpt.mrs"
-    path: "./rule_provider/chatgpt.mrs"
-    interval: 86400
-
-  youtube:
-    type: http
-    behavior: domain
-    format: mrs
-    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/youtube.mrs"
-    path: "./rule_provider/youtube.mrs"
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/chatgpt.yaml"
+    path: "./rule_provider/chatgpt.yaml"
     interval: 86400
 
 rules:
@@ -33,6 +44,16 @@ rules:
   - RULE-SET,youtube,  YouTube
   - RULE-SET,telegram, Telegram
 ```
+
+> **注意**:本仓库 yaml 里的 `+.example.com` 是 clash 的 domain-suffix 匹配语法,直接通过 `format: text` + `behavior: classical` 加载即可,无需预先编译。
+
+### 关于 .mrs
+
+本仓库**不发布编译后的 .mrs 文件**。原计划用 GitHub Actions 编译 .mrs,但 mihomo v1.19+ 的 `convert-ruleset` 不接受带 `+.` 前缀的输入(它要裸 domain),编译出来会是空文件。直接分发 yaml 反而更灵活:
+
+- yaml 可读、可审计、可 fork
+- OpenClash / clash-meta / mihomo 都原生支持 yaml 格式的 rule-provider
+- 业务组更新只需改 yaml,无需 CI
 
 ## 可用的规则集
 
@@ -75,17 +96,16 @@ rules:
 | `scholar.yaml` | 学术(Google Scholar / ResearchGate / arXiv / PubMed) | 26 |
 | `cloud-ide.yaml` | 云 IDE(Gitpod / StackBlitz / CodeSandbox / Replit) | 13 |
 | `pornhub.yaml` | 18+ 类(选择性使用) | 28 |
+| `paypal-extra.yaml` | PayPal 子域补充(配合 meta-rules-dat 的 paypal) | 21 |
 
-**总计 30 个 yaml / 618 个域名**
+**总计 31 个 yaml**
 
 ## 仓库结构
 
 ```
-<业务组>.yaml / <业务组>.mrs       # 30 对一一对应
-LICENSE                              # MIT
+<业务组>.yaml               # 31 个 yaml,直接 rule-provider 用
+LICENSE                       # MIT
 README.md
-.github/workflows/
-  build-mrs.yml                      # GitHub Actions 自动编译 30 个 .mrs
 ```
 
 ## 贡献
@@ -93,7 +113,7 @@ README.md
 接受 PR!新增/修改域名时:
 
 1. 编辑对应业务组的 yaml(确保只放该业务组的域名)
-2. 保持 `+.` 前缀(mihomo domain suffix 匹配)
+2. 保持 `+.` 前缀(clash domain-suffix 匹配语法,直接生效)
 3. 提交 PR,描述你为什么要加这个域名
 
 ## License
