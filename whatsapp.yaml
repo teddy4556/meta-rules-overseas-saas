@@ -1,22 +1,22 @@
 payload:
-    - +.api.whatsapp.com
-    - +.business.whatsapp.com
-    - +.chat.whatsapp.com
-    - +.wa.me
-    - +.wamrooms.com
-    - +.whatsapp-brand.com
-    - +.whatsapp-cdn.com
-    - +.whatsapp-plus.com
-    - +.whatsapp.cc
-    - +.whatsapp.com
-    - +.whatsapp.net
-    - +.whatsapp.org
-    - +.wwco.com
-    - +.wwhelp.com
-    - +.wwstatic.com
-      - +.bintray.com
-      - +.graph.facebook.com
-      - +.whatsapp.biz
+    - 'DOMAIN-SUFFIX,api.whatsapp.com'
+    - 'DOMAIN-SUFFIX,business.whatsapp.com'
+    - 'DOMAIN-SUFFIX,chat.whatsapp.com'
+    - 'DOMAIN-SUFFIX,wa.me'
+    - 'DOMAIN-SUFFIX,wamrooms.com'
+    - 'DOMAIN-SUFFIX,whatsapp-brand.com'
+    - 'DOMAIN-SUFFIX,whatsapp-cdn.com'
+    - 'DOMAIN-SUFFIX,whatsapp-plus.com'
+    - 'DOMAIN-SUFFIX,whatsapp.cc'
+    - 'DOMAIN-SUFFIX,whatsapp.com'
+    - 'DOMAIN-SUFFIX,whatsapp.net'
+    - 'DOMAIN-SUFFIX,whatsapp.org'
+    - 'DOMAIN-SUFFIX,wwco.com'
+    - 'DOMAIN-SUFFIX,wwhelp.com'
+    - 'DOMAIN-SUFFIX,wwstatic.com'
+      - 'DOMAIN-SUFFIX,bintray.com'
+      - 'DOMAIN-SUFFIX,graph.facebook.com'
+      - 'DOMAIN-SUFFIX,whatsapp.biz'
 
     # 9-1 batch: 补 meta yfamilys 漏的 whatsapp 子域 (mine - yc)
     # 来源: yfamilys/whatsapp.list, mine/whatsapp.yaml

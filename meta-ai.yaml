@@ -1,14 +1,14 @@
 payload:
-    - +.ai.meta.com
-    - +.facebook.ai
-    - +.instagram.com
-    - +.llama.com
-    - +.messenger.com
-    - +.meta-llama.com
-    - +.meta.ai
-    - +.meta.ai.com
-    - +.meta.com
-    - +.metaai.com
-    - +.metaverse.ai
-    - +.threads.com
-    - +.threads.net
+    - 'DOMAIN-SUFFIX,ai.meta.com'
+    - 'DOMAIN-SUFFIX,facebook.ai'
+    - 'DOMAIN-SUFFIX,instagram.com'
+    - 'DOMAIN-SUFFIX,llama.com'
+    - 'DOMAIN-SUFFIX,messenger.com'
+    - 'DOMAIN-SUFFIX,meta-llama.com'
+    - 'DOMAIN-SUFFIX,meta.ai'
+    - 'DOMAIN-SUFFIX,meta.ai.com'
+    - 'DOMAIN-SUFFIX,meta.com'
+    - 'DOMAIN-SUFFIX,metaai.com'
+    - 'DOMAIN-SUFFIX,metaverse.ai'
+    - 'DOMAIN-SUFFIX,threads.com'
+    - 'DOMAIN-SUFFIX,threads.net'

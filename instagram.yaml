@@ -1,6 +1,6 @@
 payload:
     # Instagram
     # 来源: yfamilys/instagram.list + mine 9-1 备份
-    - +.cdninstagram.com
-    - +.instagr.am
-    - +.instagram.com
+    - 'DOMAIN-SUFFIX,cdninstagram.com'
+    - 'DOMAIN-SUFFIX,instagr.am'
+    - 'DOMAIN-SUFFIX,instagram.com'

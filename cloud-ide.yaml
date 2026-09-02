@@ -1,16 +1,16 @@
 payload:
     # Cloud IDE / Online Development
-    - +.gitpod.io
-    - +.stackblitz.com
-    - +.codesandbox.io
-    - +.replit.com
-    - +.glitch.com
-    - +.heroku.com
-    - +.flynn.io
-    - +.codepen.io
-    - +.jsbin.com
-    - +.jsfiddle.net
-    - +.runkit.com
-    - +.typescriptlang.org
-    - +.playcode.io
-    - +.kaggle.com
+    - 'DOMAIN-SUFFIX,gitpod.io'
+    - 'DOMAIN-SUFFIX,stackblitz.com'
+    - 'DOMAIN-SUFFIX,codesandbox.io'
+    - 'DOMAIN-SUFFIX,replit.com'
+    - 'DOMAIN-SUFFIX,glitch.com'
+    - 'DOMAIN-SUFFIX,heroku.com'
+    - 'DOMAIN-SUFFIX,flynn.io'
+    - 'DOMAIN-SUFFIX,codepen.io'
+    - 'DOMAIN-SUFFIX,jsbin.com'
+    - 'DOMAIN-SUFFIX,jsfiddle.net'
+    - 'DOMAIN-SUFFIX,runkit.com'
+    - 'DOMAIN-SUFFIX,typescriptlang.org'
+    - 'DOMAIN-SUFFIX,playcode.io'
+    - 'DOMAIN-SUFFIX,kaggle.com'

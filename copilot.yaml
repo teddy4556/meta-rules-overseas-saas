@@ -1,11 +1,11 @@
 payload:
-    - +.bing.com
-    - +.copilot-cloud.com
-    - +.copilot.com
-    - +.copilot.microsoft.com
-    - +.copilot.workspace
-    - +.copilotgallery.com
-    - +.copilotstudio.microsoft.com
-    - +.github.ai
-    - +.githubcopilot.ai
-    - +.githubcopilot.com
+    - 'DOMAIN-SUFFIX,bing.com'
+    - 'DOMAIN-SUFFIX,copilot-cloud.com'
+    - 'DOMAIN-SUFFIX,copilot.com'
+    - 'DOMAIN-SUFFIX,copilot.microsoft.com'
+    - 'DOMAIN-SUFFIX,copilot.workspace'
+    - 'DOMAIN-SUFFIX,copilotgallery.com'
+    - 'DOMAIN-SUFFIX,copilotstudio.microsoft.com'
+    - 'DOMAIN-SUFFIX,github.ai'
+    - 'DOMAIN-SUFFIX,githubcopilot.ai'
+    - 'DOMAIN-SUFFIX,githubcopilot.com'
