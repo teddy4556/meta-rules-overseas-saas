@@ -1,10 +1,10 @@
 payload:
-    - 'DOMAIN-SUFFIX,api.perplexity.ai'
-    - 'DOMAIN-SUFFIX,perplexity.ai'
-    - 'DOMAIN-SUFFIX,perplexity.com'
-    - 'DOMAIN-SUFFIX,perplexity.dev'
-    - 'DOMAIN-SUFFIX,perplexityapi.com'
-    - 'DOMAIN-SUFFIX,perplexitylabs.ai'
-    - 'DOMAIN-SUFFIX,pplx.ai'
-    - 'DOMAIN-SUFFIX,pplx.com'
-    - 'DOMAIN-SUFFIX,www.perplexity.ai'
+    - DOMAIN-SUFFIX,api.perplexity.ai
+    - DOMAIN-SUFFIX,perplexity.ai
+    - DOMAIN-SUFFIX,perplexity.com
+    - DOMAIN-SUFFIX,perplexity.dev
+    - DOMAIN-SUFFIX,perplexityapi.com
+    - DOMAIN-SUFFIX,perplexitylabs.ai
+    - DOMAIN-SUFFIX,pplx.ai
+    - DOMAIN-SUFFIX,pplx.com
+    - DOMAIN-SUFFIX,www.perplexity.ai

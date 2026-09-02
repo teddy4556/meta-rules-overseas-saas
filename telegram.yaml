@@ -2,43 +2,43 @@ payload:
     # Telegram 核心服务(9-1 补完版)
     # 涵盖:主域/桌面端/Mini Apps/TON 生态/官方子域/国内访问备用镜像
     # 核心 telegram.org
-    - 'DOMAIN-SUFFIX,telegram.org'
-    - 'DOMAIN-SUFFIX,telegram-cdn.org'
-    - 'DOMAIN-SUFFIX,telegram.me'
-    - 'DOMAIN-SUFFIX,telegram.dog'
-    - 'DOMAIN-SUFFIX,telegram.space'
+    - DOMAIN-SUFFIX,telegram.org
+    - DOMAIN-SUFFIX,telegram-cdn.org
+    - DOMAIN-SUFFIX,telegram.me
+    - DOMAIN-SUFFIX,telegram.dog
+    - DOMAIN-SUFFIX,telegram.space
     # 短链
-    - 'DOMAIN-SUFFIX,t.me'
-    - 'DOMAIN-SUFFIX,tx.me'
-    - 'DOMAIN-SUFFIX,tg.dev'
+    - DOMAIN-SUFFIX,t.me
+    - DOMAIN-SUFFIX,tx.me
+    - DOMAIN-SUFFIX,tg.dev
     # 桌面端
-    - 'DOMAIN-SUFFIX,tdesktop.com'
+    - DOMAIN-SUFFIX,tdesktop.com
     # 官方子域
-    - 'DOMAIN-SUFFIX,web.telegram.org'
-    - 'DOMAIN-SUFFIX,a.telegram.org'
-    - 'DOMAIN-SUFFIX,api.telegram.org'
-    - 'DOMAIN-SUFFIX,cdn-telegram.org'
-    - 'DOMAIN-SUFFIX,updates.telegram.org'
+    - DOMAIN-SUFFIX,web.telegram.org
+    - DOMAIN-SUFFIX,a.telegram.org
+    - DOMAIN-SUFFIX,api.telegram.org
+    - DOMAIN-SUFFIX,cdn-telegram.org
+    - DOMAIN-SUFFIX,updates.telegram.org
     # 服务
-    - 'DOMAIN-SUFFIX,telegra.ph'
-    - 'DOMAIN-SUFFIX,legra.ph'
-    - 'DOMAIN-SUFFIX,telega.one'
-    - 'DOMAIN-SUFFIX,telesco.pe'
+    - DOMAIN-SUFFIX,telegra.ph
+    - DOMAIN-SUFFIX,legra.ph
+    - DOMAIN-SUFFIX,telega.one
+    - DOMAIN-SUFFIX,telesco.pe
     # 评论/投票
-    - 'DOMAIN-SUFFIX,comments.app'
-    - 'DOMAIN-SUFFIX,contest.com'
-    - 'DOMAIN-SUFFIX,graph.org'
-    - 'DOMAIN-SUFFIX,quiz.directory'
+    - DOMAIN-SUFFIX,comments.app
+    - DOMAIN-SUFFIX,contest.com
+    - DOMAIN-SUFFIX,graph.org
+    - DOMAIN-SUFFIX,quiz.directory
     # TON 生态
-    - 'DOMAIN-SUFFIX,ton.org'
-    - 'DOMAIN-SUFFIX,toncenter.com'
-    - 'DOMAIN-SUFFIX,fragment.com'
-    - 'DOMAIN-SUFFIX,usercontent.dev'
+    - DOMAIN-SUFFIX,ton.org
+    - DOMAIN-SUFFIX,toncenter.com
+    - DOMAIN-SUFFIX,fragment.com
+    - DOMAIN-SUFFIX,usercontent.dev
     # 国内访问备用镜像(9-1 补: telegram.org 被封时的替代)
-    - 'DOMAIN-SUFFIX,stel.com'
+    - DOMAIN-SUFFIX,stel.com
     # Telegram Mini Apps 官方商店(9-1 补)
-    - 'DOMAIN-SUFFIX,mbrx.app'
+    - DOMAIN-SUFFIX,mbrx.app
     # 非官方下载站(9-1 补,墙内用户备用)
-    - 'DOMAIN-SUFFIX,telegramdownload.com'
-      - 'DOMAIN-SUFFIX,api.imem.app'
-      - 'DOMAIN-SUFFIX,api.swiftgram.app'
+    - DOMAIN-SUFFIX,telegramdownload.com
+      - DOMAIN-SUFFIX,api.imem.app
+      - DOMAIN-SUFFIX,api.swiftgram.app

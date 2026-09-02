@@ -4,54 +4,54 @@ payload:
     # 注:9-1 起加 DOMAIN-KEYWORD + IP-CIDR 提升命中率(本仓库第三个含
     # IP 段的 yaml,继 twitter.yaml / chatgpt.yaml 后)
     # === Spotify 主域 ===
-    - 'DOMAIN-SUFFIX,spotify.com'
-    - 'DOMAIN-SUFFIX,www.spotify.com'
-    - 'DOMAIN-SUFFIX,open.spotify.com'
-    - 'DOMAIN-SUFFIX,spoti.fi'
-    - 'DOMAIN-SUFFIX,spotify.link'
-    - 'DOMAIN-SUFFIX,spotify.app.link'
-    - 'DOMAIN-SUFFIX,spotify.design'
-    - 'DOMAIN-SUFFIX,spotify.net'
-    - 'DOMAIN-SUFFIX,spotify-everywhere.com'
+    - DOMAIN-SUFFIX,spotify.com
+    - DOMAIN-SUFFIX,www.spotify.com
+    - DOMAIN-SUFFIX,open.spotify.com
+    - DOMAIN-SUFFIX,spoti.fi
+    - DOMAIN-SUFFIX,spotify.link
+    - DOMAIN-SUFFIX,spotify.app.link
+    - DOMAIN-SUFFIX,spotify.design
+    - DOMAIN-SUFFIX,spotify.net
+    - DOMAIN-SUFFIX,spotify-everywhere.com
     # === Spotify 子域 ===
-    - 'DOMAIN-SUFFIX,accounts.spotify.com'
-    - 'DOMAIN-SUFFIX,ap.spotify.com'
-    - 'DOMAIN-SUFFIX,api.spotify.com'
-    - 'DOMAIN-SUFFIX,developer.spotify.com'
-    - 'DOMAIN-SUFFIX,lifeatspotify.com'
-    - 'DOMAIN-SUFFIX,newsroom.spotify.com'
-    - 'DOMAIN-SUFFIX,podcasters.spotify.com'
-    - 'DOMAIN-SUFFIX,spotifycharts.com'
-    - 'DOMAIN-SUFFIX,spotifycodes.com'
-    - 'DOMAIN-SUFFIX,spotifyforbrands.com'
-    - 'DOMAIN-SUFFIX,spotifyforvendors.com'
-    - 'DOMAIN-SUFFIX,spotifyjobs.com'
-    - 'DOMAIN-SUFFIX,tospotify.com'
-    - 'DOMAIN-SUFFIX,byspotify.com'
-    - 'DOMAIN-SUFFIX,spotifynewsroom.jp'
-    - 'DOMAIN-SUFFIX,spotilocal.com'
+    - DOMAIN-SUFFIX,accounts.spotify.com
+    - DOMAIN-SUFFIX,ap.spotify.com
+    - DOMAIN-SUFFIX,api.spotify.com
+    - DOMAIN-SUFFIX,developer.spotify.com
+    - DOMAIN-SUFFIX,lifeatspotify.com
+    - DOMAIN-SUFFIX,newsroom.spotify.com
+    - DOMAIN-SUFFIX,podcasters.spotify.com
+    - DOMAIN-SUFFIX,spotifycharts.com
+    - DOMAIN-SUFFIX,spotifycodes.com
+    - DOMAIN-SUFFIX,spotifyforbrands.com
+    - DOMAIN-SUFFIX,spotifyforvendors.com
+    - DOMAIN-SUFFIX,spotifyjobs.com
+    - DOMAIN-SUFFIX,tospotify.com
+    - DOMAIN-SUFFIX,byspotify.com
+    - DOMAIN-SUFFIX,spotifynewsroom.jp
+    - DOMAIN-SUFFIX,spotilocal.com
     # === Spotify CDN(Akamai) ===
-    - 'DOMAIN-SUFFIX,audio-akp-quic-control.spotifycdn.com'
-    - 'DOMAIN-SUFFIX,audio-akp.spotifycdn.com'
-    - 'DOMAIN-SUFFIX,audio-fab.spotifycdn.com'
-    - 'DOMAIN-SUFFIX,audio-gc.spotifycdn.com'
-    - 'DOMAIN-SUFFIX,audio-fa.scdn.co'
-    - 'DOMAIN-SUFFIX,audio-gc.scdn.co'
-    - 'DOMAIN-SUFFIX,audio-sp.scdn.co'
-    - 'DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net'
-    - 'DOMAIN-SUFFIX,audio4-ak-spotify-com.akamaized.net'
-    - 'DOMAIN-SUFFIX,heads-ak-spotify-com.akamaized.net'
-    - 'DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net'
-    - 'DOMAIN-SUFFIX,spotify-com.akamaized.net'
+    - DOMAIN-SUFFIX,audio-akp-quic-control.spotifycdn.com
+    - DOMAIN-SUFFIX,audio-akp.spotifycdn.com
+    - DOMAIN-SUFFIX,audio-fab.spotifycdn.com
+    - DOMAIN-SUFFIX,audio-gc.spotifycdn.com
+    - DOMAIN-SUFFIX,audio-fa.scdn.co
+    - DOMAIN-SUFFIX,audio-gc.scdn.co
+    - DOMAIN-SUFFIX,audio-sp.scdn.co
+    - DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
+    - DOMAIN-SUFFIX,audio4-ak-spotify-com.akamaized.net
+    - DOMAIN-SUFFIX,heads-ak-spotify-com.akamaized.net
+    - DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net
+    - DOMAIN-SUFFIX,spotify-com.akamaized.net
     # === Spotify CDN(Fastly / Akamai edgesuite / scdn / pscdn / conductrics) ===
-    - 'DOMAIN-SUFFIX,spotifycdn.com'
-    - 'DOMAIN-SUFFIX,spotifycdn.net'
-    - 'DOMAIN-SUFFIX,pscdn.co'
-    - 'DOMAIN-SUFFIX,scdn.co'
-    - 'DOMAIN-SUFFIX,spotify.com.edgesuite.net'
-    - 'DOMAIN-SUFFIX,spotify.map.fastly.net'
-    - 'DOMAIN-SUFFIX,spotify.map.fastlylb.net'
-    - 'DOMAIN-SUFFIX,cdn-spotify-experiments.conductrics.com'
+    - DOMAIN-SUFFIX,spotifycdn.com
+    - DOMAIN-SUFFIX,spotifycdn.net
+    - DOMAIN-SUFFIX,pscdn.co
+    - DOMAIN-SUFFIX,scdn.co
+    - DOMAIN-SUFFIX,spotify.com.edgesuite.net
+    - DOMAIN-SUFFIX,spotify.map.fastly.net
+    - DOMAIN-SUFFIX,spotify.map.fastlylb.net
+    - DOMAIN-SUFFIX,cdn-spotify-experiments.conductrics.com
     # === DOMAIN-KEYWORD 兜底 ===
     - DOMAIN-KEYWORD,spotify
     # === IP 段(命中率优化,绕过 DNS) ===

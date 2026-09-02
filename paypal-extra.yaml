@@ -1,26 +1,26 @@
 payload:
     # PayPal — international payments
     # 补充 meta paypal.mrs 的细节(坑 9: PayPal 经常被风控)
-    - 'DOMAIN-SUFFIX,paypal.com'
-    - 'DOMAIN-SUFFIX,paypal-corp.com'
-    - 'DOMAIN-SUFFIX,paypal-communication.com'
-    - 'DOMAIN-SUFFIX,paypal-customerfeedback.com'
-    - 'DOMAIN-SUFFIX,paypal-learning.com'
-    - 'DOMAIN-SUFFIX,paypal-mktg.com'
-    - 'DOMAIN-SUFFIX,paypal-notice.com'
-    - 'DOMAIN-SUFFIX,paypal-survey.com'
-    - 'DOMAIN-SUFFIX,paypal.us'
-    - 'DOMAIN-SUFFIX,paypalobjects.com'
-    - 'DOMAIN-SUFFIX,paypalinc.com'
-    - 'DOMAIN-SUFFIX,paypal-knowledge.com'
-    - 'DOMAIN-SUFFIX,paypal-help.com'
-    - 'DOMAIN-SUFFIX,paypal.biz'
-    - 'DOMAIN-SUFFIX,paypalbenefits.com'
-    - 'DOMAIN-SUFFIX,paypal-plus.com'
-    - 'DOMAIN-SUFFIX,paypal.me'
-    - 'DOMAIN-SUFFIX,paypalobjects.com.edgesuite.net'
-    - 'DOMAIN-SUFFIX,braintreepayments.com'
-    - 'DOMAIN-SUFFIX,braintreegateway.com'
-    - 'DOMAIN-SUFFIX,venmo.com'
+    - DOMAIN-SUFFIX,paypal.com
+    - DOMAIN-SUFFIX,paypal-corp.com
+    - DOMAIN-SUFFIX,paypal-communication.com
+    - DOMAIN-SUFFIX,paypal-customerfeedback.com
+    - DOMAIN-SUFFIX,paypal-learning.com
+    - DOMAIN-SUFFIX,paypal-mktg.com
+    - DOMAIN-SUFFIX,paypal-notice.com
+    - DOMAIN-SUFFIX,paypal-survey.com
+    - DOMAIN-SUFFIX,paypal.us
+    - DOMAIN-SUFFIX,paypalobjects.com
+    - DOMAIN-SUFFIX,paypalinc.com
+    - DOMAIN-SUFFIX,paypal-knowledge.com
+    - DOMAIN-SUFFIX,paypal-help.com
+    - DOMAIN-SUFFIX,paypal.biz
+    - DOMAIN-SUFFIX,paypalbenefits.com
+    - DOMAIN-SUFFIX,paypal-plus.com
+    - DOMAIN-SUFFIX,paypal.me
+    - DOMAIN-SUFFIX,paypalobjects.com.edgesuite.net
+    - DOMAIN-SUFFIX,braintreepayments.com
+    - DOMAIN-SUFFIX,braintreegateway.com
+    - DOMAIN-SUFFIX,venmo.com
     # 9-1 batch: 补 meta yfamilys 漏的 paypal 子域 (mine - yc)
     # 来源: yfamilys/paypal.list, mine/paypal.yaml

@@ -4,62 +4,62 @@ payload:
     # 注:9-1 起加 DOMAIN-KEYWORD + IP-CIDR + IP-ASN 提升命中率(本仓库第二个含
     # IP 段的 yaml,继 twitter.yaml 后)
     # === ChatGPT 主域 ===
-    - 'DOMAIN-SUFFIX,chat.openai.com'
-    - 'DOMAIN-SUFFIX,chatgpt.com'
-    - 'DOMAIN-SUFFIX,chatgpt.pt'
-    - 'DOMAIN-SUFFIX,chatgp.pt'
-    - 'DOMAIN-SUFFIX,sora-chatgpt.com'
-    - 'DOMAIN-SUFFIX,sora.com'
+    - DOMAIN-SUFFIX,chat.openai.com
+    - DOMAIN-SUFFIX,chatgpt.com
+    - DOMAIN-SUFFIX,chatgpt.pt
+    - DOMAIN-SUFFIX,chatgp.pt
+    - DOMAIN-SUFFIX,sora-chatgpt.com
+    - DOMAIN-SUFFIX,sora.com
     # === OpenAI 主域 ===
-    - 'DOMAIN-SUFFIX,openai.com'
-    - 'DOMAIN-SUFFIX,openai.fund'
-    - 'DOMAIN-SUFFIX,openai.org'
-    - 'DOMAIN-SUFFIX,openaiapis.com'
-    - 'DOMAIN-SUFFIX,openaiassets.com'
-    - 'DOMAIN-SUFFIX,openailabs.com'
+    - DOMAIN-SUFFIX,openai.com
+    - DOMAIN-SUFFIX,openai.fund
+    - DOMAIN-SUFFIX,openai.org
+    - DOMAIN-SUFFIX,openaiapis.com
+    - DOMAIN-SUFFIX,openaiassets.com
+    - DOMAIN-SUFFIX,openailabs.com
     # === OpenAI API/认证 ===
-    - 'DOMAIN-SUFFIX,api.openai.com'
-    - 'DOMAIN-SUFFIX,auth0.openai.com'
-    - 'DOMAIN-SUFFIX,platform.openai.com'
-    - 'DOMAIN-SUFFIX,cdn.openai.com'
-    - 'DOMAIN-SUFFIX,oaistatic.com'
-    - 'DOMAIN-SUFFIX,oaiusercontent.com'
-    - 'DOMAIN-SUFFIX,status.openai.com'
+    - DOMAIN-SUFFIX,api.openai.com
+    - DOMAIN-SUFFIX,auth0.openai.com
+    - DOMAIN-SUFFIX,platform.openai.com
+    - DOMAIN-SUFFIX,cdn.openai.com
+    - DOMAIN-SUFFIX,oaistatic.com
+    - DOMAIN-SUFFIX,oaiusercontent.com
+    - DOMAIN-SUFFIX,status.openai.com
     # === OpenAI CDN / Azure 资源 ===
-    - 'DOMAIN-SUFFIX,chat.openai.com.cdn.cloudflare.net'
-    - 'DOMAIN-SUFFIX,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net'
-    - 'DOMAIN-SUFFIX,openaicomproductionae4b.blob.core.windows.net'
-    - 'DOMAIN-SUFFIX,production-openaicom-storage.azureedge.net'
-    - 'DOMAIN-SUFFIX,openaiapi-site.azureedge.net'
-    - 'DOMAIN-SUFFIX,openaicom.imgix.net'
+    - DOMAIN-SUFFIX,chat.openai.com.cdn.cloudflare.net
+    - DOMAIN-SUFFIX,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+    - DOMAIN-SUFFIX,openaicomproductionae4b.blob.core.windows.net
+    - DOMAIN-SUFFIX,production-openaicom-storage.azureedge.net
+    - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+    - DOMAIN-SUFFIX,openaicom.imgix.net
     # === Bot 检测 / 反滥用 ===
-    - 'DOMAIN-SUFFIX,client-api.arkoselabs.com'
-    - 'DOMAIN-SUFFIX,openai-api.arkoselabs.com'
+    - DOMAIN-SUFFIX,client-api.arkoselabs.com
+    - DOMAIN-SUFFIX,openai-api.arkoselabs.com
     # === 实时音视频(ChatGPT 高级语音模式)===
-    - 'DOMAIN-SUFFIX,chatgpt.livekit.cloud'
-    - 'DOMAIN-SUFFIX,host.livekit.cloud'
-    - 'DOMAIN-SUFFIX,turn.livekit.cloud'
+    - DOMAIN-SUFFIX,chatgpt.livekit.cloud
+    - DOMAIN-SUFFIX,host.livekit.cloud
+    - DOMAIN-SUFFIX,turn.livekit.cloud
     # === Analytics / Feature Flag ===
-    - 'DOMAIN-SUFFIX,api.statsig.com'
-    - 'DOMAIN-SUFFIX,events.statsigapi.net'
-    - 'DOMAIN-SUFFIX,launchdarkly.com'
-    - 'DOMAIN-SUFFIX,featuregates.org'
+    - DOMAIN-SUFFIX,api.statsig.com
+    - DOMAIN-SUFFIX,events.statsigapi.net
+    - DOMAIN-SUFFIX,launchdarkly.com
+    - DOMAIN-SUFFIX,featuregates.org
     # === 监控 / 错误追踪 ===
-    - 'DOMAIN-SUFFIX,sentry.io'
-    - 'DOMAIN-SUFFIX,segment.io'
-    - 'DOMAIN-SUFFIX,static.cloudflareinsights.com'
-    - 'DOMAIN-SUFFIX,browser-intake-datadoghq.com'
+    - DOMAIN-SUFFIX,sentry.io
+    - DOMAIN-SUFFIX,segment.io
+    - DOMAIN-SUFFIX,static.cloudflareinsights.com
+    - DOMAIN-SUFFIX,browser-intake-datadoghq.com
     # === 支付 ===
-    - 'DOMAIN-SUFFIX,stripe.com'
+    - DOMAIN-SUFFIX,stripe.com
     # === 客户支持 ===
-    - 'DOMAIN-SUFFIX,intercom.io'
-    - 'DOMAIN-SUFFIX,intercomcdn.com'
+    - DOMAIN-SUFFIX,intercom.io
+    - DOMAIN-SUFFIX,intercomcdn.com
     # === 其他 ===
-    - 'DOMAIN-SUFFIX,ai.com'
-    - 'DOMAIN-SUFFIX,algolia.net'
-    - 'DOMAIN-SUFFIX,auth0.com'
-    - 'DOMAIN-SUFFIX,identrust.com'
-    - 'DOMAIN-SUFFIX,observeit.net'
+    - DOMAIN-SUFFIX,ai.com
+    - DOMAIN-SUFFIX,algolia.net
+    - DOMAIN-SUFFIX,auth0.com
+    - DOMAIN-SUFFIX,identrust.com
+    - DOMAIN-SUFFIX,observeit.net
     # === DOMAIN-KEYWORD 兜底 ===
     - DOMAIN-KEYWORD,openai
     # === IP 段(命中率优化,绕过 DNS) ===
