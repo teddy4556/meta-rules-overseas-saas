@@ -1,33 +1,8 @@
 payload:
-    # Twitter / X 全套(9-1 命中率优化版)
-    # 涵盖:Twitter 主服务 + x.com + Grok(xAI) + Twitter 图片 + IP-CIDR段
-    # 注:加 IP-CIDR 段以提升命中率(yfamilys 验证有效),
-    # 这是本仓库第一个含 IP 段的 yaml,后续如需可推广。
-    # Twitter 主域
-    - DOMAIN-SUFFIX,twitter.com
-    - DOMAIN-SUFFIX,twitter.biz
-    - DOMAIN-SUFFIX,twitter.io
-    - DOMAIN-SUFFIX,twitter.jp
-    - DOMAIN-SUFFIX,twitter.map.fastly.net
-    - DOMAIN-SUFFIX,twittercommunity.com
-    - DOMAIN-SUFFIX,twitterflightschool.com
-    - DOMAIN-SUFFIX,twitterinc.com
-    - DOMAIN-SUFFIX,twitteroauth.com
-    - DOMAIN-SUFFIX,twitterstat.us
-    - DOMAIN-SUFFIX,twttr.com
-    - DOMAIN-SUFFIX,twttr.net
-    - DOMAIN-SUFFIX,twvid.com
-    # X(原 Twitter,2023-07 改名)
-    - DOMAIN-SUFFIX,x.com
-    - DOMAIN-SUFFIX,x.io
-    # Twitter 图片
-    - DOMAIN-SUFFIX,twimg.com
+    # twitter (mine + metacubex union, 9-8)
+    # source: teddy4556/meta-rules-overseas-saas + metacubex/meta-rules-dat
+    # DOMAIN-SUFFIX
     - DOMAIN-SUFFIX,abs.twimg.com
-    - DOMAIN-SUFFIX,twimg.co
-    - DOMAIN-SUFFIX,twimg.org
-    - DOMAIN-SUFFIX,twitpic.com
-    # Twitter 子服务
-    - DOMAIN-SUFFIX,t.co
     - DOMAIN-SUFFIX,ads-twitter.com
     - DOMAIN-SUFFIX,ads.twitter.com
     - DOMAIN-SUFFIX,analytics.twitter.com
@@ -36,20 +11,41 @@ payload:
     - DOMAIN-SUFFIX,business.twitter.com
     - DOMAIN-SUFFIX,cms-twdigitalassets.com
     - DOMAIN-SUFFIX,developer.twitter.com
+    - DOMAIN-SUFFIX,grok.com
     - DOMAIN-SUFFIX,help.twitter.com
     - DOMAIN-SUFFIX,periscope.tv
     - DOMAIN-SUFFIX,platform.twitter.com
     - DOMAIN-SUFFIX,pscp.tv
+    - DOMAIN-SUFFIX,t.co
     - DOMAIN-SUFFIX,tellapart.com
     - DOMAIN-SUFFIX,tweetdeck.com
+    - DOMAIN-SUFFIX,twimg.co
+    - DOMAIN-SUFFIX,twimg.com
+    - DOMAIN-SUFFIX,twimg.org
+    - DOMAIN-SUFFIX,twitpic.com
+    - DOMAIN-SUFFIX,twitter.biz
+    - DOMAIN-SUFFIX,twitter.com
+    - DOMAIN-SUFFIX,twitter.io
+    - DOMAIN-SUFFIX,twitter.jp
+    - DOMAIN-SUFFIX,twitter.map.fastly.net
+    - DOMAIN-SUFFIX,twittercommunity.com
+    - DOMAIN-SUFFIX,twitterflightschool.com
+    - DOMAIN-SUFFIX,twitterinc.com
+    - DOMAIN-SUFFIX,twitteroauth.com
+    - DOMAIN-SUFFIX,twitterstat.us
     - DOMAIN-SUFFIX,twtrdns.net
+    - DOMAIN-SUFFIX,twttr.com
+    - DOMAIN-SUFFIX,twttr.net
+    - DOMAIN-SUFFIX,twvid.com
     - DOMAIN-SUFFIX,vine.co
-    # xAI Grok(Musk 旗下,2024-09 独立品牌,9-1 补)
-    - DOMAIN-SUFFIX,grok.com
-    # Twitter IP 段(9-1 命中率优化,绕过 DNS 直连)
-    - IP-CIDR,192.133.76.0/22,no-resolve
-    - IP-CIDR,199.59.148.0/22,no-resolve
-    - IP-CIDR,199.96.56.0/21,no-resolve
-    - IP-CIDR,202.160.128.0/22,no-resolve
-    - IP-CIDR,209.237.192.0/19,no-resolve
-    - IP-CIDR,69.195.160.0/19,no-resolve
+    - DOMAIN-SUFFIX,x.com
+    - DOMAIN-SUFFIX,x.io
+
+    # IP-CIDR
+    - IP-CIDR,192.133.76.0
+    - IP-CIDR,199.59.148.0
+    - IP-CIDR,199.96.56.0
+    - IP-CIDR,202.160.128.0
+    - IP-CIDR,209.237.192.0
+    - IP-CIDR,69.195.160.0
+
