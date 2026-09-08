@@ -1,22 +1,31 @@
 payload:
+    # whatsapp (mine + metacubex union, 9-8)
+    # source: teddy4556/meta-rules-overseas-saas + metacubex/meta-rules-dat
+    # DOMAIN-SUFFIX
     - DOMAIN-SUFFIX,api.whatsapp.com
+    - DOMAIN-SUFFIX,bintray.com
     - DOMAIN-SUFFIX,business.whatsapp.com
     - DOMAIN-SUFFIX,chat.whatsapp.com
+    - DOMAIN-SUFFIX,graph.facebook.com
+    - DOMAIN-SUFFIX,graph.whatsapp.com
+    - DOMAIN-SUFFIX,graph.whatsapp.net
     - DOMAIN-SUFFIX,wa.me
     - DOMAIN-SUFFIX,wamrooms.com
     - DOMAIN-SUFFIX,whatsapp-brand.com
     - DOMAIN-SUFFIX,whatsapp-cdn.com
     - DOMAIN-SUFFIX,whatsapp-plus.com
+    - DOMAIN-SUFFIX,whatsapp-plus.info
+    - DOMAIN-SUFFIX,whatsapp-plus.me
+    - DOMAIN-SUFFIX,whatsapp-plus.net
+    - DOMAIN-SUFFIX,whatsapp.biz
     - DOMAIN-SUFFIX,whatsapp.cc
     - DOMAIN-SUFFIX,whatsapp.com
+    - DOMAIN-SUFFIX,whatsapp.info
     - DOMAIN-SUFFIX,whatsapp.net
     - DOMAIN-SUFFIX,whatsapp.org
+    - DOMAIN-SUFFIX,whatsapp.tv
+    - DOMAIN-SUFFIX,whatsappbrand.com
     - DOMAIN-SUFFIX,wwco.com
     - DOMAIN-SUFFIX,wwhelp.com
     - DOMAIN-SUFFIX,wwstatic.com
-      - DOMAIN-SUFFIX,bintray.com
-      - DOMAIN-SUFFIX,graph.facebook.com
-      - DOMAIN-SUFFIX,whatsapp.biz
 
-    # 9-1 batch: 补 meta yfamilys 漏的 whatsapp 子域 (mine - yc)
-    # 来源: yfamilys/whatsapp.list, mine/whatsapp.yaml
