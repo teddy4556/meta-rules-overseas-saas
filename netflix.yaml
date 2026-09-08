@@ -1,13 +1,22 @@
 payload:
+    # netflix (mine + metacubex union, 9-8)
+    # source: teddy4556/meta-rules-overseas-saas + metacubex/meta-rules-dat
+    # DOMAIN-SUFFIX
     - DOMAIN-SUFFIX,api.netflix.com
     - DOMAIN-SUFFIX,cdn1.nflx.com
     - DOMAIN-SUFFIX,cdn2.nflx.com
     - DOMAIN-SUFFIX,codeflix.com
+    - DOMAIN-SUFFIX,cookielaw.org
+    - DOMAIN-SUFFIX,e13252.dscg.akamaiedge.net
     - DOMAIN-SUFFIX,fast.com
+    - DOMAIN-SUFFIX,flxvpn.net
+    - DOMAIN-SUFFIX,h-netflix.online-metrix.net
     - DOMAIN-SUFFIX,help.netflix.com
     - DOMAIN-SUFFIX,jobs.netflix.com
     - DOMAIN-SUFFIX,netflix.ca
     - DOMAIN-SUFFIX,netflix.com
+    - DOMAIN-SUFFIX,netflix.com.au
+    - DOMAIN-SUFFIX,netflix.com.edgesuite.net
     - DOMAIN-SUFFIX,netflix.net
     - DOMAIN-SUFFIX,netflixcdn.com
     - DOMAIN-SUFFIX,netflixdn.net
@@ -23,6 +32,7 @@ payload:
     - DOMAIN-SUFFIX,netflixdnstest8.com
     - DOMAIN-SUFFIX,netflixdnstest9.com
     - DOMAIN-SUFFIX,netflixinvestor.com
+    - DOMAIN-SUFFIX,netflixstudios.com
     - DOMAIN-SUFFIX,netflixtechblog.com
     - DOMAIN-SUFFIX,nflxext.com
     - DOMAIN-SUFFIX,nflximg.com
@@ -31,18 +41,9 @@ payload:
     - DOMAIN-SUFFIX,nflxsearch.net
     - DOMAIN-SUFFIX,nflxso.net
     - DOMAIN-SUFFIX,nflxvideo.net
+    - DOMAIN-SUFFIX,onetrust.com
     - DOMAIN-SUFFIX,research.netflix.com
     - DOMAIN-SUFFIX,signup.netflix.com
     - DOMAIN-SUFFIX,techblog.netflix.com
-      - DOMAIN-SUFFIX,cookielaw.org
-      - DOMAIN-SUFFIX,e13252.dscg.akamaiedge.net
-      - DOMAIN-SUFFIX,flxvpn.net
-      - DOMAIN-SUFFIX,h-netflix.online-metrix.net
-      - DOMAIN-SUFFIX,netflix.com.au
-      - DOMAIN-SUFFIX,netflix.com.edgesuite.net
-      - DOMAIN-SUFFIX,netflixstudios.com
-      - DOMAIN-SUFFIX,onetrust.com
-      - DOMAIN-SUFFIX,us-west-2.amazonaws.com
+    - DOMAIN-SUFFIX,us-west-2.amazonaws.com
 
-    # 9-1 batch: 补 meta yfamilys 漏的 netflix 子域 (mine - yc)
-    # 来源: yfamilys/netflix.list, mine/netflix.yaml
