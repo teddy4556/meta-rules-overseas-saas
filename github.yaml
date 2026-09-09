@@ -1,3 +1,18 @@
-payload:
-    # test
-    - 'DOMAIN-SUFFIX,test.com'
+{
+  "name": "github.yaml",
+  "path": "github.yaml",
+  "sha": "af578ca065a50c9e02e4a35a306406bf53ddb8c2",
+  "size": 51,
+  "url": "https://api.github.com/repos/teddy4556/meta-rules-overseas-saas/contents/github.yaml?ref=main",
+  "html_url": "https://github.com/teddy4556/meta-rules-overseas-saas/blob/main/github.yaml",
+  "git_url": "https://api.github.com/repos/teddy4556/meta-rules-overseas-saas/git/blobs/af578ca065a50c9e02e4a35a306406bf53ddb8c2",
+  "download_url": "https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/github.yaml",
+  "type": "file",
+  "content": "cGF5bG9hZDoKICAgICMgdGVzdAogICAgLSAnRE9NQUlOLVNVRkZJWCx0ZXN0\nLmNvbScK\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/teddy4556/meta-rules-overseas-saas/contents/github.yaml?ref=main",
+    "git": "https://api.github.com/repos/teddy4556/meta-rules-overseas-saas/git/blobs/af578ca065a50c9e02e4a35a306406bf53ddb8c2",
+    "html": "https://github.com/teddy4556/meta-rules-overseas-saas/blob/main/github.yaml"
+  }
+}
