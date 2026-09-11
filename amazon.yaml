@@ -250,3 +250,18 @@ payload:
       - DOMAIN-SUFFIX,awscloud.com
       - DOMAIN-SUFFIX,llnwd.net
       - DOMAIN-SUFFIX,pv-cdn.net
+
+# 9-12 merged from MetaCubeX (13 entries)
+    - DOMAIN-SUFFIX,d1v5ir2lpwr8os.cloudfront.net
+    - DOMAIN-SUFFIX,d22qjgkvxw22r6.cloudfront.net
+    - DOMAIN-SUFFIX,d25xi40x97liuc.cloudfront.net
+    - DOMAIN-SUFFIX,d27xxe7juh1us6.cloudfront.net
+    - DOMAIN-SUFFIX,dmqdd6hw24ucf.cloudfront.net
+    - DOMAIN-SUFFIX,images-cn-8.ssl-images-amazon.com
+    - DOMAIN-SUFFIX,images-cn.ssl-images-amazon.com
+    - DOMAIN-SUFFIX,images-eu.ssl-images-amazon.com
+    - DOMAIN-SUFFIX,images-fe.ssl-images-amazon.com
+    - DOMAIN-SUFFIX,images-na.ssl-images-amazon.com
+    - DOMAIN-SUFFIX,msh.amazon.co.uk
+    - DOMAIN-SUFFIX,static.siege-amazon.com
+    - DOMAIN-SUFFIX,zappos

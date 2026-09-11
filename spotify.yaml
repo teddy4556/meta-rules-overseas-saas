@@ -55,3 +55,8 @@ payload:
     - IP-CIDR,104.154.127.126
     - IP-CIDR,35.186.224.47
 
+
+# 9-12 merged from MetaCubeX (3 entries)
+    - DOMAIN-SUFFIX,adeventtracker.spotify.com
+    - DOMAIN-SUFFIX,adstudio-assets.scdn.co
+    - DOMAIN-SUFFIX,bloodhound.spotify.com

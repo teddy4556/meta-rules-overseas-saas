@@ -8,3 +8,7 @@ payload:
     - DOMAIN-SUFFIX,pplx.ai
     - DOMAIN-SUFFIX,pplx.com
     - DOMAIN-SUFFIX,www.perplexity.ai
+
+# 9-12 merged from MetaCubeX (2 entries)
+    - DOMAIN-SUFFIX,ppl-ai-file-upload.s3.amazonaws.com
+    - DOMAIN-SUFFIX,pplx-res.cloudinary.com

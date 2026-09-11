@@ -77,3 +77,23 @@ payload:
       - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
       - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
       - DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
+
+# 9-12 merged from MetaCubeX (18 entries)
+    - DOMAIN-SUFFIX,a4e8s8k3.map2.ssl.hwcdn.net
+    - DOMAIN-SUFFIX,alibaba.cdn.steampipe.steamcontent.com
+    - DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
+    - DOMAIN-SUFFIX,lv.queniujq.cn
+    - DOMAIN-SUFFIX,steambroadcast.akamaized.net
+    - DOMAIN-SUFFIX,steamcloudsweden.blob.core.windows.net
+    - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
+    - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net.edgesuite.net
+    - DOMAIN-SUFFIX,steammobile.akamaized.net
+    - DOMAIN-SUFFIX,steampipe-kr.akamaized.net
+    - DOMAIN-SUFFIX,steampipe-partner.akamaized.net
+    - DOMAIN-SUFFIX,steampipe.akamaized.net
+    - DOMAIN-SUFFIX,steamstore-a.akamaihd.net
+    - DOMAIN-SUFFIX,steamugcquincy.blob.core.windows.net
+    - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
+    - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+    - DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
+    - DOMAIN-SUFFIX,xz.pphimalayanrt.com

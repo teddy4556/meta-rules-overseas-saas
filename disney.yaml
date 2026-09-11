@@ -243,3 +243,12 @@ payload:
 
     # 9-1 batch: 补 meta yfamilys 漏的 disney 子域 (mine - yc)
     # 来源: yfamilys/disney.list, mine/disney.yaml
+
+# 9-12 merged from MetaCubeX (7 entries)
+    - DOMAIN-SUFFIX,disney.my.sentry.io
+    - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net
+    - DOMAIN-SUFFIX,espn.api.edge.bamgrid.com
+    - DOMAIN-SUFFIX,espn.hb.omtrdc.net
+    - DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net
+    - DOMAIN-SUFFIX,hulu.playback.edge.bamgrid.com
+    - DOMAIN-SUFFIX,wwwhuluplus.com

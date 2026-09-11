@@ -68,3 +68,9 @@ payload:
     - DOMAIN-SUFFIX,ttwebview.com
     - DOMAIN-SUFFIX,ttwstatic.com
 
+
+# 9-12 merged from MetaCubeX (4 entries)
+    - DOMAIN-SUFFIX,roovza-launches.appsflyersdk.com
+    - DOMAIN-SUFFIX,roovza.inapps.appsflyersdk.com
+    - DOMAIN-SUFFIX,roovza.launches.appsflyersdk.com
+    - DOMAIN-SUFFIX,roovza.skadsdk.appsflyersdk.com
