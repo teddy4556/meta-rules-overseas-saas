@@ -17,3 +17,11 @@ payload:
       - DOMAIN-SUFFIX,apis.google.com
       - DOMAIN-SUFFIX,generativeai.google
       - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+
+# 9-12 merged from third-party (6 entries)
+    - DOMAIN-SUFFIX,aistudio-pa.clients6.google.com
+    - DOMAIN-SUFFIX,android.googleapis.com
+    - DOMAIN-SUFFIX,gemini-pa.googleapis.com
+    - DOMAIN-SUFFIX,googleusercontent.com
+    - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+    - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com

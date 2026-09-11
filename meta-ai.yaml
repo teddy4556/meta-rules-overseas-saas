@@ -12,3 +12,9 @@ payload:
     - DOMAIN-SUFFIX,metaverse.ai
     - DOMAIN-SUFFIX,threads.com
     - DOMAIN-SUFFIX,threads.net
+
+# 9-12 merged from third-party (4 entries)
+    - DOMAIN-SUFFIX,genspark.ai
+    - DOMAIN-SUFFIX,manus.im
+    - DOMAIN-SUFFIX,metademolab.com
+    - DOMAIN-SUFFIX,skywork.ai
