@@ -21,3 +21,10 @@ payload:
     - DOMAIN-SUFFIX,wiki.debian.org
     - DOMAIN-SUFFIX,wiki.gentoo.org
       - DOMAIN-SUFFIX,wikileaks.org
+
+    # === wikipedia 服务增强 (2026-09-12 加 ASN + 进程名, 兜底防 GFW) ===
+    # Wikipedia 无桌面, 加 Wikimedia ASN
+    # ASN
+    - IP-ASN,AS14907
+    - IP-ASN,AS43821
+
