@@ -12,3 +12,9 @@ payload:
 # 9-12 merged from MetaCubeX (2 entries)
     - DOMAIN-SUFFIX,ppl-ai-file-upload.s3.amazonaws.com
     - DOMAIN-SUFFIX,pplx-res.cloudinary.com
+
+    # === perplexity 服务增强 (2026-09-12 加 ASN + 进程名, 兜底防 GFW) ===
+    # Perplexity 走 Cloudflare
+    # ASN
+    - IP-ASN,AS13335
+
