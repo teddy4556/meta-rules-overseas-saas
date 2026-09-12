@@ -22,3 +22,13 @@ payload:
       - DOMAIN-SUFFIX,slackcertified.com
       - DOMAIN-SUFFIX,slackdemo.com
       - DOMAIN-SUFFIX,slackhq.com
+
+    # === slack 服务增强 (2026-09-12 加 ASN + 进程名, 兜底防 GFW) ===
+    # Slack 桌面 + 3 个 ASN
+    # ASN
+    - IP-ASN,AS53889
+    - IP-ASN,AS16733
+    - IP-ASN,AS13335
+    # 桌面进程
+    - PROCESS-NAME,Slack.exe
+
