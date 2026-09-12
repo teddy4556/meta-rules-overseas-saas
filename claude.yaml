@@ -14,3 +14,10 @@ payload:
     - DOMAIN-SUFFIX,console.anthropic.com
     - DOMAIN-SUFFIX,files.anthropic.com
       - DOMAIN-SUFFIX,cdn.usefathom.com
+
+    # === claude 服务增强 (2026-09-12 加 ASN + 进程名, 兜底防 GFW) ===
+    # Claude 网页端无桌面端, 加 Cloudflare ASN 兜底
+    # ASN
+    - IP-ASN,AS13335
+    - IP-ASN,AS54825
+
