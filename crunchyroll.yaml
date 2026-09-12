@@ -23,3 +23,10 @@ payload:
 
 # 9-12 merged from third-party (1 entries)
     - DOMAIN-SUFFIX,crunchyrollsvc.com
+
+    # === crunchyroll 服务增强 (2026-09-12 加 ASN + 进程名, 兜底防 GFW) ===
+    # Crunchyroll / Ellation (Sony)
+    # ASN
+    - IP-ASN,AS46844
+    - IP-ASN,AS13335
+
