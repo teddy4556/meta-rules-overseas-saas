@@ -20,3 +20,12 @@ payload:
     - DOMAIN-SUFFIX,notion.cc
     - DOMAIN-SUFFIX,notion.email
     - DOMAIN-SUFFIX,notion.wiki
+
+    # === notion 服务增强 (2026-09-12 加 ASN + 进程名, 兜底防 GFW) ===
+    # Notion 桌面 + 2 个 ASN
+    # ASN
+    - IP-ASN,AS397433
+    - IP-ASN,AS13335
+    # 桌面进程
+    - PROCESS-NAME,Notion.exe
+
