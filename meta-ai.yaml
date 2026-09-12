@@ -18,3 +18,9 @@ payload:
     - DOMAIN-SUFFIX,manus.im
     - DOMAIN-SUFFIX,metademolab.com
     - DOMAIN-SUFFIX,skywork.ai
+
+    # === meta-ai 服务增强 (2026-09-12 加 ASN + 进程名, 兜底防 GFW) ===
+    # Meta 全球 ASN 32934
+    # ASN
+    - IP-ASN,AS32934
+
