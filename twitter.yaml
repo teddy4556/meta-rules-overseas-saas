@@ -48,4 +48,4 @@ payload:
     - IP-CIDR,202.160.128.0
     - IP-CIDR,209.237.192.0
     - IP-CIDR,69.195.160.0
-
+    - DOMAIN-SUFFIX,x.com
