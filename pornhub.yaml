@@ -32,3 +32,6 @@ payload:
     - DOMAIN-SUFFIX,xchina.co
     - DOMAIN-SUFFIX,cn.pornhub.com
     - DOMAIN-SUFFIX,xchina.biz
+    - DOMAIN-SUFFIX,xchina.io
+    - DOMAIN-SUFFIX,xchina.download
+    - DOMAIN-KEYWORD,xchina
