@@ -1,27 +1,12 @@
 payload:
-    # Telegram (精准清理: 仅保留 telegram 核心 16 条)
-    # 2026-09-19: 删除 167 条跨平台污染(原 Loyalsondier G 总集设计导致大量 twitter/facebook/discord/whatsapp 等域名)
-    # 保留: t.me / telegram.org 系列 / telegra.ph / telegram-cdn.org / telegramdownload.com 等
-    # entries: 16
-    - # === IP 段 (防 GFW DNS 污染, 2026-09-12 补, 来源: blackmatrix7 + metacubex) ===
-    - # === Loyalsondier 等价大类兜底: category-communication (源 151 域,新增 130) ===
+    # Telegram (精准清理 2026-09-19: 仅保留 telegram 核心)
+    # 删除 14 条跨平台污染(原 Loyalsondier G 总集设计)
+    # entries: 18
     - # ASN (Telegram 自治域号, 跨平台覆盖)
-    - # IPv4 段
-    - # IPv6 段
-    - # TON 生态
     - # Telegram Mini Apps 官方商店(9-1 补)
     - # Telegram 核心服务(9-1 补完版)
-    - # 关键字 (nicegram)
     - # 国内访问备用镜像(9-1 补: telegram.org 被封时的替代)
-    - # 官方子域
-    - # 服务
     - # 核心 telegram.org
-    - # 桌面端
-    - # 涵盖:主域/桌面端/Mini Apps/TON 生态/官方子域/国内访问备用镜像
-    - # 短链
-    - # 评论/投票
-    - # 进程名 (桌面客户端 + 第三方)
-    - # 非官方下载站(9-1 补,墙内用户备用)
     - - DOMAIN-SUFFIX,a.telegram.org
     - - DOMAIN-SUFFIX,api.telegram.org
     - - DOMAIN-SUFFIX,cdn-telegram.org
