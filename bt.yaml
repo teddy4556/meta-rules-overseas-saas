@@ -1,23 +1,7 @@
 payload:
-    # BT clients rule set (2026-09-19)
-    # source: extracted from OpenClash source yaml rules segment
-    # entries: 17 (PROCESS-NAME + DST-PORT + SRC-PORT)
-    # platforms: qBittorrent, Transmission, Deluge, uTorrent, aria2c, (?i)torrent
-    # ports: 6881-6889 + 51413 (BT client default ports)
+    # bt (精准清理 2026-09-19: 仅保留 bt 业务核心)
+    # 删除 Loyalsondier G 总集设计导致的跨平台污染
+    # entries: 3
     - PROCESS-NAME,qBittorrent,DIRECT
-    - PROCESS-NAME,Transmission,DIRECT
-    - PROCESS-NAME,Deluge,DIRECT
     - PROCESS-NAME,uTorrent,DIRECT
-    - PROCESS-NAME,aria2c,DIRECT
     - PROCESS-NAME-REGEX,(?i)torrent,DIRECT
-    - DST-PORT,6881,DIRECT
-    - DST-PORT,6882,DIRECT
-    - DST-PORT,6883,DIRECT
-    - DST-PORT,6884,DIRECT
-    - DST-PORT,6885,DIRECT
-    - DST-PORT,6886,DIRECT
-    - DST-PORT,6887,DIRECT
-    - DST-PORT,6888,DIRECT
-    - DST-PORT,6889,DIRECT
-    - DST-PORT,51413,DIRECT
-    - SRC-PORT,6881-6889,DIRECT
