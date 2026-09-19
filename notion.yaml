@@ -1,5 +1,7 @@
 payload:
-    # Notion
+    # notion (精准清理 2026-09-19: 仅保留 notion 业务核心)
+    # 删除 Loyalsondier G 总集设计导致的跨平台污染
+    # entries: 20
     - DOMAIN-SUFFIX,notion.so
     - DOMAIN-SUFFIX,notion-static.com
     - DOMAIN-SUFFIX,notion.com
@@ -12,7 +14,6 @@ payload:
     - DOMAIN-SUFFIX,notionapi.com
     - DOMAIN-SUFFIX,notionusercontent.com
     - DOMAIN-SUFFIX,notionhq.com
-    - DOMAIN-SUFFIX,prod-files-secure.s3.us-west-2.amazonaws.com
     - DOMAIN-SUFFIX,files.notion.so
     - DOMAIN-SUFFIX,exp.notion.so
     - DOMAIN-SUFFIX,www.notion.so
@@ -20,12 +21,4 @@ payload:
     - DOMAIN-SUFFIX,notion.cc
     - DOMAIN-SUFFIX,notion.email
     - DOMAIN-SUFFIX,notion.wiki
-
-    # === notion 服务增强 (2026-09-12 加 ASN + 进程名, 兜底防 GFW) ===
-    # Notion 桌面 + 2 个 ASN
-    # ASN
-    - IP-ASN,AS397433
-    - IP-ASN,AS13335
-    # 桌面进程
     - PROCESS-NAME,Notion.exe
-
