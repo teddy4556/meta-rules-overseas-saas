@@ -1,6 +1,7 @@
 payload:
-    # PayPal — international payments
-    # 补充 meta paypal.mrs 的细节(坑 9: PayPal 经常被风控)
+    # paypal-extra (精准清理 2026-09-19: 仅保留 paypal-extra 业务核心)
+    # 删除 Loyalsondier G 总集设计导致的跨平台污染
+    # entries: 21
     - DOMAIN-SUFFIX,paypal.com
     - DOMAIN-SUFFIX,paypal-corp.com
     - DOMAIN-SUFFIX,paypal-communication.com
@@ -22,5 +23,3 @@ payload:
     - DOMAIN-SUFFIX,braintreepayments.com
     - DOMAIN-SUFFIX,braintreegateway.com
     - DOMAIN-SUFFIX,venmo.com
-    # 9-1 batch: 补 meta yfamilys 漏的 paypal 子域 (mine - yc)
-    # 来源: yfamilys/paypal.list, mine/paypal.yaml
