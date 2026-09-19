@@ -3486,7 +3486,6 @@ payload:
     - DOMAIN-SUFFIX,syosetu.com
     - DOMAIN-SUFFIX,sysub.com
     - DOMAIN-SUFFIX,t-g.com
-    - DOMAIN-SUFFIX,t.me
     - DOMAIN-SUFFIX,t66y.com
     - DOMAIN-SUFFIX,taa-usa.org
     - DOMAIN-SUFFIX,taaze.tw
@@ -3533,8 +3532,6 @@ payload:
     - DOMAIN-SUFFIX,tehrantimes.com
     - DOMAIN-SUFFIX,telega.one
     - DOMAIN-SUFFIX,telegra.ph
-    - DOMAIN-SUFFIX,telegram.dog
-    - DOMAIN-SUFFIX,telegram.me
     - DOMAIN-SUFFIX,telegram.org
     - DOMAIN-SUFFIX,telegram.space
     - DOMAIN-SUFFIX,telegramdownload.com
