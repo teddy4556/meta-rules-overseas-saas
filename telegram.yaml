@@ -1,205 +1,37 @@
 payload:
-    # Telegram 核心服务(9-1 补完版)
-    # 涵盖:主域/桌面端/Mini Apps/TON 生态/官方子域/国内访问备用镜像
-    # 核心 telegram.org
-    - DOMAIN-SUFFIX,telegram.org
-    - DOMAIN-SUFFIX,telegram-cdn.org
-    - DOMAIN-SUFFIX,telegram.me
-    - DOMAIN-SUFFIX,telegram.dog
-    - DOMAIN-SUFFIX,telegram.space
-    # 短链
-    - DOMAIN-SUFFIX,t.me
-    - DOMAIN-SUFFIX,tx.me
-    - DOMAIN-SUFFIX,tg.dev
-    # 桌面端
-    - DOMAIN-SUFFIX,tdesktop.com
-    # 官方子域
-    - DOMAIN-SUFFIX,web.telegram.org
-    - DOMAIN-SUFFIX,a.telegram.org
-    - DOMAIN-SUFFIX,api.telegram.org
-    - DOMAIN-SUFFIX,cdn-telegram.org
-    - DOMAIN-SUFFIX,updates.telegram.org
-    # 服务
-    - DOMAIN-SUFFIX,telegra.ph
-    - DOMAIN-SUFFIX,legra.ph
-    - DOMAIN-SUFFIX,telega.one
-    - DOMAIN-SUFFIX,telesco.pe
-    # 评论/投票
-    - DOMAIN-SUFFIX,comments.app
-    - DOMAIN-SUFFIX,contest.com
-    - DOMAIN-SUFFIX,graph.org
-    - DOMAIN-SUFFIX,quiz.directory
-    # TON 生态
-    - DOMAIN-SUFFIX,ton.org
-    - DOMAIN-SUFFIX,toncenter.com
-    - DOMAIN-SUFFIX,fragment.com
-    - DOMAIN-SUFFIX,usercontent.dev
-    # 国内访问备用镜像(9-1 补: telegram.org 被封时的替代)
-    - DOMAIN-SUFFIX,stel.com
-    # Telegram Mini Apps 官方商店(9-1 补)
-    - DOMAIN-SUFFIX,mbrx.app
-    # 非官方下载站(9-1 补,墙内用户备用)
-    - DOMAIN-SUFFIX,telegramdownload.com
-    - DOMAIN-SUFFIX,api.imem.app
-    - DOMAIN-SUFFIX,api.swiftgram.app
-
-    # === IP 段 (防 GFW DNS 污染, 2026-09-12 补, 来源: blackmatrix7 + metacubex) ===
-    # IPv4 段
-    - IP-CIDR,91.108.0.0/16,no-resolve
-    - IP-CIDR,149.154.160.0/20,no-resolve
-    - IP-CIDR,5.28.192.0/18,no-resolve
-    - IP-CIDR,109.239.140.0/24,no-resolve
-    - IP-CIDR,139.59.210.98/32,no-resolve
-    - IP-CIDR,196.55.216.167/32,no-resolve
-    # IPv6 段
-    - IP-CIDR6,2001:67c:4e8::/48,no-resolve
-    - IP-CIDR6,2001:b28:f23c::/47,no-resolve
-    - IP-CIDR6,2001:b28:f23f::/48,no-resolve
-    - IP-CIDR6,2a0a:f280::/29,no-resolve
-    # ASN (Telegram 自治域号, 跨平台覆盖)
-    - IP-ASN,211157
-    - IP-ASN,44907
-    - IP-ASN,59930
-    - IP-ASN,62014
-    - IP-ASN,62041
-    # 进程名 (桌面客户端 + 第三方)
-    - PROCESS-NAME,Telegram.exe
-    - PROCESS-NAME,telegram-desktop
-    - PROCESS-NAME,org.telegram.messenger
-    - PROCESS-NAME,nekox.messenger
-    - PROCESS-NAME,tw.nekomimi.nekogram
-    - PROCESS-NAME,xyz.nextalone.nagram
-    # 关键字 (nicegram)
-    - DOMAIN-KEYWORD,nicegram
-
-    # === Loyalsondier 等价大类兜底: category-communication (源 151 域,新增 130) ===
-    - DOMAIN-SUFFIX,adsgram.ai
-    - DOMAIN-SUFFIX,airhorn.solutions
-    - DOMAIN-SUFFIX,airhornbot.com
-    - DOMAIN-SUFFIX,arewereadyyet.com
-    - DOMAIN-SUFFIX,bigbeans.solutions
-    - DOMAIN-SUFFIX,botim.me
-    - DOMAIN-SUFFIX,cinny.in
-    - DOMAIN-SUFFIX,clubhouse.com
-    - DOMAIN-SUFFIX,clubhouseapi.com
-    - DOMAIN-SUFFIX,dis.gd
-    - DOMAIN-SUFFIX,discord-activities.com
-    - DOMAIN-SUFFIX,discord-attachments-uploads-prd.storage.googleapis.com
-    - DOMAIN-SUFFIX,discord.co
-    - DOMAIN-SUFFIX,discord.com
-    - DOMAIN-SUFFIX,discord.design
-    - DOMAIN-SUFFIX,discord.dev
-    - DOMAIN-SUFFIX,discord.gg
-    - DOMAIN-SUFFIX,discord.gift
-    - DOMAIN-SUFFIX,discord.gifts
-    - DOMAIN-SUFFIX,discord.media
-    - DOMAIN-SUFFIX,discord.new
-    - DOMAIN-SUFFIX,discord.store
-    - DOMAIN-SUFFIX,discord.tools
-    - DOMAIN-SUFFIX,discordactivities.com
-    - DOMAIN-SUFFIX,discordapp.com
-    - DOMAIN-SUFFIX,discordapp.io
-    - DOMAIN-SUFFIX,discordapp.net
-    - DOMAIN-SUFFIX,discordcdn.com
-    - DOMAIN-SUFFIX,discordmerch.com
-    - DOMAIN-SUFFIX,discordpartygames.com
-    - DOMAIN-SUFFIX,discordsays.com
-    - DOMAIN-SUFFIX,discordstatus.com
-    - DOMAIN-SUFFIX,element.io
-    - DOMAIN-SUFFIX,fbmessenger.com
-    - DOMAIN-SUFFIX,fluffychat.im
-    - DOMAIN-SUFFIX,freenode.net
-    - DOMAIN-SUFFIX,gcld-line.com
-    - DOMAIN-SUFFIX,graph.whatsapp.com
-    - DOMAIN-SUFFIX,graph.whatsapp.net
-    - DOMAIN-SUFFIX,hammerandchisel.ssl.zendesk.com
-    - DOMAIN-SUFFIX,intercom.com
-    - DOMAIN-SUFFIX,intercom.io
-    - DOMAIN-SUFFIX,intercomassets.com
-    - DOMAIN-SUFFIX,intercomcdn.com
-    - DOMAIN-SUFFIX,joinclubhouse.com
-    - DOMAIN-SUFFIX,keybase.io
-    - DOMAIN-SUFFIX,keybaseapi.com
-    - DOMAIN-SUFFIX,lin.ee
-    - DOMAIN-SUFFIX,line-apps-beta.com
-    - DOMAIN-SUFFIX,line-apps-rc.com
-    - DOMAIN-SUFFIX,line-apps.com
-    - DOMAIN-SUFFIX,line-beta.me
-    - DOMAIN-SUFFIX,line-cdn.net
-    - DOMAIN-SUFFIX,line-scdn.net
-    - DOMAIN-SUFFIX,line.biz
-    - DOMAIN-SUFFIX,line.me
-    - DOMAIN-SUFFIX,line.naver.jp
-    - DOMAIN-SUFFIX,linecorp.com
-    - DOMAIN-SUFFIX,linefriends.com
-    - DOMAIN-SUFFIX,linefriends.com.tw
-    - DOMAIN-SUFFIX,linegame.jp
-    - DOMAIN-SUFFIX,linemobile.com
-    - DOMAIN-SUFFIX,linemyshop.com
-    - DOMAIN-SUFFIX,lineshoppingseller.com
-    - DOMAIN-SUFFIX,linetv.tw
-    - DOMAIN-SUFFIX,m.me
-    - DOMAIN-SUFFIX,mail.com
-    - DOMAIN-SUFFIX,matrix.org
-    - DOMAIN-SUFFIX,matrix.to
-    - DOMAIN-SUFFIX,messenger.com
-    - DOMAIN-SUFFIX,modular.im
-    - DOMAIN-SUFFIX,myteamspeak.com
-    - DOMAIN-SUFFIX,nbabot.net
-    - DOMAIN-SUFFIX,nhncorp.jp
-    - DOMAIN-SUFFIX,nicegram.app
-    - DOMAIN-SUFFIX,nicegram.cloud
-    - DOMAIN-SUFFIX,pm.me
-    - DOMAIN-SUFFIX,proton.me
-    - DOMAIN-SUFFIX,protonmail.ch
-    - DOMAIN-SUFFIX,protonmail.com
-    - DOMAIN-SUFFIX,protonstatus.com
-    - DOMAIN-SUFFIX,protontech.ch
-    - DOMAIN-SUFFIX,protonvpn.ch
-    - DOMAIN-SUFFIX,protonvpn.com
-    - DOMAIN-SUFFIX,protonweb.com
-    - DOMAIN-SUFFIX,riot.im
-    - DOMAIN-SUFFIX,s-bid.rmp.rakuten.com
-    - DOMAIN-SUFFIX,signal.art
-    - DOMAIN-SUFFIX,signal.group
-    - DOMAIN-SUFFIX,signal.link
-    - DOMAIN-SUFFIX,signal.me
-    - DOMAIN-SUFFIX,signal.org
-    - DOMAIN-SUFFIX,signal.tube
-    - DOMAIN-SUFFIX,signalusers.org
-    - DOMAIN-SUFFIX,slack-core.com
-    - DOMAIN-SUFFIX,slack-edge.com
-    - DOMAIN-SUFFIX,slack-files.com
-    - DOMAIN-SUFFIX,slack-imgs.com
-    - DOMAIN-SUFFIX,slack-msgs.com
-    - DOMAIN-SUFFIX,slack-redir.net
-    - DOMAIN-SUFFIX,slack.com
-    - DOMAIN-SUFFIX,slackb.com
-    - DOMAIN-SUFFIX,slackcertified.com
-    - DOMAIN-SUFFIX,slackdemo.com
-    - DOMAIN-SUFFIX,slackhq.com
-    - DOMAIN-SUFFIX,teamspeak-services.com
-    - DOMAIN-SUFFIX,teamspeak.com
-    - DOMAIN-SUFFIX,temp-mail.org
-    - DOMAIN-SUFFIX,ui-portal.de
-    - DOMAIN-SUFFIX,uicdn.com
-    - DOMAIN-SUFFIX,uimserv.net
-    - DOMAIN-SUFFIX,vbcdn.com
-    - DOMAIN-SUFFIX,vbcdn.net
-    - DOMAIN-SUFFIX,vector.im
-    - DOMAIN-SUFFIX,viber.co
-    - DOMAIN-SUFFIX,viber.com
-    - DOMAIN-SUFFIX,viber.me
-    - DOMAIN-SUFFIX,wa.me
-    - DOMAIN-SUFFIX,watchanimeattheoffice.com
-    - DOMAIN-SUFFIX,whatsapp-plus.info
-    - DOMAIN-SUFFIX,whatsapp-plus.me
-    - DOMAIN-SUFFIX,whatsapp-plus.net
-    - DOMAIN-SUFFIX,whatsapp.cc
-    - DOMAIN-SUFFIX,whatsapp.com
-    - DOMAIN-SUFFIX,whatsapp.info
-    - DOMAIN-SUFFIX,whatsapp.net
-    - DOMAIN-SUFFIX,whatsapp.org
-    - DOMAIN-SUFFIX,whatsapp.tv
-    - DOMAIN-SUFFIX,whatsappbrand.com
-    - DOMAIN-SUFFIX,whispersystems.org
+    # Telegram (精准清理: 仅保留 telegram 核心 16 条)
+    # 2026-09-19: 删除 167 条跨平台污染(原 Loyalsondier G 总集设计导致大量 twitter/facebook/discord/whatsapp 等域名)
+    # 保留: t.me / telegram.org 系列 / telegra.ph / telegram-cdn.org / telegramdownload.com 等
+    # entries: 16
+    - # === IP 段 (防 GFW DNS 污染, 2026-09-12 补, 来源: blackmatrix7 + metacubex) ===
+    - # === Loyalsondier 等价大类兜底: category-communication (源 151 域,新增 130) ===
+    - # ASN (Telegram 自治域号, 跨平台覆盖)
+    - # IPv4 段
+    - # IPv6 段
+    - # TON 生态
+    - # Telegram Mini Apps 官方商店(9-1 补)
+    - # Telegram 核心服务(9-1 补完版)
+    - # 关键字 (nicegram)
+    - # 国内访问备用镜像(9-1 补: telegram.org 被封时的替代)
+    - # 官方子域
+    - # 服务
+    - # 核心 telegram.org
+    - # 桌面端
+    - # 涵盖:主域/桌面端/Mini Apps/TON 生态/官方子域/国内访问备用镜像
+    - # 短链
+    - # 评论/投票
+    - # 进程名 (桌面客户端 + 第三方)
+    - # 非官方下载站(9-1 补,墙内用户备用)
+    - - DOMAIN-SUFFIX,a.telegram.org
+    - - DOMAIN-SUFFIX,api.telegram.org
+    - - DOMAIN-SUFFIX,cdn-telegram.org
+    - - DOMAIN-SUFFIX,t.me
+    - - DOMAIN-SUFFIX,telegra.ph
+    - - DOMAIN-SUFFIX,telegram-cdn.org
+    - - DOMAIN-SUFFIX,telegram.dog
+    - - DOMAIN-SUFFIX,telegram.me
+    - - DOMAIN-SUFFIX,telegram.org
+    - - DOMAIN-SUFFIX,telegram.space
+    - - DOMAIN-SUFFIX,telegramdownload.com
+    - - DOMAIN-SUFFIX,updates.telegram.org
+    - - DOMAIN-SUFFIX,web.telegram.org
