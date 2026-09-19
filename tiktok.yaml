@@ -191,8 +191,6 @@ payload:
     - DOMAIN-SUFFIX,adpl.org.hk
     - DOMAIN-SUFFIX,ads-twitter.com
     - DOMAIN-SUFFIX,adsense.com
-    - DOMAIN-SUFFIX,adult-sex-games.com
-    - DOMAIN-SUFFIX,adult.friendfinder.com
     - DOMAIN-SUFFIX,advanscene.com
     - DOMAIN-SUFFIX,advertfan.com
     - DOMAIN-SUFFIX,advertisercommunity.com
@@ -3255,7 +3253,6 @@ payload:
     - DOMAIN-SUFFIX,sethwklein.net
     - DOMAIN-SUFFIX,setn.com
     - DOMAIN-SUFFIX,sevenload.com
-    - DOMAIN-SUFFIX,sex.com
     - DOMAIN-SUFFIX,sex3.com
     - DOMAIN-SUFFIX,sex8.cc
     - DOMAIN-SUFFIX,sexinsex.net
@@ -3694,7 +3691,6 @@ payload:
     - DOMAIN-SUFFIX,token.im
     - DOMAIN-SUFFIX,tokenlon.im
     - DOMAIN-SUFFIX,tokenplus.app
-    - DOMAIN-SUFFIX,tokyo-porn-tube.com
     - DOMAIN-SUFFIX,tokyocn.com
     - DOMAIN-SUFFIX,tomp3.cc
     - DOMAIN-SUFFIX,top.tv
