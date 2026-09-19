@@ -1,4 +1,7 @@
 payload:
+    # reddit (精准清理 2026-09-19: 仅保留 reddit 业务核心)
+    # 删除 Loyalsondier G 总集设计导致的跨平台污染
+    # entries: 22
     - DOMAIN-SUFFIX,api.reddit.com
     - DOMAIN-SUFFIX,i.reddit.com
     - DOMAIN-SUFFIX,oauth.reddit.com
@@ -17,12 +20,7 @@ payload:
     - DOMAIN-SUFFIX,redditspace.com
     - DOMAIN-SUFFIX,redditstatic.com
     - DOMAIN-SUFFIX,redditstatus.com
-      - DOMAIN-SUFFIX,reddituploads.com
-      - DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
-      - DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
-
-    # 9-1 batch: 补 meta yfamilys 漏的 reddit 子域 (mine - yc)
-    # 来源: yfamilys/reddit.list, mine/reddit.yaml
-
-# 9-12 merged from MetaCubeX (1 entries)
+    - DOMAIN-SUFFIX,reddituploads.com
+    - DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
+    - DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
     - DOMAIN-SUFFIX,redditstatus.com
