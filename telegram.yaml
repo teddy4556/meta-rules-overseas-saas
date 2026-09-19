@@ -1,6 +1,6 @@
 payload:
-    # Telegram (精准清理 2026-09-19: 仅保留 telegram 核心)
-    # 删除 Loyalsondier G 总集设计导致的 跨平台污染
+    # Telegram (精准清理 2026-09-19)
+    # 删除 Loyalsondier G 总集设计导致的跨平台污染
     # entries: 13
     - DOMAIN-SUFFIX,telegram.org
     - DOMAIN-SUFFIX,telegram-cdn.org
