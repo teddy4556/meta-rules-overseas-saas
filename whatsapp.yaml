@@ -711,7 +711,6 @@ payload:
     - DOMAIN-SUFFIX,cdig.info
     - DOMAIN-SUFFIX,cdjp.org
     - DOMAIN-SUFFIX,cdn-images.mailchimp.com
-    - DOMAIN-SUFFIX,cdn-telegram.org
     - DOMAIN-SUFFIX,cdn.arstechnica.net
     - DOMAIN-SUFFIX,cdn.jwplayer.com
     - DOMAIN-SUFFIX,cdn.printfriendly.com
@@ -3531,11 +3530,6 @@ payload:
     - DOMAIN-SUFFIX,tehrantimes.com
     - DOMAIN-SUFFIX,telega.one
     - DOMAIN-SUFFIX,telegra.ph
-    - DOMAIN-SUFFIX,telegram.dog
-    - DOMAIN-SUFFIX,telegram.me
-    - DOMAIN-SUFFIX,telegram.org
-    - DOMAIN-SUFFIX,telegram.space
-    - DOMAIN-SUFFIX,telegramdownload.com
     - DOMAIN-SUFFIX,telesco.pe
     - DOMAIN-SUFFIX,tellapart.com
     - DOMAIN-SUFFIX,temu.com
