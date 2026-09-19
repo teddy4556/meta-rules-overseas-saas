@@ -301,7 +301,6 @@ payload:
     - DOMAIN-SUFFIX,api.pureapk.com
     - DOMAIN-SUFFIX,api.recaptcha.net
     - DOMAIN-SUFFIX,api.shuaiapi.com
-    - DOMAIN-SUFFIX,api.steampowered.com
     - DOMAIN-SUFFIX,apiary.io
     - DOMAIN-SUFFIX,apigee.com
     - DOMAIN-SUFFIX,apk.support
@@ -3451,9 +3450,6 @@ payload:
     - DOMAIN-SUFFIX,staticflickr.com
     - DOMAIN-SUFFIX,stboy.net
     - DOMAIN-SUFFIX,stc.com.sa
-    - DOMAIN-SUFFIX,steamcommunity.com
-    - DOMAIN-SUFFIX,steamladder.com
-    - DOMAIN-SUFFIX,steamstatic.com
     - DOMAIN-SUFFIX,steel-storm.com
     - DOMAIN-SUFFIX,steemit.com
     - DOMAIN-SUFFIX,steganos.com
@@ -3463,7 +3459,6 @@ payload:
     - DOMAIN-SUFFIX,stoptibetcrisis.net
     - DOMAIN-SUFFIX,storage.yandex.net
     - DOMAIN-SUFFIX,storagenewsletter.com
-    - DOMAIN-SUFFIX,store.steampowered.com
     - DOMAIN-SUFFIX,storj.io
     - DOMAIN-SUFFIX,storm.mg
     - DOMAIN-SUFFIX,storry.tv
