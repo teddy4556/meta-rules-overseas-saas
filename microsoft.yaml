@@ -56,6 +56,4 @@ payload:
     - DOMAIN-SUFFIX,store.microsoft.com
     - DOMAIN-SUFFIX,tlu.dl.delivery.mp.microsoft.com
     - DOMAIN-SUFFIX,tlu.dl.delivery.mp.microsoft.com.akamaized.net
-    - DOMAIN-SUFFIX,xbox.com
     - DOMAIN-SUFFIX,xboxlive.com
-    - DOMAIN-SUFFIX,xboxservices.com
