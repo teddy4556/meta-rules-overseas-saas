@@ -1,16 +1,10 @@
 payload:
-    # Cloud IDE / Online Development
+    # cloud-ide (精准清理 2026-09-19: 仅保留 cloud-ide 业务核心)
+    # 删除 Loyalsondier G 总集设计导致的跨平台污染
+    # entries: 6
     - DOMAIN-SUFFIX,gitpod.io
     - DOMAIN-SUFFIX,stackblitz.com
-    - DOMAIN-SUFFIX,codesandbox.io
     - DOMAIN-SUFFIX,replit.com
-    - DOMAIN-SUFFIX,glitch.com
-    - DOMAIN-SUFFIX,heroku.com
     - DOMAIN-SUFFIX,flynn.io
-    - DOMAIN-SUFFIX,codepen.io
-    - DOMAIN-SUFFIX,jsbin.com
-    - DOMAIN-SUFFIX,jsfiddle.net
-    - DOMAIN-SUFFIX,runkit.com
-    - DOMAIN-SUFFIX,typescriptlang.org
     - DOMAIN-SUFFIX,playcode.io
     - DOMAIN-SUFFIX,kaggle.com
