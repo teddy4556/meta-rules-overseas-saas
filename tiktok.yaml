@@ -277,7 +277,6 @@ payload:
     - DOMAIN-SUFFIX,anonfiles.com
     - DOMAIN-SUFFIX,anonymouse.org
     - DOMAIN-SUFFIX,anthonycalzadilla.com
-    - DOMAIN-SUFFIX,anthropic.com
     - DOMAIN-SUFFIX,antiwave.net
     - DOMAIN-SUFFIX,antpool.com
     - DOMAIN-SUFFIX,anuneko.com
@@ -774,7 +773,6 @@ payload:
     - DOMAIN-SUFFIX,character.ai
     - DOMAIN-SUFFIX,chat.com
     - DOMAIN-SUFFIX,chat.lmsys.org
-    - DOMAIN-SUFFIX,chatgpt.com
     - DOMAIN-SUFFIX,chatgpt.site
     - DOMAIN-SUFFIX,chatpdf.com
     - DOMAIN-SUFFIX,checkgfw.com
@@ -858,8 +856,6 @@ payload:
     - DOMAIN-SUFFIX,ck101.com
     - DOMAIN-SUFFIX,clashyun.com
     - DOMAIN-SUFFIX,classicalguitarblog.net
-    - DOMAIN-SUFFIX,claude.ai
-    - DOMAIN-SUFFIX,claude.com
     - DOMAIN-SUFFIX,cldr.unicode.org
     - DOMAIN-SUFFIX,clearsurance.com
     - DOMAIN-SUFFIX,clementine-player.org
@@ -1990,7 +1986,6 @@ payload:
     - DOMAIN-SUFFIX,hudson.org
     - DOMAIN-SUFFIX,huffingtonpost.com
     - DOMAIN-SUFFIX,huffpost.com
-    - DOMAIN-SUFFIX,huggingface.co
     - DOMAIN-SUFFIX,hugoroy.eu
     - DOMAIN-SUFFIX,huhaitai.com
     - DOMAIN-SUFFIX,huhamhire.com
@@ -2795,7 +2790,6 @@ payload:
     - DOMAIN-SUFFIX,ooni.io
     - DOMAIN-SUFFIX,ooni.org
     - DOMAIN-SUFFIX,open.firstory.me
-    - DOMAIN-SUFFIX,openai.com
     - DOMAIN-SUFFIX,openapi-quote.longbridge.cn
     - DOMAIN-SUFFIX,openapi-trade.longbridge.cn
     - DOMAIN-SUFFIX,openapi.longbridge.cn
@@ -2883,7 +2877,6 @@ payload:
     - DOMAIN-SUFFIX,perfect-privacy.com
     - DOMAIN-SUFFIX,periscope.tv
     - DOMAIN-SUFFIX,perma.cc
-    - DOMAIN-SUFFIX,perplexity.ai
     - DOMAIN-SUFFIX,pewresearch.org
     - DOMAIN-SUFFIX,phayul.com
     - DOMAIN-SUFFIX,phmsociety.org
