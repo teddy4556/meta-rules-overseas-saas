@@ -1,22 +1,17 @@
 payload:
     # Telegram (精准清理 2026-09-19: 仅保留 telegram 核心)
-    # 删除 14 条跨平台污染(原 Loyalsondier G 总集设计)
-    # entries: 18
-    - # ASN (Telegram 自治域号, 跨平台覆盖)
-    - # Telegram Mini Apps 官方商店(9-1 补)
-    - # Telegram 核心服务(9-1 补完版)
-    - # 国内访问备用镜像(9-1 补: telegram.org 被封时的替代)
-    - # 核心 telegram.org
-    - - DOMAIN-SUFFIX,a.telegram.org
-    - - DOMAIN-SUFFIX,api.telegram.org
-    - - DOMAIN-SUFFIX,cdn-telegram.org
-    - - DOMAIN-SUFFIX,t.me
-    - - DOMAIN-SUFFIX,telegra.ph
-    - - DOMAIN-SUFFIX,telegram-cdn.org
-    - - DOMAIN-SUFFIX,telegram.dog
-    - - DOMAIN-SUFFIX,telegram.me
-    - - DOMAIN-SUFFIX,telegram.org
-    - - DOMAIN-SUFFIX,telegram.space
-    - - DOMAIN-SUFFIX,telegramdownload.com
-    - - DOMAIN-SUFFIX,updates.telegram.org
-    - - DOMAIN-SUFFIX,web.telegram.org
+    # 删除 Loyalsondier G 总集设计导致的 跨平台污染
+    # entries: 13
+    - DOMAIN-SUFFIX,telegram.org
+    - DOMAIN-SUFFIX,telegram-cdn.org
+    - DOMAIN-SUFFIX,telegram.me
+    - DOMAIN-SUFFIX,telegram.dog
+    - DOMAIN-SUFFIX,telegram.space
+    - DOMAIN-SUFFIX,t.me
+    - DOMAIN-SUFFIX,web.telegram.org
+    - DOMAIN-SUFFIX,a.telegram.org
+    - DOMAIN-SUFFIX,api.telegram.org
+    - DOMAIN-SUFFIX,cdn-telegram.org
+    - DOMAIN-SUFFIX,updates.telegram.org
+    - DOMAIN-SUFFIX,telegra.ph
+    - DOMAIN-SUFFIX,telegramdownload.com
