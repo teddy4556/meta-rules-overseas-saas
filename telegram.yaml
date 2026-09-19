@@ -1,7 +1,7 @@
 payload:
     # Telegram (精准清理 2026-09-19)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 13
+    # entries: 19
     - DOMAIN-SUFFIX,telegram.org
     - DOMAIN-SUFFIX,telegram-cdn.org
     - DOMAIN-SUFFIX,telegram.me
@@ -15,3 +15,9 @@ payload:
     - DOMAIN-SUFFIX,updates.telegram.org
     - DOMAIN-SUFFIX,telegra.ph
     - DOMAIN-SUFFIX,telegramdownload.com
+    - PROCESS-NAME,Telegram.exe
+    - PROCESS-NAME,telegram-desktop
+    - PROCESS-NAME,org.telegram.messenger
+    - PROCESS-NAME,nekox.messenger
+    - PROCESS-NAME,tw.nekomimi.nekogram
+    - PROCESS-NAME,xyz.nextalone.nagram
