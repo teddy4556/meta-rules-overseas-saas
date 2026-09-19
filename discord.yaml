@@ -1,5 +1,7 @@
 payload:
-    # Discord
+    # discord (精准清理 2026-09-19: 仅保留 discord 业务核心)
+    # 删除 Loyalsondier G 总集设计导致的跨平台污染
+    # entries: 34
     - DOMAIN-SUFFIX,discord.com
     - DOMAIN-SUFFIX,discord.gg
     - DOMAIN-SUFFIX,discordapp.com
@@ -18,31 +20,19 @@ payload:
     - DOMAIN-SUFFIX,discord.me
     - DOMAIN-SUFFIX,discordhome.com
     - DOMAIN-SUFFIX,discordhub.com
-    - DOMAIN-SUFFIX,disboard.org
-    - DOMAIN-SUFFIX,disboard.gg
-    - DOMAIN-SUFFIX,top.gg
     - DOMAIN-SUFFIX,discord.style
     - DOMAIN-SUFFIX,discordwidgets.com
     - DOMAIN-SUFFIX,discord.band
     - DOMAIN-SUFFIX,discord.coffee
-      - DOMAIN-SUFFIX,airhorn.solutions
-      - DOMAIN-SUFFIX,airhornbot.com
-      - DOMAIN-SUFFIX,bigbeans.solutions
-      - DOMAIN-SUFFIX,dis.gd
-      - DOMAIN-SUFFIX,discord-activities.com
-      - DOMAIN-SUFFIX,discord-attachments-uploads-prd.storage.googleapis.com
-      - DOMAIN-SUFFIX,discord.co
-      - DOMAIN-SUFFIX,discord.design
-      - DOMAIN-SUFFIX,discord.gifts
-      - DOMAIN-SUFFIX,discord.store
-      - DOMAIN-SUFFIX,discordactivities.com
-      - DOMAIN-SUFFIX,discordapp.io
-      - DOMAIN-SUFFIX,discordapp.page.link
-      - DOMAIN-SUFFIX,discordmerch.com
-      - DOMAIN-SUFFIX,discordpartygames.com
-      - DOMAIN-SUFFIX,discordsays.com
-      - DOMAIN-SUFFIX,hammerandchisel.ssl.zendesk.com
-      - DOMAIN-SUFFIX,watchanimeattheoffice.com
-    # 9-1 batch: 补 meta yfamilys 漏的 discord 子域 (mine - yc)
-    # 来源: yfamilys/discord.list, mine/discord.yaml
-
+    - DOMAIN-SUFFIX,discord-activities.com
+    - DOMAIN-SUFFIX,discord-attachments-uploads-prd.storage.googleapis.com
+    - DOMAIN-SUFFIX,discord.co
+    - DOMAIN-SUFFIX,discord.design
+    - DOMAIN-SUFFIX,discord.gifts
+    - DOMAIN-SUFFIX,discord.store
+    - DOMAIN-SUFFIX,discordactivities.com
+    - DOMAIN-SUFFIX,discordapp.io
+    - DOMAIN-SUFFIX,discordapp.page.link
+    - DOMAIN-SUFFIX,discordmerch.com
+    - DOMAIN-SUFFIX,discordpartygames.com
+    - DOMAIN-SUFFIX,discordsays.com
