@@ -1,7 +1,7 @@
 payload:
     # Cloudflare 全量规则集 (CDN/Workers/DNS/Insights/IP)
     # 来源: https://yfamilys.com/rule/Cloudflare.list
-    # 内容: 65 行 = 43 DOMAIN-SUFFIX + 15 IP-CIDR + 7 IP-CIDR6
+    # 内容: 43 DOMAIN-SUFFIX (del -15 IP-CIDR + -7 IP-CIDR6,IP 段太广匹配 Cloudflare CDN 用户如 xchina.biz → 错归类 Cloudflare 业务组)
     - DOMAIN-SUFFIX,cf-ipfs.com
     - DOMAIN-SUFFIX,cf-ns.com
     - DOMAIN-SUFFIX,cf-ns.net
@@ -45,25 +45,5 @@ payload:
     - DOMAIN-SUFFIX,videodelivery.net
     - DOMAIN-SUFFIX,warp.plus
     - DOMAIN-SUFFIX,workers.dev
-    - IP-CIDR,103.21.244.0/22,no-resolve
-    - IP-CIDR,103.22.200.0/22,no-resolve
-    - IP-CIDR,103.31.4.0/22,no-resolve
-    - IP-CIDR,104.16.0.0/13,no-resolve
-    - IP-CIDR,104.24.0.0/14,no-resolve
-    - IP-CIDR,108.162.192.0/18,no-resolve
-    - IP-CIDR,131.0.72.0/22,no-resolve
-    - IP-CIDR,141.101.64.0/18,no-resolve
-    - IP-CIDR,162.158.0.0/15,no-resolve
-    - IP-CIDR,172.64.0.0/13,no-resolve
-    - IP-CIDR,173.245.48.0/20,no-resolve
-    - IP-CIDR,188.114.96.0/20,no-resolve
-    - IP-CIDR,190.93.240.0/20,no-resolve
-    - IP-CIDR,197.234.240.0/22,no-resolve
-    - IP-CIDR,198.41.128.0/17,no-resolve
-    - IP-CIDR6,2400:cb00::/32,no-resolve
-    - IP-CIDR6,2405:8100::/32,no-resolve
-    - IP-CIDR6,2405:b500::/32,no-resolve
-    - IP-CIDR6,2606:4700::/32,no-resolve
-    - IP-CIDR6,2803:f800::/32,no-resolve
-    - IP-CIDR6,2a06:98c0::/29,no-resolve
-    - IP-CIDR6,2c0f:f248::/32,no-resolve
+
+    # 2026-09-19: deleted IP-CIDR/IP-CIDR6 段(IP-CIDR 会把 Cloudflare CDN 用户误判成 Cloudflare 业务组,如 xchina.biz 用 Cloudflare CDN 但实际是 Pornhub)
