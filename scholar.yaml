@@ -2,7 +2,6 @@ payload:
     # scholar (精准清理 2026-09-19: 仅保留 scholar 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
     # entries: 10
-    - DOMAIN-SUFFIX,scholar.google.com
     - DOMAIN-SUFFIX,scholar.google.com.hk
     - DOMAIN-SUFFIX,researchgate.net
     - DOMAIN-SUFFIX,researchgate.com
