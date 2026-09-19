@@ -100,7 +100,6 @@ payload:
     - DOMAIN-SUFFIX,coinex.com
     - DOMAIN-SUFFIX,coinut.com
     - DOMAIN-SUFFIX,compileheart.com
-    - DOMAIN-SUFFIX,copilot.microsoft.com
     - DOMAIN-SUFFIX,cotweet.com
     - DOMAIN-SUFFIX,crazyshit.com
     - DOMAIN-SUFFIX,ctwant.com
@@ -185,7 +184,6 @@ payload:
     - DOMAIN-SUFFIX,mybet.com
     - DOMAIN-SUFFIX,nanyangpost.com
     - DOMAIN-SUFFIX,nephobox.com
-    - DOMAIN-SUFFIX,netflix.com
     - DOMAIN-SUFFIX,news.mt.co.kr
     - DOMAIN-SUFFIX,newsmax.com
     - DOMAIN-SUFFIX,nflxext.com
@@ -215,7 +213,6 @@ payload:
     - DOMAIN-SUFFIX,quakemachinex.com
     - DOMAIN-SUFFIX,rawgit.com
     - DOMAIN-SUFFIX,rcam.target.com
-    - DOMAIN-SUFFIX,reddit.com
     - DOMAIN-SUFFIX,redditlist.com
     - DOMAIN-SUFFIX,relay.firefox.com
     - DOMAIN-SUFFIX,retweetrank.com
