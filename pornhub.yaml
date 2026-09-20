@@ -5,7 +5,10 @@ payload:
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,8se.me
     - DOMAIN-SUFFIX,avjb.com
+    - DOMAIN-SUFFIX,blog.buondua.com
+    - DOMAIN-SUFFIX,buondua.com
     - DOMAIN-SUFFIX,cdn.avjb.com
+    - DOMAIN-SUFFIX,cdn.buondua.com
     - DOMAIN-SUFFIX,cdn.cup2d.com
     - DOMAIN-SUFFIX,cdn.everia.club
     - DOMAIN-SUFFIX,cdn.hentaiclub.net
@@ -18,13 +21,16 @@ payload:
     - DOMAIN-SUFFIX,hentaiclub.net
     - DOMAIN-SUFFIX,huangguo.video
     - DOMAIN-SUFFIX,image.avjb.com
+    - DOMAIN-SUFFIX,image.buondua.com
     - DOMAIN-SUFFIX,image.everia.club
     - DOMAIN-SUFFIX,image.trendszine.com
     - DOMAIN-SUFFIX,images.avjb.com
+    - DOMAIN-SUFFIX,images.buondua.com
     - DOMAIN-SUFFIX,images.everia.club
     - DOMAIN-SUFFIX,images.trendszine.com
     - DOMAIN-SUFFIX,img.8se.me
     - DOMAIN-SUFFIX,img.avjb.com
+    - DOMAIN-SUFFIX,img.buondua.com
     - DOMAIN-SUFFIX,img.cup2d.com
     - DOMAIN-SUFFIX,img.everia.club
     - DOMAIN-SUFFIX,img.hentaiclub.net
@@ -32,14 +38,16 @@ payload:
     - DOMAIN-SUFFIX,img.taotu.org
     - DOMAIN-SUFFIX,img.trendszine.com
     - DOMAIN-SUFFIX,img.xiunice.com
+    - DOMAIN-KEYWORD,xchina
     - DOMAIN-SUFFIX,javd.me
     - DOMAIN-SUFFIX,litu100.xyz
     - DOMAIN-SUFFIX,media.avjb.com
+    - DOMAIN-SUFFIX,media.buondua.com
     - DOMAIN-SUFFIX,media.everia.club
     - DOMAIN-SUFFIX,media.trendszine.com
     - DOMAIN-SUFFIX,myjav.tv
-    - DOMAIN-KEYWORD,xchina
     - DOMAIN-SUFFIX,photo.avjb.com
+    - DOMAIN-SUFFIX,photo.buondua.com
     - DOMAIN-SUFFIX,photo.everia.club
     - DOMAIN-SUFFIX,photo.trendszine.com
     - DOMAIN-SUFFIX,photo.xiunice.com
@@ -58,6 +66,7 @@ payload:
     - DOMAIN-SUFFIX,shise.me
     - DOMAIN-SUFFIX,siwake.cc
     - DOMAIN-SUFFIX,static.avjb.com
+    - DOMAIN-SUFFIX,static.buondua.com
     - DOMAIN-SUFFIX,static.cup2d.com
     - DOMAIN-SUFFIX,static.everia.club
     - DOMAIN-SUFFIX,static.hentaiclub.net
@@ -77,12 +86,3 @@ payload:
     - DOMAIN-SUFFIX,thepornmap.net
     - DOMAIN-SUFFIX,thumbnail.everia.club
     - DOMAIN-SUFFIX,trendszine.com
-    - DOMAIN-SUFFIX,tuzac.com
-    - DOMAIN-SUFFIX,www.cup2d.com
-    - DOMAIN-SUFFIX,www.everia.club
-    - DOMAIN-SUFFIX,www.hentaiclub.net
-    - DOMAIN-SUFFIX,www.trendszine.com
-    - DOMAIN-SUFFIX,www.xiunice.com
-    - DOMAIN-SUFFIX,xchina.biz
-    - DOMAIN-SUFFIX,xchina.co
-    - DOMAIN-SUFFIX,xchina.download
