@@ -46,3 +46,9 @@ payload:
     - DOMAIN-SUFFIX,img.hentaiclub.net
     - DOMAIN-SUFFIX,static.hentaiclub.net
     - DOMAIN-SUFFIX,cdn.hentaiclub.net
+    - DOMAIN-SUFFIX,xiunice.com
+    - DOMAIN-SUFFIX,www.xiunice.com
+    - DOMAIN-SUFFIX,photo.xiunice.com
+    - DOMAIN-SUFFIX,img.xiunice.com
+    - DOMAIN-SUFFIX,cdn.xiunice.com
+    - DOMAIN-SUFFIX,static.xiunice.com
