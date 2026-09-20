@@ -2,7 +2,6 @@ payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
     # entries: 17
-    - IP-CIDR,221.228.32.0/24,Pornhub,no-resolve
     - DOMAIN-SUFFIX,pornhub.com
     - DOMAIN-SUFFIX,phprcdn.com
     - DOMAIN-SUFFIX,xvideos.com
