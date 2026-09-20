@@ -52,3 +52,8 @@ payload:
     - DOMAIN-SUFFIX,img.xiunice.com
     - DOMAIN-SUFFIX,cdn.xiunice.com
     - DOMAIN-SUFFIX,static.xiunice.com
+    - DOMAIN-SUFFIX,cup2d.com
+    - DOMAIN-SUFFIX,www.cup2d.com
+    - DOMAIN-SUFFIX,img.cup2d.com
+    - DOMAIN-SUFFIX,cdn.cup2d.com
+    - DOMAIN-SUFFIX,static.cup2d.com
