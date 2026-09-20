@@ -1,10 +1,11 @@
 payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 133
+    # entries: 178
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,446m.com
     - DOMAIN-SUFFIX,8se.me
+    - DOMAIN-SUFFIX,928r.com
     - DOMAIN-SUFFIX,ahottie.top
     - DOMAIN-SUFFIX,avjb.cc
     - DOMAIN-SUFFIX,avjb.com
@@ -12,6 +13,7 @@ payload:
     - DOMAIN-SUFFIX,blog.buondua.com
     - DOMAIN-SUFFIX,buondua.com
     - DOMAIN-SUFFIX,cdn.446m.com
+    - DOMAIN-SUFFIX,cdn.928r.com
     - DOMAIN-SUFFIX,cdn.ahottie.top
     - DOMAIN-SUFFIX,cdn.avjb.cc
     - DOMAIN-SUFFIX,cdn.avjb.com
@@ -36,6 +38,7 @@ payload:
     - DOMAIN-SUFFIX,hotgirl.asia
     - DOMAIN-SUFFIX,huangguo.video
     - DOMAIN-SUFFIX,image.446m.com
+    - DOMAIN-SUFFIX,image.928r.com
     - DOMAIN-SUFFIX,image.ahottie.top
     - DOMAIN-SUFFIX,image.avjb.cc
     - DOMAIN-SUFFIX,image.avjb.com
@@ -50,6 +53,7 @@ payload:
     - DOMAIN-SUFFIX,image.xasiat.ws
     - DOMAIN-SUFFIX,image.xiunice.com
     - DOMAIN-SUFFIX,images.446m.com
+    - DOMAIN-SUFFIX,images.928r.com
     - DOMAIN-SUFFIX,images.ahottie.top
     - DOMAIN-SUFFIX,images.avjb.cc
     - DOMAIN-SUFFIX,images.avjb.com
@@ -65,6 +69,7 @@ payload:
     - DOMAIN-SUFFIX,images.xiunice.com
     - DOMAIN-SUFFIX,img.446m.com
     - DOMAIN-SUFFIX,img.8se.me
+    - DOMAIN-SUFFIX,img.928r.com
     - DOMAIN-SUFFIX,img.ahottie.top
     - DOMAIN-SUFFIX,img.avjb.cc
     - DOMAIN-SUFFIX,img.avjb.com
@@ -85,6 +90,7 @@ payload:
     - DOMAIN-SUFFIX,javd.me
     - DOMAIN-SUFFIX,litu100.xyz
     - DOMAIN-SUFFIX,media.446m.com
+    - DOMAIN-SUFFIX,media.928r.com
     - DOMAIN-SUFFIX,media.ahottie.top
     - DOMAIN-SUFFIX,media.avjb.cc
     - DOMAIN-SUFFIX,media.avjb.com
@@ -101,6 +107,7 @@ payload:
     - DOMAIN-SUFFIX,myjav.tv
     - DOMAIN-SUFFIX,pfec.uuss.uk
     - DOMAIN-SUFFIX,photo.446m.com
+    - DOMAIN-SUFFIX,photo.928r.com
     - DOMAIN-SUFFIX,photo.ahottie.top
     - DOMAIN-SUFFIX,photo.avjb.cc
     - DOMAIN-SUFFIX,photo.avjb.com
@@ -129,6 +136,7 @@ payload:
     - DOMAIN-SUFFIX,shise.me
     - DOMAIN-SUFFIX,siwake.cc
     - DOMAIN-SUFFIX,static.446m.com
+    - DOMAIN-SUFFIX,static.928r.com
     - DOMAIN-SUFFIX,static.ahottie.top
     - DOMAIN-SUFFIX,static.avjb.cc
     - DOMAIN-SUFFIX,static.avjb.com
@@ -160,6 +168,7 @@ payload:
     - DOMAIN-SUFFIX,trendszine.com
     - DOMAIN-SUFFIX,wnacg.com
     - DOMAIN-SUFFIX,www.446m.com
+    - DOMAIN-SUFFIX,www.928r.com
     - DOMAIN-SUFFIX,www.ahottie.top
     - DOMAIN-SUFFIX,www.avjb.cc
     - DOMAIN-SUFFIX,www.bi-girl.net
