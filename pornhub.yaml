@@ -1,13 +1,15 @@
 payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 17
+    # entries: 106
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,8se.me
     - DOMAIN-SUFFIX,avjb.com
+    - DOMAIN-SUFFIX,bi-girl.net
     - DOMAIN-SUFFIX,blog.buondua.com
     - DOMAIN-SUFFIX,buondua.com
     - DOMAIN-SUFFIX,cdn.avjb.com
+    - DOMAIN-SUFFIX,cdn.bi-girl.net
     - DOMAIN-SUFFIX,cdn.buondua.com
     - DOMAIN-SUFFIX,cdn.cup2d.com
     - DOMAIN-SUFFIX,cdn.everia.club
@@ -23,12 +25,14 @@ payload:
     - DOMAIN-SUFFIX,hentaiclub.net
     - DOMAIN-SUFFIX,huangguo.video
     - DOMAIN-SUFFIX,image.avjb.com
+    - DOMAIN-SUFFIX,image.bi-girl.net
     - DOMAIN-SUFFIX,image.buondua.com
     - DOMAIN-SUFFIX,image.everia.club
     - DOMAIN-SUFFIX,image.geinou-nude.com
     - DOMAIN-SUFFIX,image.trendszine.com
     - DOMAIN-SUFFIX,image.xiunice.com
     - DOMAIN-SUFFIX,images.avjb.com
+    - DOMAIN-SUFFIX,images.bi-girl.net
     - DOMAIN-SUFFIX,images.buondua.com
     - DOMAIN-SUFFIX,images.everia.club
     - DOMAIN-SUFFIX,images.geinou-nude.com
@@ -36,6 +40,7 @@ payload:
     - DOMAIN-SUFFIX,images.xiunice.com
     - DOMAIN-SUFFIX,img.8se.me
     - DOMAIN-SUFFIX,img.avjb.com
+    - DOMAIN-SUFFIX,img.bi-girl.net
     - DOMAIN-SUFFIX,img.buondua.com
     - DOMAIN-SUFFIX,img.cup2d.com
     - DOMAIN-SUFFIX,img.everia.club
@@ -48,6 +53,7 @@ payload:
     - DOMAIN-SUFFIX,javd.me
     - DOMAIN-SUFFIX,litu100.xyz
     - DOMAIN-SUFFIX,media.avjb.com
+    - DOMAIN-SUFFIX,media.bi-girl.net
     - DOMAIN-SUFFIX,media.buondua.com
     - DOMAIN-SUFFIX,media.everia.club
     - DOMAIN-SUFFIX,media.geinou-nude.com
@@ -55,6 +61,7 @@ payload:
     - DOMAIN-SUFFIX,media.xiunice.com
     - DOMAIN-SUFFIX,myjav.tv
     - DOMAIN-SUFFIX,photo.avjb.com
+    - DOMAIN-SUFFIX,photo.bi-girl.net
     - DOMAIN-SUFFIX,photo.buondua.com
     - DOMAIN-SUFFIX,photo.everia.club
     - DOMAIN-SUFFIX,photo.geinou-nude.com
@@ -75,6 +82,7 @@ payload:
     - DOMAIN-SUFFIX,shise.me
     - DOMAIN-SUFFIX,siwake.cc
     - DOMAIN-SUFFIX,static.avjb.com
+    - DOMAIN-SUFFIX,static.bi-girl.net
     - DOMAIN-SUFFIX,static.buondua.com
     - DOMAIN-SUFFIX,static.cup2d.com
     - DOMAIN-SUFFIX,static.everia.club
@@ -96,6 +104,7 @@ payload:
     - DOMAIN-SUFFIX,thepornmap.net
     - DOMAIN-SUFFIX,thumbnail.everia.club
     - DOMAIN-SUFFIX,trendszine.com
+    - DOMAIN-SUFFIX,www.bi-girl.net
     - DOMAIN-SUFFIX,www.geinou-nude.com
     - DOMAIN-SUFFIX,www.xiunice.com
     - DOMAIN-SUFFIX,xiunice.com
