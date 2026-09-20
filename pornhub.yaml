@@ -1,7 +1,7 @@
 payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 106
+    # entries: 115
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,8se.me
     - DOMAIN-SUFFIX,avjb.com
@@ -16,6 +16,7 @@ payload:
     - DOMAIN-SUFFIX,cdn.geinou-nude.com
     - DOMAIN-SUFFIX,cdn.hentaiclub.net
     - DOMAIN-SUFFIX,cdn.trendszine.com
+    - DOMAIN-SUFFIX,cdn.wnacg.com
     - DOMAIN-SUFFIX,cdn.xiunice.com
     - DOMAIN-SUFFIX,cn.pornhub.com
     - DOMAIN-SUFFIX,cup2d.com
@@ -30,6 +31,7 @@ payload:
     - DOMAIN-SUFFIX,image.everia.club
     - DOMAIN-SUFFIX,image.geinou-nude.com
     - DOMAIN-SUFFIX,image.trendszine.com
+    - DOMAIN-SUFFIX,image.wnacg.com
     - DOMAIN-SUFFIX,image.xiunice.com
     - DOMAIN-SUFFIX,images.avjb.com
     - DOMAIN-SUFFIX,images.bi-girl.net
@@ -37,6 +39,7 @@ payload:
     - DOMAIN-SUFFIX,images.everia.club
     - DOMAIN-SUFFIX,images.geinou-nude.com
     - DOMAIN-SUFFIX,images.trendszine.com
+    - DOMAIN-SUFFIX,images.wnacg.com
     - DOMAIN-SUFFIX,images.xiunice.com
     - DOMAIN-SUFFIX,img.8se.me
     - DOMAIN-SUFFIX,img.avjb.com
@@ -49,6 +52,7 @@ payload:
     - DOMAIN-SUFFIX,img.siwake.cc
     - DOMAIN-SUFFIX,img.taotu.org
     - DOMAIN-SUFFIX,img.trendszine.com
+    - DOMAIN-SUFFIX,img.wnacg.com
     - DOMAIN-SUFFIX,img.xiunice.com
     - DOMAIN-SUFFIX,javd.me
     - DOMAIN-SUFFIX,litu100.xyz
@@ -58,6 +62,7 @@ payload:
     - DOMAIN-SUFFIX,media.everia.club
     - DOMAIN-SUFFIX,media.geinou-nude.com
     - DOMAIN-SUFFIX,media.trendszine.com
+    - DOMAIN-SUFFIX,media.wnacg.com
     - DOMAIN-SUFFIX,media.xiunice.com
     - DOMAIN-SUFFIX,myjav.tv
     - DOMAIN-SUFFIX,photo.avjb.com
@@ -66,6 +71,7 @@ payload:
     - DOMAIN-SUFFIX,photo.everia.club
     - DOMAIN-SUFFIX,photo.geinou-nude.com
     - DOMAIN-SUFFIX,photo.trendszine.com
+    - DOMAIN-SUFFIX,photo.wnacg.com
     - DOMAIN-SUFFIX,photo.xiunice.com
     - DOMAIN-SUFFIX,phprcdn.com
     - DOMAIN-SUFFIX,pic.avjb.com
@@ -89,6 +95,7 @@ payload:
     - DOMAIN-SUFFIX,static.geinou-nude.com
     - DOMAIN-SUFFIX,static.hentaiclub.net
     - DOMAIN-SUFFIX,static.trendszine.com
+    - DOMAIN-SUFFIX,static.wnacg.com
     - DOMAIN-SUFFIX,static.xiunice.com
     - DOMAIN-SUFFIX,taotu.org
     - DOMAIN-SUFFIX,theporndude.cc
@@ -104,8 +111,10 @@ payload:
     - DOMAIN-SUFFIX,thepornmap.net
     - DOMAIN-SUFFIX,thumbnail.everia.club
     - DOMAIN-SUFFIX,trendszine.com
+    - DOMAIN-SUFFIX,wnacg.com
     - DOMAIN-SUFFIX,www.bi-girl.net
     - DOMAIN-SUFFIX,www.geinou-nude.com
+    - DOMAIN-SUFFIX,www.wnacg.com
     - DOMAIN-SUFFIX,www.xiunice.com
     - DOMAIN-SUFFIX,xiunice.com
     - DOMAIN-KEYWORD,xchina
