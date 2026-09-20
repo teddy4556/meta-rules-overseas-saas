@@ -3,6 +3,17 @@ payload:
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
     # entries: 17
     - DOMAIN-SUFFIX,avjb.com
+    - DOMAIN-SUFFIX,everia.club
+    - DOMAIN-SUFFIX,www.everia.club
+    - DOMAIN-SUFFIX,img.everia.club
+    - DOMAIN-SUFFIX,cdn.everia.club
+    - DOMAIN-SUFFIX,static.everia.club
+    - DOMAIN-SUFFIX,image.everia.club
+    - DOMAIN-SUFFIX,images.everia.club
+    - DOMAIN-SUFFIX,photo.everia.club
+    - DOMAIN-SUFFIX,media.everia.club
+    - DOMAIN-SUFFIX,pic.everia.club
+    - DOMAIN-SUFFIX,thumbnail.everia.club
     - DOMAIN-SUFFIX,img.avjb.com
     - DOMAIN-SUFFIX,cdn.avjb.com
     - DOMAIN-SUFFIX,static.avjb.com
