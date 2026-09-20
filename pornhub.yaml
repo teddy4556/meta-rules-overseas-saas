@@ -11,6 +11,7 @@ payload:
     - DOMAIN-SUFFIX,cdn.buondua.com
     - DOMAIN-SUFFIX,cdn.cup2d.com
     - DOMAIN-SUFFIX,cdn.everia.club
+    - DOMAIN-SUFFIX,cdn.geinou-nude.com
     - DOMAIN-SUFFIX,cdn.hentaiclub.net
     - DOMAIN-SUFFIX,cdn.trendszine.com
     - DOMAIN-SUFFIX,cdn.xiunice.com
@@ -18,16 +19,19 @@ payload:
     - DOMAIN-SUFFIX,cup2d.com
     - DOMAIN-SUFFIX,eporner.com
     - DOMAIN-SUFFIX,everia.club
+    - DOMAIN-SUFFIX,geinou-nude.com
     - DOMAIN-SUFFIX,hentaiclub.net
     - DOMAIN-SUFFIX,huangguo.video
     - DOMAIN-SUFFIX,image.avjb.com
     - DOMAIN-SUFFIX,image.buondua.com
     - DOMAIN-SUFFIX,image.everia.club
+    - DOMAIN-SUFFIX,image.geinou-nude.com
     - DOMAIN-SUFFIX,image.trendszine.com
     - DOMAIN-SUFFIX,image.xiunice.com
     - DOMAIN-SUFFIX,images.avjb.com
     - DOMAIN-SUFFIX,images.buondua.com
     - DOMAIN-SUFFIX,images.everia.club
+    - DOMAIN-SUFFIX,images.geinou-nude.com
     - DOMAIN-SUFFIX,images.trendszine.com
     - DOMAIN-SUFFIX,images.xiunice.com
     - DOMAIN-SUFFIX,img.8se.me
@@ -35,23 +39,25 @@ payload:
     - DOMAIN-SUFFIX,img.buondua.com
     - DOMAIN-SUFFIX,img.cup2d.com
     - DOMAIN-SUFFIX,img.everia.club
+    - DOMAIN-SUFFIX,img.geinou-nude.com
     - DOMAIN-SUFFIX,img.hentaiclub.net
     - DOMAIN-SUFFIX,img.siwake.cc
     - DOMAIN-SUFFIX,img.taotu.org
     - DOMAIN-SUFFIX,img.trendszine.com
     - DOMAIN-SUFFIX,img.xiunice.com
-    - DOMAIN-KEYWORD,xchina
     - DOMAIN-SUFFIX,javd.me
     - DOMAIN-SUFFIX,litu100.xyz
     - DOMAIN-SUFFIX,media.avjb.com
     - DOMAIN-SUFFIX,media.buondua.com
     - DOMAIN-SUFFIX,media.everia.club
+    - DOMAIN-SUFFIX,media.geinou-nude.com
     - DOMAIN-SUFFIX,media.trendszine.com
     - DOMAIN-SUFFIX,media.xiunice.com
     - DOMAIN-SUFFIX,myjav.tv
     - DOMAIN-SUFFIX,photo.avjb.com
     - DOMAIN-SUFFIX,photo.buondua.com
     - DOMAIN-SUFFIX,photo.everia.club
+    - DOMAIN-SUFFIX,photo.geinou-nude.com
     - DOMAIN-SUFFIX,photo.trendszine.com
     - DOMAIN-SUFFIX,photo.xiunice.com
     - DOMAIN-SUFFIX,phprcdn.com
@@ -72,6 +78,7 @@ payload:
     - DOMAIN-SUFFIX,static.buondua.com
     - DOMAIN-SUFFIX,static.cup2d.com
     - DOMAIN-SUFFIX,static.everia.club
+    - DOMAIN-SUFFIX,static.geinou-nude.com
     - DOMAIN-SUFFIX,static.hentaiclub.net
     - DOMAIN-SUFFIX,static.trendszine.com
     - DOMAIN-SUFFIX,static.xiunice.com
@@ -89,6 +96,7 @@ payload:
     - DOMAIN-SUFFIX,thepornmap.net
     - DOMAIN-SUFFIX,thumbnail.everia.club
     - DOMAIN-SUFFIX,trendszine.com
-
+    - DOMAIN-SUFFIX,www.geinou-nude.com
     - DOMAIN-SUFFIX,www.xiunice.com
     - DOMAIN-SUFFIX,xiunice.com
+    - DOMAIN-KEYWORD,xchina
