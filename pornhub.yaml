@@ -24,10 +24,12 @@ payload:
     - DOMAIN-SUFFIX,image.buondua.com
     - DOMAIN-SUFFIX,image.everia.club
     - DOMAIN-SUFFIX,image.trendszine.com
+    - DOMAIN-SUFFIX,image.xiunice.com
     - DOMAIN-SUFFIX,images.avjb.com
     - DOMAIN-SUFFIX,images.buondua.com
     - DOMAIN-SUFFIX,images.everia.club
     - DOMAIN-SUFFIX,images.trendszine.com
+    - DOMAIN-SUFFIX,images.xiunice.com
     - DOMAIN-SUFFIX,img.8se.me
     - DOMAIN-SUFFIX,img.avjb.com
     - DOMAIN-SUFFIX,img.buondua.com
@@ -45,6 +47,7 @@ payload:
     - DOMAIN-SUFFIX,media.buondua.com
     - DOMAIN-SUFFIX,media.everia.club
     - DOMAIN-SUFFIX,media.trendszine.com
+    - DOMAIN-SUFFIX,media.xiunice.com
     - DOMAIN-SUFFIX,myjav.tv
     - DOMAIN-SUFFIX,photo.avjb.com
     - DOMAIN-SUFFIX,photo.buondua.com
@@ -86,3 +89,6 @@ payload:
     - DOMAIN-SUFFIX,thepornmap.net
     - DOMAIN-SUFFIX,thumbnail.everia.club
     - DOMAIN-SUFFIX,trendszine.com
+
+    - DOMAIN-SUFFIX,www.xiunice.com
+    - DOMAIN-SUFFIX,xiunice.com
