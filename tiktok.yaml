@@ -4101,8 +4101,6 @@ payload:
     - DOMAIN-SUFFIX,wmflabs.org
     - DOMAIN-SUFFIX,wmfusercontent.org
     - DOMAIN-SUFFIX,wn.com
-    - DOMAIN-SUFFIX,wnacg.com
-    - DOMAIN-SUFFIX,wnacg.org
     - DOMAIN-SUFFIX,wo.tc
     - DOMAIN-SUFFIX,woeser.com
     - DOMAIN-SUFFIX,wokar.org
