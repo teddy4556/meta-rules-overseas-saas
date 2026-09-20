@@ -20,6 +20,7 @@ payload:
     - DOMAIN-SUFFIX,cdn.geinou-nude.com
     - DOMAIN-SUFFIX,cdn.hentaiclub.net
     - DOMAIN-SUFFIX,cdn.hotgirl.asia
+    - DOMAIN-SUFFIX,cdn.pfec.uuss.uk
     - DOMAIN-SUFFIX,cdn.trendszine.com
     - DOMAIN-SUFFIX,cdn.wnacg.com
     - DOMAIN-SUFFIX,cdn.xasiat.ws
@@ -40,6 +41,7 @@ payload:
     - DOMAIN-SUFFIX,image.everia.club
     - DOMAIN-SUFFIX,image.geinou-nude.com
     - DOMAIN-SUFFIX,image.hotgirl.asia
+    - DOMAIN-SUFFIX,image.pfec.uuss.uk
     - DOMAIN-SUFFIX,image.trendszine.com
     - DOMAIN-SUFFIX,image.wnacg.com
     - DOMAIN-SUFFIX,image.xasiat.ws
@@ -52,6 +54,7 @@ payload:
     - DOMAIN-SUFFIX,images.everia.club
     - DOMAIN-SUFFIX,images.geinou-nude.com
     - DOMAIN-SUFFIX,images.hotgirl.asia
+    - DOMAIN-SUFFIX,images.pfec.uuss.uk
     - DOMAIN-SUFFIX,images.trendszine.com
     - DOMAIN-SUFFIX,images.wnacg.com
     - DOMAIN-SUFFIX,images.xasiat.ws
@@ -67,6 +70,7 @@ payload:
     - DOMAIN-SUFFIX,img.geinou-nude.com
     - DOMAIN-SUFFIX,img.hentaiclub.net
     - DOMAIN-SUFFIX,img.hotgirl.asia
+    - DOMAIN-SUFFIX,img.pfec.uuss.uk
     - DOMAIN-SUFFIX,img.siwake.cc
     - DOMAIN-SUFFIX,img.taotu.org
     - DOMAIN-SUFFIX,img.trendszine.com
@@ -83,11 +87,13 @@ payload:
     - DOMAIN-SUFFIX,media.everia.club
     - DOMAIN-SUFFIX,media.geinou-nude.com
     - DOMAIN-SUFFIX,media.hotgirl.asia
+    - DOMAIN-SUFFIX,media.pfec.uuss.uk
     - DOMAIN-SUFFIX,media.trendszine.com
     - DOMAIN-SUFFIX,media.wnacg.com
     - DOMAIN-SUFFIX,media.xasiat.ws
     - DOMAIN-SUFFIX,media.xiunice.com
     - DOMAIN-SUFFIX,myjav.tv
+    - DOMAIN-SUFFIX,pfec.uuss.uk
     - DOMAIN-SUFFIX,photo.ahottie.top
     - DOMAIN-SUFFIX,photo.avjb.cc
     - DOMAIN-SUFFIX,photo.avjb.com
@@ -96,6 +102,7 @@ payload:
     - DOMAIN-SUFFIX,photo.everia.club
     - DOMAIN-SUFFIX,photo.geinou-nude.com
     - DOMAIN-SUFFIX,photo.hotgirl.asia
+    - DOMAIN-SUFFIX,photo.pfec.uuss.uk
     - DOMAIN-SUFFIX,photo.trendszine.com
     - DOMAIN-SUFFIX,photo.wnacg.com
     - DOMAIN-SUFFIX,photo.xasiat.ws
@@ -124,6 +131,7 @@ payload:
     - DOMAIN-SUFFIX,static.geinou-nude.com
     - DOMAIN-SUFFIX,static.hentaiclub.net
     - DOMAIN-SUFFIX,static.hotgirl.asia
+    - DOMAIN-SUFFIX,static.pfec.uuss.uk
     - DOMAIN-SUFFIX,static.trendszine.com
     - DOMAIN-SUFFIX,static.wnacg.com
     - DOMAIN-SUFFIX,static.xasiat.ws
@@ -148,6 +156,7 @@ payload:
     - DOMAIN-SUFFIX,www.bi-girl.net
     - DOMAIN-SUFFIX,www.geinou-nude.com
     - DOMAIN-SUFFIX,www.hotgirl.asia
+    - DOMAIN-SUFFIX,www.pfec.uuss.uk
     - DOMAIN-SUFFIX,www.wnacg.com
     - DOMAIN-SUFFIX,www.xasiat.ws
     - DOMAIN-SUFFIX,www.xiunice.com
