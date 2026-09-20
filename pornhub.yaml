@@ -5,11 +5,13 @@ payload:
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,8se.me
     - DOMAIN-SUFFIX,ahottie.top
+    - DOMAIN-SUFFIX,avjb.cc
     - DOMAIN-SUFFIX,avjb.com
     - DOMAIN-SUFFIX,bi-girl.net
     - DOMAIN-SUFFIX,blog.buondua.com
     - DOMAIN-SUFFIX,buondua.com
     - DOMAIN-SUFFIX,cdn.ahottie.top
+    - DOMAIN-SUFFIX,cdn.avjb.cc
     - DOMAIN-SUFFIX,cdn.avjb.com
     - DOMAIN-SUFFIX,cdn.bi-girl.net
     - DOMAIN-SUFFIX,cdn.buondua.com
@@ -31,6 +33,7 @@ payload:
     - DOMAIN-SUFFIX,hotgirl.asia
     - DOMAIN-SUFFIX,huangguo.video
     - DOMAIN-SUFFIX,image.ahottie.top
+    - DOMAIN-SUFFIX,image.avjb.cc
     - DOMAIN-SUFFIX,image.avjb.com
     - DOMAIN-SUFFIX,image.bi-girl.net
     - DOMAIN-SUFFIX,image.buondua.com
@@ -42,6 +45,7 @@ payload:
     - DOMAIN-SUFFIX,image.xasiat.ws
     - DOMAIN-SUFFIX,image.xiunice.com
     - DOMAIN-SUFFIX,images.ahottie.top
+    - DOMAIN-SUFFIX,images.avjb.cc
     - DOMAIN-SUFFIX,images.avjb.com
     - DOMAIN-SUFFIX,images.bi-girl.net
     - DOMAIN-SUFFIX,images.buondua.com
@@ -54,6 +58,7 @@ payload:
     - DOMAIN-SUFFIX,images.xiunice.com
     - DOMAIN-SUFFIX,img.8se.me
     - DOMAIN-SUFFIX,img.ahottie.top
+    - DOMAIN-SUFFIX,img.avjb.cc
     - DOMAIN-SUFFIX,img.avjb.com
     - DOMAIN-SUFFIX,img.bi-girl.net
     - DOMAIN-SUFFIX,img.buondua.com
@@ -71,6 +76,7 @@ payload:
     - DOMAIN-SUFFIX,javd.me
     - DOMAIN-SUFFIX,litu100.xyz
     - DOMAIN-SUFFIX,media.ahottie.top
+    - DOMAIN-SUFFIX,media.avjb.cc
     - DOMAIN-SUFFIX,media.avjb.com
     - DOMAIN-SUFFIX,media.bi-girl.net
     - DOMAIN-SUFFIX,media.buondua.com
@@ -83,6 +89,7 @@ payload:
     - DOMAIN-SUFFIX,media.xiunice.com
     - DOMAIN-SUFFIX,myjav.tv
     - DOMAIN-SUFFIX,photo.ahottie.top
+    - DOMAIN-SUFFIX,photo.avjb.cc
     - DOMAIN-SUFFIX,photo.avjb.com
     - DOMAIN-SUFFIX,photo.bi-girl.net
     - DOMAIN-SUFFIX,photo.buondua.com
@@ -108,6 +115,7 @@ payload:
     - DOMAIN-SUFFIX,shise.me
     - DOMAIN-SUFFIX,siwake.cc
     - DOMAIN-SUFFIX,static.ahottie.top
+    - DOMAIN-SUFFIX,static.avjb.cc
     - DOMAIN-SUFFIX,static.avjb.com
     - DOMAIN-SUFFIX,static.bi-girl.net
     - DOMAIN-SUFFIX,static.buondua.com
@@ -136,6 +144,7 @@ payload:
     - DOMAIN-SUFFIX,trendszine.com
     - DOMAIN-SUFFIX,wnacg.com
     - DOMAIN-SUFFIX,www.ahottie.top
+    - DOMAIN-SUFFIX,www.avjb.cc
     - DOMAIN-SUFFIX,www.bi-girl.net
     - DOMAIN-SUFFIX,www.geinou-nude.com
     - DOMAIN-SUFFIX,www.hotgirl.asia
