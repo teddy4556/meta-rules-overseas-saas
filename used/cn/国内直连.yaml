@@ -2,7 +2,7 @@ payload:
     # China direct rule set (2026-09-19)
     # source: Loyalsoldier v2ray-rules-dat geosite-cn + MetaCubeX geosite/category-games-cn + manual additions
     # added: 21 Chinese gaming domains (3839, 9game, 7k7k, 66rpg, 71acg, 573.jp, etc.)
-    # entries: 20048 (deduplicated)
+    # entries: 20079 (deduplicated)
     - 'DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net'
     - 'DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com'
     - 'DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com'
@@ -20051,3 +20051,37 @@ payload:
     - DOMAIN-SUFFIX,tencent-gcloud.com
     - DOMAIN-SUFFIX,tencentstart.com
     - DOMAIN-SUFFIX,wo1wan.com
+
+    # 2026-09-21 扩充 yfamilys.com/rule/China.rule (USER-AGENT/IP-CIDR6/IP-CIDR/DOMAIN-KEYWORD)
+    # 剔除:DOMAIN-SUFFIX,cn/ms (过宽) + 5 个重复 DOMAIN-KEYWORD
+    - 'USER-AGENT,%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C*'
+    - 'USER-AGENT,%E4%BA%AC%E4%B8%9C%E5%88%B0%E5%AE%B6*'
+    - 'USER-AGENT,%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*'
+    - 'USER-AGENT,%E4%BC%98%E9%85%B7*'
+    - 'USER-AGENT,%E5%8D%B3%E5%88%BB*'
+    - 'USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*'
+    - 'USER-AGENT,*Vainglory*'
+    - 'USER-AGENT,AdBlock*'
+    - 'USER-AGENT,Best%20Trace*'
+    - 'USER-AGENT,MegaWerewolf*'
+    - 'USER-AGENT,MicroMessenger%20Client'
+    - 'USER-AGENT,MicroMessenger*'
+    - 'USER-AGENT,MicroMessengerClient*'
+    - 'USER-AGENT,Microsoft*'
+    - 'USER-AGENT,Moke*'
+    - 'USER-AGENT,NeteaseMusic*'
+    - 'USER-AGENT,QQ*'
+    - 'USER-AGENT,RemotePlay*'
+    - 'USER-AGENT,TIM*'
+    - 'USER-AGENT,TeamViewer*'
+    - 'USER-AGENT,WeChat*'
+    - 'USER-AGENT,WebTorrent*'
+    - 'USER-AGENT,YYeTs*'
+    - 'USER-AGENT,arrowio*'
+    - 'USER-AGENT,balls*'
+    - 'USER-AGENT,cmb*'
+    - 'USER-AGENT,cmblife*'
+    - 'USER-AGENT,eusoft_ting_en_iphone'
+    - 'USER-AGENT,hearthstone*'
+    - 'USER-AGENT,hide*'
+    - 'USER-AGENT,ting_en'
