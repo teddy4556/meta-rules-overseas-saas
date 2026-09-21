@@ -1,7 +1,7 @@
 payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 178
+    # entries: 187
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,446m.com
     - DOMAIN-SUFFIX,8se.me
@@ -9,6 +9,7 @@ payload:
     - DOMAIN-SUFFIX,ahottie.top
     - DOMAIN-SUFFIX,avjb.cc
     - DOMAIN-SUFFIX,avjb.com
+    - DOMAIN-SUFFIX,bestgirlsexy.com
     - DOMAIN-SUFFIX,bi-girl.net
     - DOMAIN-SUFFIX,blog.buondua.com
     - DOMAIN-SUFFIX,buondua.com
@@ -17,6 +18,7 @@ payload:
     - DOMAIN-SUFFIX,cdn.ahottie.top
     - DOMAIN-SUFFIX,cdn.avjb.cc
     - DOMAIN-SUFFIX,cdn.avjb.com
+    - DOMAIN-SUFFIX,cdn.bestgirlsexy.com
     - DOMAIN-SUFFIX,cdn.bi-girl.net
     - DOMAIN-SUFFIX,cdn.buondua.com
     - DOMAIN-SUFFIX,cdn.cup2d.com
@@ -42,6 +44,7 @@ payload:
     - DOMAIN-SUFFIX,image.ahottie.top
     - DOMAIN-SUFFIX,image.avjb.cc
     - DOMAIN-SUFFIX,image.avjb.com
+    - DOMAIN-SUFFIX,image.bestgirlsexy.com
     - DOMAIN-SUFFIX,image.bi-girl.net
     - DOMAIN-SUFFIX,image.buondua.com
     - DOMAIN-SUFFIX,image.everia.club
@@ -57,6 +60,7 @@ payload:
     - DOMAIN-SUFFIX,images.ahottie.top
     - DOMAIN-SUFFIX,images.avjb.cc
     - DOMAIN-SUFFIX,images.avjb.com
+    - DOMAIN-SUFFIX,images.bestgirlsexy.com
     - DOMAIN-SUFFIX,images.bi-girl.net
     - DOMAIN-SUFFIX,images.buondua.com
     - DOMAIN-SUFFIX,images.everia.club
@@ -73,6 +77,7 @@ payload:
     - DOMAIN-SUFFIX,img.ahottie.top
     - DOMAIN-SUFFIX,img.avjb.cc
     - DOMAIN-SUFFIX,img.avjb.com
+    - DOMAIN-SUFFIX,img.bestgirlsexy.com
     - DOMAIN-SUFFIX,img.bi-girl.net
     - DOMAIN-SUFFIX,img.buondua.com
     - DOMAIN-SUFFIX,img.cup2d.com
@@ -94,6 +99,7 @@ payload:
     - DOMAIN-SUFFIX,media.ahottie.top
     - DOMAIN-SUFFIX,media.avjb.cc
     - DOMAIN-SUFFIX,media.avjb.com
+    - DOMAIN-SUFFIX,media.bestgirlsexy.com
     - DOMAIN-SUFFIX,media.bi-girl.net
     - DOMAIN-SUFFIX,media.buondua.com
     - DOMAIN-SUFFIX,media.everia.club
@@ -111,6 +117,7 @@ payload:
     - DOMAIN-SUFFIX,photo.ahottie.top
     - DOMAIN-SUFFIX,photo.avjb.cc
     - DOMAIN-SUFFIX,photo.avjb.com
+    - DOMAIN-SUFFIX,photo.bestgirlsexy.com
     - DOMAIN-SUFFIX,photo.bi-girl.net
     - DOMAIN-SUFFIX,photo.buondua.com
     - DOMAIN-SUFFIX,photo.everia.club
@@ -140,6 +147,7 @@ payload:
     - DOMAIN-SUFFIX,static.ahottie.top
     - DOMAIN-SUFFIX,static.avjb.cc
     - DOMAIN-SUFFIX,static.avjb.com
+    - DOMAIN-SUFFIX,static.bestgirlsexy.com
     - DOMAIN-SUFFIX,static.bi-girl.net
     - DOMAIN-SUFFIX,static.buondua.com
     - DOMAIN-SUFFIX,static.cup2d.com
@@ -171,6 +179,7 @@ payload:
     - DOMAIN-SUFFIX,www.928r.com
     - DOMAIN-SUFFIX,www.ahottie.top
     - DOMAIN-SUFFIX,www.avjb.cc
+    - DOMAIN-SUFFIX,www.bestgirlsexy.com
     - DOMAIN-SUFFIX,www.bi-girl.net
     - DOMAIN-SUFFIX,www.geinou-nude.com
     - DOMAIN-SUFFIX,www.hotgirl.asia
