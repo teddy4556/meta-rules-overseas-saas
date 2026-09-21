@@ -1,7 +1,7 @@
 payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 187
+    # entries: 196
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,446m.com
     - DOMAIN-SUFFIX,8se.me
@@ -26,6 +26,7 @@ payload:
     - DOMAIN-SUFFIX,cdn.geinou-nude.com
     - DOMAIN-SUFFIX,cdn.hentaiclub.net
     - DOMAIN-SUFFIX,cdn.hotgirl.asia
+    - DOMAIN-SUFFIX,cdn.ilovexs.com
     - DOMAIN-SUFFIX,cdn.pfec.uuss.uk
     - DOMAIN-SUFFIX,cdn.trendszine.com
     - DOMAIN-SUFFIX,cdn.wnacg.com
@@ -39,6 +40,7 @@ payload:
     - DOMAIN-SUFFIX,hentaiclub.net
     - DOMAIN-SUFFIX,hotgirl.asia
     - DOMAIN-SUFFIX,huangguo.video
+    - DOMAIN-SUFFIX,ilovexs.com
     - DOMAIN-SUFFIX,image.446m.com
     - DOMAIN-SUFFIX,image.928r.com
     - DOMAIN-SUFFIX,image.ahottie.top
@@ -50,6 +52,7 @@ payload:
     - DOMAIN-SUFFIX,image.everia.club
     - DOMAIN-SUFFIX,image.geinou-nude.com
     - DOMAIN-SUFFIX,image.hotgirl.asia
+    - DOMAIN-SUFFIX,image.ilovexs.com
     - DOMAIN-SUFFIX,image.pfec.uuss.uk
     - DOMAIN-SUFFIX,image.trendszine.com
     - DOMAIN-SUFFIX,image.wnacg.com
@@ -66,6 +69,7 @@ payload:
     - DOMAIN-SUFFIX,images.everia.club
     - DOMAIN-SUFFIX,images.geinou-nude.com
     - DOMAIN-SUFFIX,images.hotgirl.asia
+    - DOMAIN-SUFFIX,images.ilovexs.com
     - DOMAIN-SUFFIX,images.pfec.uuss.uk
     - DOMAIN-SUFFIX,images.trendszine.com
     - DOMAIN-SUFFIX,images.wnacg.com
@@ -85,6 +89,7 @@ payload:
     - DOMAIN-SUFFIX,img.geinou-nude.com
     - DOMAIN-SUFFIX,img.hentaiclub.net
     - DOMAIN-SUFFIX,img.hotgirl.asia
+    - DOMAIN-SUFFIX,img.ilovexs.com
     - DOMAIN-SUFFIX,img.pfec.uuss.uk
     - DOMAIN-SUFFIX,img.siwake.cc
     - DOMAIN-SUFFIX,img.taotu.org
@@ -105,6 +110,7 @@ payload:
     - DOMAIN-SUFFIX,media.everia.club
     - DOMAIN-SUFFIX,media.geinou-nude.com
     - DOMAIN-SUFFIX,media.hotgirl.asia
+    - DOMAIN-SUFFIX,media.ilovexs.com
     - DOMAIN-SUFFIX,media.pfec.uuss.uk
     - DOMAIN-SUFFIX,media.trendszine.com
     - DOMAIN-SUFFIX,media.wnacg.com
@@ -123,6 +129,7 @@ payload:
     - DOMAIN-SUFFIX,photo.everia.club
     - DOMAIN-SUFFIX,photo.geinou-nude.com
     - DOMAIN-SUFFIX,photo.hotgirl.asia
+    - DOMAIN-SUFFIX,photo.ilovexs.com
     - DOMAIN-SUFFIX,photo.pfec.uuss.uk
     - DOMAIN-SUFFIX,photo.trendszine.com
     - DOMAIN-SUFFIX,photo.wnacg.com
@@ -155,6 +162,7 @@ payload:
     - DOMAIN-SUFFIX,static.geinou-nude.com
     - DOMAIN-SUFFIX,static.hentaiclub.net
     - DOMAIN-SUFFIX,static.hotgirl.asia
+    - DOMAIN-SUFFIX,static.ilovexs.com
     - DOMAIN-SUFFIX,static.pfec.uuss.uk
     - DOMAIN-SUFFIX,static.trendszine.com
     - DOMAIN-SUFFIX,static.wnacg.com
@@ -183,6 +191,7 @@ payload:
     - DOMAIN-SUFFIX,www.bi-girl.net
     - DOMAIN-SUFFIX,www.geinou-nude.com
     - DOMAIN-SUFFIX,www.hotgirl.asia
+    - DOMAIN-SUFFIX,www.ilovexs.com
     - DOMAIN-SUFFIX,www.pfec.uuss.uk
     - DOMAIN-SUFFIX,www.wnacg.com
     - DOMAIN-SUFFIX,www.xasiat.ws
