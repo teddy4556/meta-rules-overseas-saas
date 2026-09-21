@@ -1,7 +1,7 @@
 payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 205
+    # entries: 215
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,446m.com
     - DOMAIN-SUFFIX,8se.me
@@ -22,6 +22,7 @@ payload:
     - DOMAIN-SUFFIX,cdn.bi-girl.net
     - DOMAIN-SUFFIX,cdn.buondua.com
     - DOMAIN-SUFFIX,cdn.cgcosplay.org
+    - DOMAIN-SUFFIX,cdn.cosjiang.com
     - DOMAIN-SUFFIX,cdn.cup2d.com
     - DOMAIN-SUFFIX,cdn.everia.club
     - DOMAIN-SUFFIX,cdn.geinou-nude.com
@@ -35,6 +36,7 @@ payload:
     - DOMAIN-SUFFIX,cdn.xiunice.com
     - DOMAIN-SUFFIX,cgcosplay.org
     - DOMAIN-SUFFIX,cn.pornhub.com
+    - DOMAIN-SUFFIX,cosjiang.com
     - DOMAIN-SUFFIX,cup2d.com
     - DOMAIN-SUFFIX,eporner.com
     - DOMAIN-SUFFIX,everia.club
@@ -52,6 +54,7 @@ payload:
     - DOMAIN-SUFFIX,image.bi-girl.net
     - DOMAIN-SUFFIX,image.buondua.com
     - DOMAIN-SUFFIX,image.cgcosplay.org
+    - DOMAIN-SUFFIX,image.cosjiang.com
     - DOMAIN-SUFFIX,image.everia.club
     - DOMAIN-SUFFIX,image.geinou-nude.com
     - DOMAIN-SUFFIX,image.hotgirl.asia
@@ -70,6 +73,7 @@ payload:
     - DOMAIN-SUFFIX,images.bi-girl.net
     - DOMAIN-SUFFIX,images.buondua.com
     - DOMAIN-SUFFIX,images.cgcosplay.org
+    - DOMAIN-SUFFIX,images.cosjiang.com
     - DOMAIN-SUFFIX,images.everia.club
     - DOMAIN-SUFFIX,images.geinou-nude.com
     - DOMAIN-SUFFIX,images.hotgirl.asia
@@ -89,6 +93,7 @@ payload:
     - DOMAIN-SUFFIX,img.bi-girl.net
     - DOMAIN-SUFFIX,img.buondua.com
     - DOMAIN-SUFFIX,img.cgcosplay.org
+    - DOMAIN-SUFFIX,img.cosjiang.com
     - DOMAIN-SUFFIX,img.cup2d.com
     - DOMAIN-SUFFIX,img.everia.club
     - DOMAIN-SUFFIX,img.geinou-nude.com
@@ -113,6 +118,7 @@ payload:
     - DOMAIN-SUFFIX,media.bi-girl.net
     - DOMAIN-SUFFIX,media.buondua.com
     - DOMAIN-SUFFIX,media.cgcosplay.org
+    - DOMAIN-SUFFIX,media.cosjiang.com
     - DOMAIN-SUFFIX,media.everia.club
     - DOMAIN-SUFFIX,media.geinou-nude.com
     - DOMAIN-SUFFIX,media.hotgirl.asia
@@ -133,6 +139,7 @@ payload:
     - DOMAIN-SUFFIX,photo.bi-girl.net
     - DOMAIN-SUFFIX,photo.buondua.com
     - DOMAIN-SUFFIX,photo.cgcosplay.org
+    - DOMAIN-SUFFIX,photo.cosjiang.com
     - DOMAIN-SUFFIX,photo.everia.club
     - DOMAIN-SUFFIX,photo.geinou-nude.com
     - DOMAIN-SUFFIX,photo.hotgirl.asia
@@ -165,6 +172,7 @@ payload:
     - DOMAIN-SUFFIX,static.bi-girl.net
     - DOMAIN-SUFFIX,static.buondua.com
     - DOMAIN-SUFFIX,static.cgcosplay.org
+    - DOMAIN-SUFFIX,static.cosjiang.com
     - DOMAIN-SUFFIX,static.cup2d.com
     - DOMAIN-SUFFIX,static.everia.club
     - DOMAIN-SUFFIX,static.geinou-nude.com
@@ -198,6 +206,7 @@ payload:
     - DOMAIN-SUFFIX,www.bestgirlsexy.com
     - DOMAIN-SUFFIX,www.bi-girl.net
     - DOMAIN-SUFFIX,www.cgcosplay.org
+    - DOMAIN-SUFFIX,www.cosjiang.com
     - DOMAIN-SUFFIX,www.geinou-nude.com
     - DOMAIN-SUFFIX,www.hotgirl.asia
     - DOMAIN-SUFFIX,www.ilovexs.com
