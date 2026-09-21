@@ -1,7 +1,7 @@
 payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 216
+    # entries: 217
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,446m.com
     - DOMAIN-SUFFIX,8se.me
@@ -220,3 +220,6 @@ payload:
 
     # 2026-09-21 add xchina.co
     - DOMAIN-SUFFIX,xchina.co
+
+    # 2026-09-21 add 4khd.com
+    - DOMAIN-SUFFIX,4khd.com
