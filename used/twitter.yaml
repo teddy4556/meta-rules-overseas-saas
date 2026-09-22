@@ -1,6 +1,6 @@
 payload:
     # Twitter (精准清理 2026-09-19: 仅保留 twitter 核心,剔除 roblox 等其他游戏平台)
-    # entries: 284
+    # entries: 287
     - DOMAIN-SUFFIX,abs.twimg.com
     - DOMAIN-SUFFIX,ads-twitter.com
     - DOMAIN-SUFFIX,ads.twitter.com
@@ -280,3 +280,8 @@ payload:
     - DOMAIN-SUFFIX,yourlust.com
     - DOMAIN-SUFFIX,yousendit.com
     - DOMAIN-SUFFIX,zdnet.com.tw
+
+    # 2026-09-21 add twitter video CDN 子域(视频载入用)
+    - DOMAIN-SUFFIX,video.twimg.com
+    - DOMAIN-SUFFIX,pscp.tv
+    - DOMAIN-SUFFIX,video.pscp.tv
