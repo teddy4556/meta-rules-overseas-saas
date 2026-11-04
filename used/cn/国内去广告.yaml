@@ -8,6 +8,13 @@
 # 生成时间:2026-09-01T12:36:05Z
 # 总条数:55843 (去重 29 条)
 payload:
+      # === Microsoft Store 遗留死域(2026-11-04 核实)===
+      # pti.store.microsoft.com / catalog.s.microsoft.com
+      # 全球权威 NS 均为 NXDOMAIN(Google/Cloudflare/223.5.5.5 DoH Status=3),
+      # 同文件兄弟域名 displaycatalog.mp.microsoft.com 等 Status=0 正常。
+      # 走 DIRECT 或代理都解析不出,只会挂 5s+ 等超时 —— 放 REJECT 组秒拒。
+      - 'DOMAIN,pti.store.microsoft.com'
+      - 'DOMAIN,catalog.s.microsoft.com'
     # 国内去广告 (teddy4556, 9-17 转格式 mihomo classical)
     # DOMAIN-SUFFIX
     - 'DOMAIN-SUFFIX,ad.12306.cn'
