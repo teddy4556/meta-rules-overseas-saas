@@ -2,6 +2,13 @@
 # 自动生成 2026-09-17 / 2026-09-21 扩充
 # 路由命中此文件 → DIRECT(本地局域网连接)
 # mihomo classical format
+#
+# 2026-11-04 手工追加(益新拍板):epicgames.com / .dev / .cdn
+#   Epic 商城按出口 IP 判区 —— 走海外游戏组(日本节点)= 跳外区/外币 + 频繁换 IP 触发账号风控;
+#   实测 accounts/store 经日本节点 5s 超时,DIRECT 200-280ms 通;
+#   launcher-public-service-prod06.ol.epicgames.com 直连落腾讯云国区节点(43.159.5.170)。
+#   本文件命中位置(rules index 10)早于 RULE-SET,overseas-games(index 35)→ 直连生效。
+#   注:fortnite.com 不在此列(国际服国内直连不通,仍归海外游戏组)。
 payload:
   - 'DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net'
   - 'DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com'
@@ -1847,6 +1854,9 @@ payload:
   - 'DOMAIN-SUFFIX,ez2q5.cn'
   - 'DOMAIN-SUFFIX,ez4q2.cn'
   - 'DOMAIN-SUFFIX,ezyotkp.com'
+  - 'DOMAIN-SUFFIX,epicgames.com'
+  - 'DOMAIN-SUFFIX,epicgames.dev'
+  - 'DOMAIN-SUFFIX,epicgamescdn.com'
   - 'DOMAIN-SUFFIX,f1bbu.cn'
   - 'DOMAIN-SUFFIX,f3n0k.cn'
   - 'DOMAIN-SUFFIX,facephoto.com'
