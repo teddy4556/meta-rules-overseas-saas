@@ -1,12 +1,12 @@
 # 国内去广告.yaml
 # 用途:OpenClash REJECT 组 - RULE-SET,国内去广告,REJECT
 # 来源:https://yfamilys.com/rule/ADLite.list (轻量版去广告)
-# 行为:阻断国内常见广告域(百度广告/统计/弹窗/恶意站/...) 55872 → 去重后 55843 条
+# 行为:阻断国内常见广告域(百度广告/统计/弹窗/恶意站/...) 55872 → 去重后 55845 条
 # 性能:几乎全是 DOMAIN-SUFFIX (55744 条 hash 索引匹配),OpenClash 性能影响极小
 # 配套 cn/国内直连.yaml (20027 条 DIRECT,本文件是 REJECT)
 # AntiAD 9.7MB 完整版不进仓库(9-1 用户决定,体积过大);ADLite 是其轻量替代
 # 生成时间:2026-09-01T12:36:05Z
-# 总条数:55843 (去重 29 条)
+# 总条数:55845 (去重 29 条)
 payload:
       # === Microsoft Store 遗留死域(2026-11-04 核实)===
       # pti.store.microsoft.com / catalog.s.microsoft.com
