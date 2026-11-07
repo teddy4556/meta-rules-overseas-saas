@@ -25,12 +25,32 @@ proxy-groups:
     #   日本-手选 / 美国-手选 / 新加坡-手选 / 香港-手选  —— select, 可手动钉节点
     #   日本-故转 / 美国-故转 / 新加坡-故转 / 香港-故转  —— fallback, 链尾是「智选」URLTest
     #   兜底组                                                  —— select, 链尾指向「其他-手选」
-    #   DIRECT                                                  —— 直连(BT 走直连时 tracker 最快,
-    #                                                            但部分国际 tracker 连不上)
+    #   DIRECT                                                  —— 直连
+    #
+    # 默认选 DIRECT(2026-11-07 实测结论):
+    #   ① 机场节点全是多出口负载均衡落地机 —— 实测 24 个节点,出口 IP 全部在跳:
+    #      JP_🇯🇵-01 → 141.147.162.33 / 64.110.104.30 / 43.175.18.181
+    #      天诚优选1 → 167.179.75.237 / 168.138.46.67 / 160.16.209.61
+    #      全部落在 AWS / Oracle / SoftLayer 公有云段(141.147 / 64.110 / 43.175 /
+    #      8.221 / 167.179 / 168.138 / 160.16),一个入口后面挂多个出口,配置改不动。
+    #   ② 共享优选节点存活期极短 —— 实测同一节点几分钟内从「tracker 全通」变成
+    #      「全部 i/o timeout」:F1-小日本儿-01.T 通 → 02.T 通 → 全挂,轮番上演。
+    #      入口 IP 43.161.221.119 / 172.64.229.36 / 45.202.255.174 依次超时。
+    #   ③ tracker 直连可达 7/14,代理 8/14 —— 差异很小,且挂掉的那些是 tracker 本身死了
+    #      (路由器本机直连测得同样结果,排除代理因素):
+    #      tracker.dler.org / tracker.opentrackr.org / tracker.breizh.pm / tracker.dler.com 通
+    #      open.demonii.com / tracker.torrent.eu.org / tracker.gmi.gd / tracker.nyaa.vc 等不通
+    #   ④ BT 的 peer 发现主力是 DHT/PEX,不是 tracker —— 实测 qBittorrent 在
+    #      tracker 大量超时的情况下,DHT 依然拿到 peer(leechs=1)。
+    #      tracker 只是补充 peer 源,用家宽 IP 报 announce 信誉度远高于数据中心 IP。
+    #
+    # 如需改走代理,直接在 OpenClash 面板把 BT 组切到「美国-手选」等即可(Select 类型,
+    # 手动切换即生效,无需改配置)。建议切「美国-手选」—— 实测 tracker 3/3 全通。
 
     - name: BT
       type: select
       proxies:
+        - DIRECT
         - 日本-手选
         - 美国-手选
         - 新加坡-手选
@@ -40,8 +60,8 @@ proxy-groups:
         - 新加坡-故转
         - 香港-故转
         - 兜底组
-        - DIRECT
       fallback:
+        - DIRECT
         - 日本-手选
         - 美国-手选
         - 新加坡-手选
@@ -51,4 +71,3 @@ proxy-groups:
         - 新加坡-故转
         - 香港-故转
         - 兜底组
-        - DIRECT
