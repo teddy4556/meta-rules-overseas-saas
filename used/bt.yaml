@@ -1,7 +1,203 @@
 payload:
-    # bt (精准清理 2026-09-19: 仅保留 bt 业务核心)
-    # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 3
-    - PROCESS-NAME,qBittorrent,DIRECT
-    - PROCESS-NAME,uTorrent,DIRECT
-    - PROCESS-NAME-REGEX,(?i)torrent,DIRECT
+    # BT 业务规则集 (2026-11-07 重写)
+    #
+    # 背景: 原 bt.yaml 用 PROCESS-NAME,qBittorrent,DIRECT 匹配进程名,
+    # 但 OpenClash 的 PROCESS-NAME 依赖 nftables/iptables 进程名匹配,
+    # NAS 上 qBittorrent 跑在容器里 (实际进程名 qbittorrent-nox),
+    # 流量经 docker NAT 后到路由器时已丢失原始进程上下文 → 规则零命中。
+    # 实测 (2026-11-07): mihomo /tmp/openclash.log 全量日志搜 'match RuleSet/bt' 零命中;
+    #              tracker2.dler.org / open.demonii.com / tracker.gmi.gd 等
+    #              实际走 'dial 兜底组 (match Match/)' → 其他-手选 → BestCF 优选节点,
+    #              出口 IP 在 Cloudflare 段 (162.159.197.x) 间跳变,且大量 i/o timeout。
+    #
+    # 本次改为域名匹配(不依赖进程嗅探,容器/非容器场景都生效):
+    #   tracker 域名 104 条 (公开 tracker 列表实测从本 NAS 可解析)
+    #   BT 种子站域名 69 条 (Jackett indexer 站点)
+    #   tracker 裸 IP 5 条 (走 IP-CIDR)
+    #
+    # 策略: 由路由器 rules 段 RULE-SET,bt,<策略> 指定,规则集不带策略后缀
+    #       (与本仓库其余 42 个 rule-set 保持一致)
+    # 配套: 路由器 proxy-groups 需存在名为 BT 的 select 组
+    #       (type: select, 上游挂各地区「手选」组,可用手动钉死固定节点)
+    # entries: 178
+    # --- BT tracker 域名 (announce 握手走这里) ---
+    - DOMAIN-SUFFIX,004430.xyz
+    - DOMAIN-SUFFIX,1.tracker.eu.org
+    - DOMAIN-SUFFIX,1337.abcvg.info
+    - DOMAIN-SUFFIX,admin.52ywp.com
+    - DOMAIN-SUFFIX,anime-tracker.aruku.kro.kr
+    - DOMAIN-SUFFIX,archive.torrentonline.cc
+    - DOMAIN-SUFFIX,bittorrent-tracker.e-n-c-r-y-p-t.net
+    - DOMAIN-SUFFIX,bt-tracker.de
+    - DOMAIN-SUFFIX,bt1.archive.org
+    - DOMAIN-SUFFIX,bt2.archive.org
+    - DOMAIN-SUFFIX,discover.curiousfacts.blog
+    - DOMAIN-SUFFIX,evan.im
+    - DOMAIN-SUFFIX,exodus.desync.com
+    - DOMAIN-SUFFIX,explodie.org
+    - DOMAIN-SUFFIX,ht.therarbg.to
+    - DOMAIN-SUFFIX,ipv4announce.sktorrent.eu
+    - DOMAIN-SUFFIX,kolankoalastree.newtrackon.co.nz
+    - DOMAIN-SUFFIX,mail.segso.net
+    - DOMAIN-SUFFIX,martin-gebhardt.eu
+    - DOMAIN-SUFFIX,ns575949.ip-51-222-82.net
+    - DOMAIN-SUFFIX,nyaa.tracker.wf
+    - DOMAIN-SUFFIX,open.demonii.com
+    - DOMAIN-SUFFIX,open.ftorrent.com
+    - DOMAIN-SUFFIX,open.stealth.si
+    - DOMAIN-SUFFIX,open.tracker.cl
+    - DOMAIN-SUFFIX,open.tracker.ink
+    - DOMAIN-SUFFIX,opentor.org
+    - DOMAIN-SUFFIX,opentracker.lain.moscow
+    - DOMAIN-SUFFIX,opentracker2.lain.moscow
+    - DOMAIN-SUFFIX,p4p.arenabg.com
+    - DOMAIN-SUFFIX,retracker.hotplug.ru
+    - DOMAIN-SUFFIX,retracker01-msk-virt.corbina.net
+    - DOMAIN-SUFFIX,seedpeer.net
+    - DOMAIN-SUFFIX,t.213891.xyz
+    - DOMAIN-SUFFIX,t.overflow.biz
+    - DOMAIN-SUFFIX,torrent.tracker.durukanbal.com
+    - DOMAIN-SUFFIX,torrentsmd.com
+    - DOMAIN-SUFFIX,tr.abiir.top
+    - DOMAIN-SUFFIX,tr.burnabyhighstar.com
+    - DOMAIN-SUFFIX,tr.nyacat.pw
+    - DOMAIN-SUFFIX,tr3.ysagin.top
+    - DOMAIN-SUFFIX,tr4ck3r.duckdns.org
+    - DOMAIN-SUFFIX,tracker-udp.gbitt.info
+    - DOMAIN-SUFFIX,tracker.004430.xyz
+    - DOMAIN-SUFFIX,tracker.7471.top
+    - DOMAIN-SUFFIX,tracker.aruku.ovh
+    - DOMAIN-SUFFIX,tracker.bittor.pw
+    - DOMAIN-SUFFIX,tracker.breizh.pm
+    - DOMAIN-SUFFIX,tracker.bt4g.com
+    - DOMAIN-SUFFIX,tracker.cn.nyaa.net
+    - DOMAIN-SUFFIX,tracker.corpscorp.online
+    - DOMAIN-SUFFIX,tracker.dhitechnical.com
+    - DOMAIN-SUFFIX,tracker.dler.com
+    - DOMAIN-SUFFIX,tracker.dler.org
+    - DOMAIN-SUFFIX,tracker.ducks.party
+    - DOMAIN-SUFFIX,tracker.evergarden.uk
+    - DOMAIN-SUFFIX,tracker.farted.net
+    - DOMAIN-SUFFIX,tracker.filemail.com
+    - DOMAIN-SUFFIX,tracker.flatuslifir.is
+    - DOMAIN-SUFFIX,tracker.fnix.net
+    - DOMAIN-SUFFIX,tracker.foreverpirates.co
+    - DOMAIN-SUFFIX,tracker.gmi.gd
+    - DOMAIN-SUFFIX,tracker.ilibr.org
+    - DOMAIN-SUFFIX,tracker.internetwarriors.net
+    - DOMAIN-SUFFIX,tracker.k.vu
+    - DOMAIN-SUFFIX,tracker.kuroy.me
+    - DOMAIN-SUFFIX,tracker.midnightprogrammer.net
+    - DOMAIN-SUFFIX,tracker.mywaifu.best
+    - DOMAIN-SUFFIX,tracker.nekomi.cn
+    - DOMAIN-SUFFIX,tracker.nyaa.net
+    - DOMAIN-SUFFIX,tracker.nyaa.vc
+    - DOMAIN-SUFFIX,tracker.okade.pro
+    - DOMAIN-SUFFIX,tracker.opentrackr.com
+    - DOMAIN-SUFFIX,tracker.opentrackr.org
+    - DOMAIN-SUFFIX,tracker.peerfect.org
+    - DOMAIN-SUFFIX,tracker.playground.ru
+    - DOMAIN-SUFFIX,tracker.pmman.tech
+    - DOMAIN-SUFFIX,tracker.qingwapt.org
+    - DOMAIN-SUFFIX,tracker.qu.ax
+    - DOMAIN-SUFFIX,tracker.renfei.net
+    - DOMAIN-SUFFIX,tracker.sela.st
+    - DOMAIN-SUFFIX,tracker.skyts.net
+    - DOMAIN-SUFFIX,tracker.theoks.net
+    - DOMAIN-SUFFIX,tracker.torrent.eu.org
+    - DOMAIN-SUFFIX,tracker.torrents.observer
+    - DOMAIN-SUFFIX,tracker.transfur.org
+    - DOMAIN-SUFFIX,tracker.tryhackx.org
+    - DOMAIN-SUFFIX,tracker.waaa.moe
+    - DOMAIN-SUFFIX,tracker.wildkat.net
+    - DOMAIN-SUFFIX,tracker.willy.pro
+    - DOMAIN-SUFFIX,tracker.xn--djrq4gl4hvoi.top
+    - DOMAIN-SUFFIX,tracker.yume-hatsuyuki.moe
+    - DOMAIN-SUFFIX,tracker.zhuqiy.com
+    - DOMAIN-SUFFIX,tracker.zhuqiy.dgj055.icu
+    - DOMAIN-SUFFIX,tracker1.520.jp
+    - DOMAIN-SUFFIX,tracker1.itzmx.com
+    - DOMAIN-SUFFIX,tracker2.dler.org
+    - DOMAIN-SUFFIX,tracker2.itzmx.com
+    - DOMAIN-SUFFIX,tracker3.itzmx.com
+    - DOMAIN-SUFFIX,tracker4.itzmx.com
+    - DOMAIN-SUFFIX,v2.iperson.xyz
+    - DOMAIN-SUFFIX,whybother.torrentonline.cc
+    - DOMAIN-SUFFIX,www.wareztorrent.com
+    - DOMAIN-SUFFIX,yuptracker-eu.gaijinent.com
+    # --- BT 种子站域名 (磁力链接 / 种子页) ---
+    - DOMAIN-SUFFIX,1337x.org
+    - DOMAIN-SUFFIX,1337x.to
+    - DOMAIN-SUFFIX,acg.rip
+    - DOMAIN-SUFFIX,acgrip.to
+    - DOMAIN-SUFFIX,aniliberty.top
+    - DOMAIN-SUFFIX,anilibria.top
+    - DOMAIN-SUFFIX,anirena.com
+    - DOMAIN-SUFFIX,bitsearch.to
+    - DOMAIN-SUFFIX,bludvd.com
+    - DOMAIN-SUFFIX,bt4g.com
+    - DOMAIN-SUFFIX,bt4g.link
+    - DOMAIN-SUFFIX,bt4g.to
+    - DOMAIN-SUFFIX,bt4gprx.com
+    - DOMAIN-SUFFIX,btdig.com
+    - DOMAIN-SUFFIX,dmhy.org
+    - DOMAIN-SUFFIX,e-hentai.org
+    - DOMAIN-SUFFIX,elitetorrent.wf
+    - DOMAIN-SUFFIX,exhentai.org
+    - DOMAIN-SUFFIX,eztv.re
+    - DOMAIN-SUFFIX,hanime.tv
+    - DOMAIN-SUFFIX,kickasstorrents.to
+    - DOMAIN-SUFFIX,kinopoisk.dev
+    - DOMAIN-SUFFIX,knaben.org
+    - DOMAIN-SUFFIX,limetorrents.lol
+    - DOMAIN-SUFFIX,limetorrents.pro
+    - DOMAIN-SUFFIX,magnetcat.org
+    - DOMAIN-SUFFIX,magnetdownload.com
+    - DOMAIN-SUFFIX,megapeak.uno
+    - DOMAIN-SUFFIX,mixdrop.to
+    - DOMAIN-SUFFIX,mkvcx.org
+    - DOMAIN-SUFFIX,nyaa.net
+    - DOMAIN-SUFFIX,nyaa.si
+    - DOMAIN-SUFFIX,nyaa.tracker.wf
+    - DOMAIN-SUFFIX,nyaasi.com
+    - DOMAIN-SUFFIX,openload.co
+    - DOMAIN-SUFFIX,pornhub.com
+    - DOMAIN-SUFFIX,porntrex.com
+    - DOMAIN-SUFFIX,rarbg.com
+    - DOMAIN-SUFFIX,rarbg.to
+    - DOMAIN-SUFFIX,rutor.info
+    - DOMAIN-SUFFIX,rutracker.net
+    - DOMAIN-SUFFIX,rutracker.org
+    - DOMAIN-SUFFIX,rutracker.ru
+    - DOMAIN-SUFFIX,share.dmhy.org
+    - DOMAIN-SUFFIX,showrss.info
+    - DOMAIN-SUFFIX,showsrss.info
+    - DOMAIN-SUFFIX,skidrowrepack.com
+    - DOMAIN-SUFFIX,solidtorrents.to
+    - DOMAIN-SUFFIX,subsplease.org
+    - DOMAIN-SUFFIX,sukebei.nyaa.si
+    - DOMAIN-SUFFIX,thepiratebay.org
+    - DOMAIN-SUFFIX,therarbg.to
+    - DOMAIN-SUFFIX,torrent-pirat.com
+    - DOMAIN-SUFFIX,torrent-pirate.com
+    - DOMAIN-SUFFIX,torrent4you.eu
+    - DOMAIN-SUFFIX,torrent9.nz
+    - DOMAIN-SUFFIX,torrent9.pm
+    - DOMAIN-SUFFIX,torrentcore.org
+    - DOMAIN-SUFFIX,torrentdownload.info
+    - DOMAIN-SUFFIX,torrentdownload.pro
+    - DOMAIN-SUFFIX,torrentgalaxy.mx
+    - DOMAIN-SUFFIX,torrentgalaxy.to
+    - DOMAIN-SUFFIX,torrentgalaxy.tv
+    - DOMAIN-SUFFIX,torrentkitty.to
+    - DOMAIN-SUFFIX,uhdbits.org
+    - DOMAIN-SUFFIX,utorrent.com
+    - DOMAIN-SUFFIX,yts.gg
+    - DOMAIN-SUFFIX,yts.mx
+    - DOMAIN-SUFFIX,zoink.org
+    # --- tracker 裸 IP (无域名,只能按 IP 匹配) ---
+    - IP-CIDR,107.189.2.131/32
+    - IP-CIDR,207.241.226.111/32
+    - IP-CIDR,207.241.231.226/32
+    - IP-CIDR,52.58.128.163/32
+    - IP-CIDR,93.158.213.92/32

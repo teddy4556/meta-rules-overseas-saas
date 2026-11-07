@@ -125,6 +125,42 @@ rules:
 | `pornhub.yaml` | 18+ 类(选择性使用) | 28 |
 | `paypal-extra.yaml` | PayPal 子域补充(配合 meta-rules-dat 的 paypal) | 21 |
 
+**BT 业务组 (`used/bt.yaml`,2026-11-07 重写):**
+
+BT 走独立业务组,**不走 DIRECT 也不走兜底组**。原因:tracker announce 的出口 IP 必须固定,
+否则 tracker 判滥用,且入站 peer 与出站 announce 出口不一致会掉连通率。
+
+| yaml | 用途 | 条数 |
+|---|---|---|
+| `used/bt.yaml` | BT tracker 域名 + BT 种子站域名 | 178 |
+| `used/bt-proxy-groups.yaml` | BT 业务组定义(`type: select`,上游挂各地区「手选」组) | 1 组 |
+
+```yaml
+rule-providers:
+  bt:
+    type: http
+    interval: 86400
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/teddy4556/meta-rules-overseas-saas/main/used/bt.yaml
+    path: ./rule_provider/bt.yaml
+
+rules:
+  - RULE-SET,bt,BT
+```
+
+> **坑(2026-11-07 实测)**:原 `bt.yaml` 用 `PROCESS-NAME,qBittorrent,DIRECT` 匹配进程名,
+> 但 OpenClash 的 PROCESS-NAME 依赖 nftables 进程名匹配,容器里的 qBittorrent
+> (实际进程名 `qbittorrent-nox`)流量经 docker NAT 后到路由器已丢失进程上下文 →
+> 规则**零命中**。实测 mihomo 全量日志搜 `match RuleSet/bt` 一条都没有,
+> tracker 流量实际落进「兜底组 → 其他-手选 → BestCF 优选节点」,
+> 出口 IP 在 Cloudflare 段(162.159.197.x)间跳变 + 大量 i/o timeout。
+> **进程名匹配在容器场景不可靠,改域名匹配。**
+
+> **组必须是 `type: select`**:挂 URLTest 组会每请求换出口 IP(fact #1032: Pornhub 474
+> 就是规则命中正确、但上游挂 URLTest 组导致出口 IP 漂移、签名参数失配)。
+> 用 select 可在面板手动钉死单个节点,保证出口稳定。
+
 **总计 32 个 yaml**
 
 **国内游戏 (`cn/` 子目录):**

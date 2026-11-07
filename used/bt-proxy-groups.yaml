@@ -1,0 +1,54 @@
+proxy-groups:
+    # BT 业务组定义 (2026-11-07 新增)
+    #
+    # 为什么需要这个组:
+    #   qBittorrent 跑在 NAS 容器里,tracker announce 流量此前落进「兜底组」
+    #   → 「其他-手选」→ BestCF.pages.dev 共享优选节点,出口 IP 在 Cloudflare 段
+    #     (162.159.197.x / 104.28.158.x) 间跳变,且大量 i/o timeout。
+    #   tracker 判滥用 + 入站 peer 与出站 announce 出口不一致 → 连通率下降。
+    #
+    # 设计要点:
+    #   type: select —— 关键。用 select 而非 url-test/fallback,
+    #     因为 URLTest 组每请求重新挑最快节点(fact #1032: 实测 Pornhub 474 就是
+    #     规则命中正确、但上游挂在 URLTest 组上导致每请求换出口 IP、签名失配),
+    #     BT 必须能手动钉死一个固定节点以保证出口 IP 稳定。
+    #   上游顺序 —— 「手选」组排在最前,便于在面板上手动指定固定节点;
+    #     「故转」组(fallback→智选 URLTest)仅作后置兜底,不建议选它。
+    #
+    # 落地方式:
+    #   本文件是路由器 proxy-groups 段的来源。路由器 my-config.yaml 的
+    #   proxy-groups 需要存在同名 BT 组,rules 段需要:
+    #       - RULE-SET,bt,BT
+    #   (原为 - RULE-SET,bt, DIRECT)
+    #
+    # 上游组名对应关系(路由器 my-config.yaml 现有 45 个组):
+    #   日本-手选 / 美国-手选 / 新加坡-手选 / 香港-手选  —— select, 可手动钉节点
+    #   日本-故转 / 美国-故转 / 新加坡-故转 / 香港-故转  —— fallback, 链尾是「智选」URLTest
+    #   兜底组                                                  —— select, 链尾指向「其他-手选」
+    #   DIRECT                                                  —— 直连(BT 走直连时 tracker 最快,
+    #                                                            但部分国际 tracker 连不上)
+
+    - name: BT
+      type: select
+      proxies:
+        - 日本-手选
+        - 美国-手选
+        - 新加坡-手选
+        - 香港-手选
+        - 日本-故转
+        - 美国-故转
+        - 新加坡-故转
+        - 香港-故转
+        - 兜底组
+        - DIRECT
+      fallback:
+        - 日本-手选
+        - 美国-手选
+        - 新加坡-手选
+        - 香港-手选
+        - 日本-故转
+        - 美国-故转
+        - 新加坡-故转
+        - 香港-故转
+        - 兜底组
+        - DIRECT
