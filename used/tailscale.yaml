@@ -4,10 +4,10 @@
 #   - https://raw.githubusercontent.com/jmaddington/tailscale-ips/main/tailscale.all-ipv4.txt
 #   - https://raw.githubusercontent.com/jmaddington/tailscale-ips/main/tailscale.all-ipv6.txt
 #   - https://tailscale.com/docs/reference/derp-servers
-# entries: 305  (DOMAIN-SUFFIX 118 + DOMAIN-KEYWORD 1 + IP-CIDR 88 + IP-CIDR6 98)
+# entries: 279  (DOMAIN-SUFFIX 92 + DOMAIN-KEYWORD 1 + IP-CIDR 88 + IP-CIDR6 98)
 #
 # sections (after dedup):
-#   A 主域 (login/controlplane/app/pkg 等):     20
+#   A 主域:已拆出 -> used/tailscale-direct.yaml (控制面直连),本集不再含控制面域名
 #   B CDN / 资源:                                 5
 #   C DERP 静态域名 (region x suffix):           88
 #   C.b DERP 兜底 KEYWORD:                       1
@@ -18,36 +18,15 @@
 # 字母序规范:严格 ASCII 字典序,合并所有 DOMAIN/IP/KEYWORD 入单一序列
 # 已去重:DROP DUP count = 1 (`2600:3c0d::2000:d2ff:fe43:1790/128` 在源资料出现 2 次)
 #
-# 适用:将 tailscale.com 全域名 + DERP 中继节点(88 v4 / 98 v6)命中走代理
+# 适用:DERP 中继节点(88 v4 / 98 v6)+ 品牌域名命中走代理,作为打洞失败时的保底路径
+# 注意(2026-11-08):控制面域名(controlplane/login/api 等)已拆到 used/tailscale-direct.yaml 走 DIRECT
+#       原因:代理节点失效时控制面 long-poll 断 -> 拿不到 netmap -> peer 可达性退化 -> 外网 WS 时断
 # 不适用:fake-ip-filter 已排除 tailscale 的环境(否则双重规则,见 fact #358)
 
 payload:
     # === 主域 / CDN / DERP 子域 / 品牌 / KEYWORD 兜底 ===
-    - DOMAIN-SUFFIX,api.tailscale.com
-    - DOMAIN-SUFFIX,app.tailscale.com
-    - DOMAIN-SUFFIX,auth.tailscale.com
-    - DOMAIN-SUFFIX,controlplane.tailscale.com
-    - DOMAIN-SUFFIX,help.tailscale.com
-    - DOMAIN-SUFFIX,hosts.tailscale.com
     - DOMAIN-SUFFIX,log.tailscale.com
-    - DOMAIN-SUFFIX,login.tailscale.com
-    - DOMAIN-SUFFIX,m.tailscale.com
-    - DOMAIN-SUFFIX,mail.tailscale.com
-    - DOMAIN-SUFFIX,metadata.tailscale.com
-    - DOMAIN-SUFFIX,node.ts.net
-    - DOMAIN-SUFFIX,pkg.tailscale.com
-    - DOMAIN-SUFFIX,pkgs.tailscale.com
-    - DOMAIN-SUFFIX,sso.tailscale.com
-    - DOMAIN-SUFFIX,status.tailscale.com
-    - DOMAIN-SUFFIX,support.tailscale.com
     - DOMAIN-SUFFIX,tailscale.com
-    - DOMAIN-SUFFIX,updates.tailscale.com
-    - DOMAIN-SUFFIX,www.tailscale.com
-    - DOMAIN-SUFFIX,cdn.tailscale.com
-    - DOMAIN-SUFFIX,images.tailscale.com
-    - DOMAIN-SUFFIX,img.tailscale.com
-    - DOMAIN-SUFFIX,static.tailscale.com
-    - DOMAIN-SUFFIX,tsdata.tailscale.com
     - DOMAIN-SUFFIX,derp10b.tailscale.com
     - DOMAIN-SUFFIX,derp10c.tailscale.com
     - DOMAIN-SUFFIX,derp10d.tailscale.com
@@ -139,9 +118,6 @@ payload:
     - DOMAIN-KEYWORD,derp
     - DOMAIN-SUFFIX,headscale.net
     - DOMAIN-SUFFIX,log.tailscale.io
-    - DOMAIN-SUFFIX,tailscale.bond
-    - DOMAIN-SUFFIX,tailscale.io
-    - DOMAIN-SUFFIX,ts.net
 
     # === DERP IP-CIDR v4 (no-resolve) ===
     - IP-CIDR,102.67.165.185/32,no-resolve
