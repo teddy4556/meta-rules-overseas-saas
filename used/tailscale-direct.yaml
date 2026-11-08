@@ -1,0 +1,48 @@
+# Tailscale 控制面直连规则集
+# 用途:把 Tailscale 协调服务器(control plane)流量从代理组里摘出来,强制 DIRECT。
+#
+# 背景(2026-11-08 实测):
+#   OpenClash 规则 `RULE-SET,tailscale,Tailscale` 把 controlplane.tailscale.com
+#   和全部 DERP 中继节点绑在同一个 Tailscale 代理组上。代理节点失效时:
+#     - 控制面 long-poll 每 60s 超时、每 2min 彻底失败
+#     - tailscaled 报 "hasn't received a network map from the coordination server"
+#     - 拿不到 netmap -> peer 可达性退化 -> 外面(移动网络)时 WS 时断
+#   控制面直连实测延迟 200ms,比所有代理节点(277-381ms)更快更稳。
+#
+# 分工:
+#   本文件(控制面域名) -> DIRECT,直连
+#   used/tailscale.yaml (DERP 域名 + DERP IP) -> Tailscale 代理组,保底中继
+#
+# 数据源:从 used/tailscale.yaml 的主域段拆分而来(2026-11-08)
+# entries: 26
+#
+# 注意:DERP 中继节点(derp*.tailscale.com / DERP IP-CIDR)不在本文件,
+#       它们留在 used/tailscale.yaml 走代理,作为打洞失败时的保底路径。
+
+payload:
+    - DOMAIN-SUFFIX,api.tailscale.com
+    - DOMAIN-SUFFIX,app.tailscale.com
+    - DOMAIN-SUFFIX,auth.tailscale.com
+    - DOMAIN-SUFFIX,cdn.tailscale.com
+    - DOMAIN-SUFFIX,controlplane.tailscale.com
+    - DOMAIN-SUFFIX,help.tailscale.com
+    - DOMAIN-SUFFIX,hosts.tailscale.com
+    - DOMAIN-SUFFIX,images.tailscale.com
+    - DOMAIN-SUFFIX,img.tailscale.com
+    - DOMAIN-SUFFIX,login.tailscale.com
+    - DOMAIN-SUFFIX,m.tailscale.com
+    - DOMAIN-SUFFIX,mail.tailscale.com
+    - DOMAIN-SUFFIX,metadata.tailscale.com
+    - DOMAIN-SUFFIX,node.ts.net
+    - DOMAIN-SUFFIX,pkg.tailscale.com
+    - DOMAIN-SUFFIX,pkgs.tailscale.com
+    - DOMAIN-SUFFIX,sso.tailscale.com
+    - DOMAIN-SUFFIX,static.tailscale.com
+    - DOMAIN-SUFFIX,status.tailscale.com
+    - DOMAIN-SUFFIX,support.tailscale.com
+    - DOMAIN-SUFFIX,tailscale.bond
+    - DOMAIN-SUFFIX,tailscale.io
+    - DOMAIN-SUFFIX,ts.net
+    - DOMAIN-SUFFIX,tsdata.tailscale.com
+    - DOMAIN-SUFFIX,updates.tailscale.com
+    - DOMAIN-SUFFIX,www.tailscale.com
