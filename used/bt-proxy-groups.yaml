@@ -27,47 +27,55 @@ proxy-groups:
     #   兜底组                                                  —— select, 链尾指向「其他-手选」
     #   DIRECT                                                  —— 直连
     #
-    # 默认选 DIRECT(2026-11-07 实测结论):
-    #   ① 机场节点全是多出口负载均衡落地机 —— 实测 24 个节点,出口 IP 全部在跳:
-    #      JP_🇯🇵-01 → 141.147.162.33 / 64.110.104.30 / 43.175.18.181
-    #      天诚优选1 → 167.179.75.237 / 168.138.46.67 / 160.16.209.61
-    #      全部落在 AWS / Oracle / SoftLayer 公有云段(141.147 / 64.110 / 43.175 /
-    #      8.221 / 167.179 / 168.138 / 160.16),一个入口后面挂多个出口,配置改不动。
-    #   ② 共享优选节点存活期极短 —— 实测同一节点几分钟内从「tracker 全通」变成
-    #      「全部 i/o timeout」:F1-小日本儿-01.T 通 → 02.T 通 → 全挂,轮番上演。
-    #      入口 IP 43.161.221.119 / 172.64.229.36 / 45.202.255.174 依次超时。
-    #   ③ tracker 直连可达 7/14,代理 8/14 —— 差异很小,且挂掉的那些是 tracker 本身死了
-    #      (路由器本机直连测得同样结果,排除代理因素):
-    #      tracker.dler.org / tracker.opentrackr.org / tracker.breizh.pm / tracker.dler.com 通
-    #      open.demonii.com / tracker.torrent.eu.org / tracker.gmi.gd / tracker.nyaa.vc 等不通
-    #   ④ BT 的 peer 发现主力是 DHT/PEX,不是 tracker —— 实测 qBittorrent 在
-    #      tracker 大量超时的情况下,DHT 依然拿到 peer(leechs=1)。
-    #      tracker 只是补充 peer 源,用家宽 IP 报 announce 信誉度远高于数据中心 IP。
+    # ★ 2026-11-08 修订:BT 首选从 DIRECT 改为「美国-故转」
     #
-    # 如需改走代理,直接在 OpenClash 面板把 BT 组切到「美国-手选」等即可(Select 类型,
-    # 手动切换即生效,无需改配置)。建议切「美国-手选」—— 实测 tracker 3/3 全通。
+    # 起因:BT 规则集污染 → pornhub 串味(见 used/bt.yaml 同日提交)
+    #   2026-11-07 22:41 路由器拉取的 used/bt.yaml 里混进了
+    #   - DOMAIN-SUFFIX,pornhub.com → www.pornhub.com 命中 RULE-SET,bt
+    #   (index 31)而不是 RULE-SET,pornhub (index 42)→ 流量进 BT 组。
+    #   BT 组当时 now=DIRECT → 直连被掐断 TLS,VidBee 5 条 PornHub 任务全灭
+    #   (curl: (35) BoringSSL SSL_connect: Connection closed abruptly)。
+    #
+    # 为什么首选不能是 DIRECT(2026-11-08 全量复测 14 个 tracker,各 2~3 轮):
+    #   DIRECT     3~4/14 通  (opentrackr / dler.com / nyaa.vc / breizh.pm 轮替)
+    #   美国-故转   8~9/14 通  (上列 + open.demonii / tracker.gmi.gd / d.rutor.info / nyaa.si)
+    #   → 代理路径稳定好一倍。2026-11-07 注释里「直连 7/14」的结论已随节点池换代过时。
+    #
+    # 为什么不用「智选 / 故转」链尾(URLTest):每请求换出口 IP,
+    #   BT 需要固定出口做 announce 信誉(见上方设计要点)。
+    #
+    # 「美国-故转」是 fallback,链尾同样是「美国-智选」URLTest —— 但当前实测
+    #   美国-智选 tracker 3/3 稳定、且比日本链(日本-智选 → F1-小日本儿 共享优选,
+    #   存活期仅几分钟)可靠得多。若日后需绝对固定出口,可在面板把 BT 组
+    #   手动切到「美国-手选」并钉死单个节点(那个组是 select,不会自动轮换)。
+    #
+    # DIRECT 保留在列表中:BT 种子站/部分 tracker 仍适合直连(家宽 IP announce 信誉更高),
+    #   需要时在面板手动切回即可。
+    #
+    # ★ 另注:PornHub 业务已与 BT 完全分开 —— 走自己的「Pornhub」组,不经过本组。
+    #   2026-11-08 实测日志已确认 NAS 流量命中 match RuleSet/pornhub。
 
     - name: BT
       type: select
       proxies:
+        - 美国-故转
         - DIRECT
         - 日本-手选
         - 美国-手选
         - 新加坡-手选
         - 香港-手选
         - 日本-故转
-        - 美国-故转
         - 新加坡-故转
         - 香港-故转
         - 兜底组
       fallback:
+        - 美国-故转
         - DIRECT
         - 日本-手选
         - 美国-手选
         - 新加坡-手选
         - 香港-手选
         - 日本-故转
-        - 美国-故转
         - 新加坡-故转
         - 香港-故转
         - 兜底组
