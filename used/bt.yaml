@@ -19,7 +19,10 @@ payload:
     #       (与本仓库其余 42 个 rule-set 保持一致)
     # 配套: 路由器 proxy-groups 需存在名为 BT 的 select 组
     #       (type: select, 上游挂各地区「手选」组,可用手动钉死固定节点)
-    # entries: 178
+    # ★ 2026-11-08 移除混入的 DOMAIN-SUFFIX,pornhub.com / DOMAIN-SUFFIX,porntrex.com
+    #   (BT 规则集不该含 pornhub 域名 —— 2026-11-07 22:41 路由器拉取后导致 pornhub
+    #    流量命中 RULE-SET,bt 而非 RULE-SET,pornhub,直连被掐断 TLS)
+    # entries: 176
     # --- BT tracker 域名 (announce 握手走这里) ---
     - DOMAIN-SUFFIX,004430.xyz
     - DOMAIN-SUFFIX,1.tracker.eu.org
