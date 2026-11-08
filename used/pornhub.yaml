@@ -1,7 +1,11 @@
 payload:
     # pornhub (精准清理 2026-09-19: 仅保留 pornhub 业务核心)
     # 删除 Loyalsondier G 总集设计导致的跨平台污染
-    # entries: 217
+    # ★ 2026-11-08 新增:DOMAIN-SUFFIX,phncdn.com —— PornHub 媒体流 CDN
+    #   m3u8/分片实际托管在此域名。原只在 tiktok.yaml 里(通用名单误带入),
+    #   而 tiktok 规则集排在 pornhub 之前 → CDN 流量被截到 TikTok 组
+    #   → SSL UNEXPECTED_EOF_WHILE_READING → 视频下载失败。
+    # entries: 218
     - DOMAIN-SUFFIX,1909.me
     - DOMAIN-SUFFIX,446m.com
     - DOMAIN-SUFFIX,8se.me
@@ -155,6 +159,7 @@ payload:
     - DOMAIN-SUFFIX,porndude.com
     - DOMAIN-SUFFIX,porndude.net
     - DOMAIN-SUFFIX,pornhub.com
+    - DOMAIN-SUFFIX,phncdn.com
     - DOMAIN-SUFFIX,pornmap.com
     - DOMAIN-SUFFIX,pornmap.net
     - DOMAIN-SUFFIX,redtube.com
