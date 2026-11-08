@@ -161,8 +161,6 @@ payload:
     - DOMAIN-SUFFIX,nyaa.tracker.wf
     - DOMAIN-SUFFIX,nyaasi.com
     - DOMAIN-SUFFIX,openload.co
-    - DOMAIN-SUFFIX,pornhub.com
-    - DOMAIN-SUFFIX,porntrex.com
     - DOMAIN-SUFFIX,rarbg.com
     - DOMAIN-SUFFIX,rarbg.to
     - DOMAIN-SUFFIX,rutor.info
